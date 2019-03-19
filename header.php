@@ -10,7 +10,7 @@
 <body <?php body_class();?>>
 
 <header>
-test123
+
 
 <img src="https://cdn1.iconfinder.com/data/icons/online-wireframes/32/Wireframe_Two_Column_Website-512.png" class="img-fluid" alt="Responsive image">
 

@@ -1,13 +1,17 @@
 <?php get_header();?>
 <div class='mellom'>
 
+<div class='events'>
+<?php echo do_shortcode('[event facebook]')?>
+</div>
+
 	<div class='hoved'>
 	
 	
 	
 	<?php if(have_posts()) : while(have_posts()): the_post();?>
+	<div class='post'>
 	<h1><?php the_title();?></h1>
-		<div class='post'>
 		<?php the_content();?>
 		</div>
 	<?php endwhile; endif;?>

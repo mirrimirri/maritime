@@ -16,7 +16,7 @@
 
 <div class="container">	
 		<nav class="main-nav">
-		sss
+		
 		<?php
 		$args= array('theme_location'=>'primary');
 		?>

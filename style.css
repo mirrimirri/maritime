@@ -113,20 +113,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	 background-color: #7796CB;
 }
 
- .footer{
+ footer{
+	 background-color:white;
      padding: 20px;
      text-align: center;
-     background: #BBBBBB;
+    
 }
- .footer a{
-     color: white;
-     font-family: Verdana;
-     font-size:80%;
+
+.sosialemedierlink {
+	
+     display: flex;
+	 flex-direction:row;
+     list-style: none;
+     text-align:center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 150%;
+     font-family: arial;
+	 justify-content:center;
+	 margin:0%;
 }
-/*responsivt layout - når skjermen er mindre enn 700px bred, da blir de to radene lagt oppå hverandre isteden for vedsiden*/
- @media screen and (max-width: 800px;
-){
-     .row, .navbar{
-         flex-direction: column;
-    }
+
+.sosialemedierlink a{
+	text-decoration: none;
+	color:black;
+	 border: 1px solid black;
+	 margin:0px 10px;
 }

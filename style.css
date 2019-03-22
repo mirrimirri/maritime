@@ -1,5 +1,17 @@
-﻿/*! Theme Name: maritime Author: septa design Author URI: https://trygvevalbo.com */
- * {
+﻿/*
+Theme Name: maritime
+Theme URI: trygvevalbo.com
+Author: design
+Author URI: https://trygvevalbo.com/
+Description: laget for USN maritime linjeforening
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: usnmaritime
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/ * {
      box-sizing: border-box;
 }
  body{

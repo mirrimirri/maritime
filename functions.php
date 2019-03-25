@@ -2,11 +2,17 @@
  
  function load_stylesheets()
  {
-	
-/*	 wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
+	/*
+ wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
 	 wp_enqueue_style('bootstrap');
 	 */
-	  wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
+	 
+	 $slug = basename(get_permalink());
+	 wp_enqueue_style( 'global', get_stylesheet_uri() );
+	 
+	 if(is_page($slug=='OmOss')){
+	  wp_register_style('style', get_template_directory_uri() . '/omoss.css', array(), false, 'all');
+	 }
 	 wp_enqueue_style('style');
 	 
 	 
@@ -43,17 +49,8 @@ array(
 )
 );
 
-function wpdocs_theme_name_scripts() {
-    wp_enqueue_style( 'global', get_stylesheet_uri() );
-
-    if ( is_page(5) ) {
-      wp_enqueue_style( 'page-five', get_stylesheet_uri() . '/page-five-styles.css' );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
 
-  
 
 
 add_image_size('smallest', 300, 300, true);

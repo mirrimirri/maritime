@@ -43,6 +43,14 @@ array(
 )
 );
 
+function wpdocs_theme_name_scripts() {
+    wp_enqueue_style( 'global', get_stylesheet_uri() );
+
+    if ( is_page(5) ) {
+      wp_enqueue_style( 'page-five', get_stylesheet_uri() . '/page-five-styles.css' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
 
   

@@ -1,4 +1,4 @@
- <?php get_header();?>
+ <?php/* get_header();?>
  <link rel="stylesheet" type="text/css" href="omoss.css">.
 <div class='presentasjon'>
 	<h1><?php the_title();?></h1>
@@ -7,4 +7,4 @@
 
 
 </div>
-<?php get_footer();?>
+<?php get_footer();/*?>

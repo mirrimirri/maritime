@@ -2,7 +2,6 @@
 <html>
 
 	<head>
-	test
 	<?php wp_head();?>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php if(basename($_SERVER['PHP_SELF']) == 'front-page.php'){ ?>

@@ -53,17 +53,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
      background:C9CAD9;
      justify-content: inherit;
 }
- .main-nav ul li a{
-     flex: 1 0 auto;
-     display: flex;
-     list-style: none;
-     text-align:center;
-     padding: 14px 16px;
-     text-decoration: none;
-     color: white;
-     font-size: 150%;
-     font-family: arial;
-}
+   .main-nav ul li a{ 
+    float: left;
+    color: #2D5778;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	list-style: none;
+	display: flex;
+    font-size: 100%;
+    font-family: arial;
+   
+  }
  .main-nav ul li a :hover {
      background-color: #white;
 } 

@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php if(basename($_SERVER['PHP_SELF']) == 'front-page.php'){ ?>
      <link href="/style.css" rel="stylesheet" media="all"/>
+     <link rel="stylesheet" href="footer.css">
+     <link rel="stylesheet" href="header.css">
 	<?php }?>	
 	</head>
 

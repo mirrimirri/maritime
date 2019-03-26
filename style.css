@@ -31,6 +31,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
      width:50%;
      margin: auto;
 }
+.header-image-text {
+  position: absolute;
+  font-size: 12em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
  .main-nav{
      display: flex;
      background-color:#576490;

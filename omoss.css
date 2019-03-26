@@ -31,33 +31,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
      width:50%;
      margin: auto;
 }
- .main-nav{
-     display: flex;
-     background-color:#576490;
-     margin: 1% 1%;
-}
- .main-nav ul{
-     display:flex;
-     flex-wrap: wrap;
-     list-style: none;
-     font-size: 130%;
-     background:C9CAD9;
-     justify-content: inherit;
-}
- .main-nav ul li a{
-     flex: 1 0 auto;
-     display: flex;
-     list-style: none;
-     text-align:center;
-     padding: 14px 16px;
-     text-decoration: none;
-     color: white;
-     font-size: 150%;
-     font-family: arial;
-}
- .main-nav ul li a :hover {
-     background-color: #white;
-}
+  .main-nav{
+	
+		background-color: #f3f3f3;
+		overflow: hidden;
+		
+	}
+	
+  .main-nav ul li a{ 
+    float: left;
+    color: #2D5778;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	text-decoration: none;
+  }
+  
+  .main-nav ul li a:hover{
+	background-color: #6DBEFF;
+    color: black;
+  }
+  .main-nav ul li a :active{
+    background-color: black;
+    color: white;
+	
+}	  
  .mellom{
      display: flex;
      flex-wrap:wrap;

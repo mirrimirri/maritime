@@ -40,37 +40,51 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
  .main-nav{
-     display: flex;
-     background-color:#576490;
-     margin: 1% 1%;
-}
- .main-nav ul{
-     display:flex;
-     flex-wrap: wrap;
-     list-style: none;
-     font-size: 130%;
-     background:C9CAD9;
-     justify-content: inherit;
-}
- .main-nav ul li a{
-     flex: 1 0 auto;
-     display: flex;
-     list-style: none;
-     text-align:center;
-     padding: 14px 16px;
-     text-decoration: none;
-     color: white;
-     font-size: 150%;
-     font-family: arial;
-}
- .main-nav ul li a :hover {
-     background-color: #white;
-}
- .mellom{
-     display: flex;
-     flex-wrap:wrap;
-     flex-direction:row;
-}
+	
+		background-color: #f3f3f3;
+		overflow: hidden;
+		margin: 0px;
+		
+		
+	}
+	.main-nav ul{
+		display:flex;
+		flex-wrap: wrap;
+		list-style: none;
+		font-size: 130%;
+		background:C9CAD9;
+		justify-content: inherit;
+		margin: 0px;
+		
+		
+		
+	}
+	
+	
+  .main-nav ul li a{ 
+    float: left;
+    color: #2D5778;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	list-style: none;
+	display: flex;
+    font-size: 100%;
+    font-family: arial;
+   
+  }
+  
+  .main-nav ul li a:hover{
+	background-color: #A3BCF9;
+    color: black;
+  }
+  .main-nav ul li a:active{
+    background-color: black;
+    color: white;
+	
+}	  
+  
 /* main column*/
  .hoved{
      flex: 55%;
@@ -87,7 +101,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	flex-wrap:wrap;
 	align-items: flex-end;
 	justify-content:space-evenly;
-	background-color: #7796CB;
+	background-color: #f3f3f3;
 	margin: 8%;
 	border-radius: 25px;
 	

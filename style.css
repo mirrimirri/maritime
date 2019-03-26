@@ -1,0 +1,57 @@
+﻿abc
+ .mellom{
+     display: flex;
+     flex-wrap:wrap;
+     flex-direction:row;
+}
+/* main column*/
+ .hoved{
+     flex: 55%;
+     background-color: #A3BCF9;
+     font-family:Verdana;
+     font-size:100%;
+     margin: 1% 1%;
+     height:1%;
+}
+
+	.post{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items: flex-end;
+	justify-content:space-evenly;
+	background-color: #7796CB;
+	margin: 8%;
+	border-radius: 25px;
+	
+}
+
+	.post p{
+		margin-left:8%;
+		margin-right:8%;
+		font-size:110%;
+	}
+	
+	
+	
+ .hoved h1{
+     text-align:center;
+     font-family:Verdana;
+}
+ .hoyreside{
+     flex: 0%;
+     flex-direction:column;
+     background-color: C9CAD9;
+     margin: 1% 1%;
+     width: 100%;
+     height: auto;
+}
+ #simple-facebook-widget {
+     width:100%;
+}
+ .instagram{
+     display:flex;
+	 background-color: #7796CB;
+}
+
+ 

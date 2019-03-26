@@ -19,7 +19,9 @@
 	
 	<?php echo get_header_image_tag(); ?>
 	<div class="header-image-text">
+
 		<?php echo get_bloginfo( 'name' );?>
+
 	</div>
 
 </div>

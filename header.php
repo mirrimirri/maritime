@@ -26,7 +26,7 @@
 			if (!$myTitle) {
 				echo get_bloginfo( 'name' );
 			}else{
-				the_title();
+				the_title('hei på deg','elvis', true);
 			}
 		?>
 	</div>

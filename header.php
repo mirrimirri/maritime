@@ -24,20 +24,18 @@
 
 	</div>
 
+<div class="nav-container">	
+		<nav class="main-nav">
+		<?php 
+			$args= array('theme_location'=>'primary');
+		 	wp_nav_menu($args);
+		 ?>
+		
+		</nav>
+</div>
 </div>
 
 
-<div class="container">	
-		<nav class="main-nav">
-		
-		<?php
-		$args= array('theme_location'=>'primary');
-		?>
-		
-						<?php wp_nav_menu($args);
-?>
-		
-		</nav>
 		
 	
 	

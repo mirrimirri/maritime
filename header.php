@@ -15,20 +15,11 @@
 
 <header>
 
-
 <div class="header-image">
 	
-	<?php echo get_header_image_tag() ?>
+	<?php echo get_header_image_tag(); ?>
 	<div class="header-image-text">
-		
-		<?php 
-			$myTitle = the_title('','',false); 
-			if (!$myTitle) {
-				echo get_bloginfo( 'name' );
-			}else{
-				the_title();
-			}
-		?>
+		<?php echo get_bloginfo( 'name' );?>
 	</div>
 
 </div>

@@ -1,13 +1,35 @@
 .ommaritime{
 	display:flex;
+	flex: column;
 	margin-left: 20%;
-	background-color:black;
-	font-size:200%;
+	margin-right: 20%;
+	font-size:100%;
 }
+
+.ommaritime .post h1{
+	display:flex;
+	justify-content: center;
+}
+
 body{
-	background:black;
+	
 }
 .presentasjon{
-	background-color:black;
-	margin:200%;
+	display: flex;
+	flex-wrap: wrap;
+	flex:column;
+	margin:10%;
+	/*margin-left: 20%;
+	margin-right: 20%;*/
 }
+
+.sponsor-item {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin-top: 2%;
+	margin-left:20%;
+	margin-right:20%;
+}
+
+

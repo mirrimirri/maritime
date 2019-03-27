@@ -1,20 +1,29 @@
 <?php /*Template Name: omoss*/?>
 <?php get_header();?>
-<div class='ommaritime'>
-    <h1>Maritime</h1>
-	<p>Lorem ipsum dolor sit amet, no duo consulatu forensibus. Te vel illum sonet, vix in tamquam euripidis. Qui natum quodsi alienum ex. Nibh recusabo per ei, nisl stet omnes in per, an solet pertinacia pri.
+<style>
+<?php include("style/omoss.css")?>
+</style>
 
-Ius sint vitae ne, salutatus gloriatur an pro. Ex vel putant fabulas argumentum, vidisse consulatu no pri. Est prima dolorum ne, usu id case vocent reformidans, no mei audire probatus. At semper quaeque probatus ius, esse inciderint cum ne, nam modus exerci putant ei. Eum pertinax explicari sententiae in, vis at zril tempor possim.</p>
-</div>
+<div class='ommaritime'>
+   <?php if(have_posts()) : while(have_posts()): the_post();?>
+	<div class='post'>
+	<h1><?php the_title();?></h1>
+		<?php the_content();?>
+		</div>
+	<?php endwhile; endif;?>
+	</div>
+	</div>
 
 </div>
 <div>
 
 <div class='presentasjon'>
- <?php echo do_shortcode('[tmm name="maritime"]')?>
+ <?php echo do_shortcode('[tc-team-members teamid="59"]')?>
 </div>
 
-<div class='sdsfaas'>
-	
+<div class='samarbeidspartnere'>
+	<?php echo do_shortcode('[sponsors description=yes title=yes]')?>
 </div>
+
+
 <?php get_footer();?>

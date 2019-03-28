@@ -1,6 +1,7 @@
 <?php get_header();?>
-<div class='mellom'>
-
+<style>
+<?php include("style.css");?>
+</style>
 <div class='events'>
 <?php echo do_shortcode('[event facebook]')?>
 </div>

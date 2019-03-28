@@ -1,8 +1,6 @@
 <?php /*Template Name: omoss*/?>
 <?php get_header();?>
-<style>
-<?php include("stil/omoss.css")?>
-</style>
+
 
 <div class='ommaritime'>
    <?php if(have_posts()) : while(have_posts()): the_post();?>

@@ -9,31 +9,41 @@
 	 
 	  
 	 wp_enqueue_style( 'header', get_template_directory_uri() . '/stil/header.css' );
+	 
+	  
+	  
+		 wp_enqueue_style( 'aside', get_template_directory_uri() . '/stil/stil.css' );
+		
+	 
+	 
 	 wp_enqueue_style( 'footer', get_template_directory_uri() . '/stil/footer.css' );
 
 	 
-	 if(is_front_page()){
-		 wp_enqueue_style( 'global', get_stylesheet_uri() );//framside
-	 }
+	
 	 
 	 
 		 
-	  if(is_page($slug=='events')){
-	   wp_enqueue_style('style', get_template_directory_uri() . '/style/events.css', array(), false, 'all'); //laster css events
+	
+	 if($slug=='events'){
+	   wp_enqueue_style('events', get_template_directory_uri() . '/stil/events.css', array(), false, 'all'); //laster css events
 	 }
 	
 	 
-	 if(is_page($slug=='omoss')){
-	  wp_enqueue_style('style', get_template_directory_uri() . '/omoss.css', array(), false, 'all'); //laster css omoss
+	 if($slug=='omoss'){
+	  wp_enqueue_style( 'omoss', get_template_directory_uri() .'/stil/omoss.css');
+	 
 	 }
 	 
 	 
-	  if(is_page($slug=='minside')){
-	  wp_enqueue_style('style', get_template_directory_uri() . '/style/minside.css', array(), false, 'all'); //laster css minside
+	  
+	 if(get_the_title($slug=='minside')){
+	  wp_enqueue_style('minside', get_template_directory_uri() . '/stil/minside.css', array(), false, 'all'); //laster css minside
 	 }
 	 
-	  if(is_page($slug=='nettbutikk')){
-	   wp_enqueue_style('style', get_template_directory_uri() . 'style/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
+	  
+	 if($slug=='nettbutikk'){
+	   wp_enqueue_style('nettbutikk', get_template_directory_uri() . 'stil/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
+	   
 	 }
 	  
 	

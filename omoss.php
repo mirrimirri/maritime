@@ -1,7 +1,7 @@
 <?php /*Template Name: omoss*/?>
 <?php get_header();?>
 <style>
-<?php include("style/omoss.css")?>
+<?php include("stil/omoss.css")?>
 </style>
 
 <div class='ommaritime'>

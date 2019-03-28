@@ -18,21 +18,21 @@
 	 
 	 
 		 
-	  if(is_page($slug=='events')){
+	  if($slug=='events'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/events.css', array(), false, 'all'); //laster css events
 	 }
 	
 	 
-	 if(is_page($slug=='omoss')){
-	  wp_enqueue_style('style', get_template_directory_uri() . '/omoss.css', array(), false, 'all'); //laster css omoss
+	 if($slug=='omoss'){
+	  wp_enqueue_style('style', get_template_directory_uri() . '/style/omoss.css', array(), false, 'all'); //laster css omoss
 	 }
 	 
 	 
-	  if(is_page($slug=='minside')){
+	  if($slug=='minside'){
 	  wp_enqueue_style('style', get_template_directory_uri() . '/style/minside.css', array(), false, 'all'); //laster css minside
 	 }
 	 
-	  if(is_page($slug=='nettbutikk')){
+	  if($slug=='nettbutikk'){
 	   wp_enqueue_style('style', get_template_directory_uri() . 'style/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
 	 }
 	  

@@ -10,10 +10,10 @@
 		</div>
 	<?php endwhile; endif;?>
 	</div>
-	</div>
+	
 
-</div>
-<div>
+
+
 
 <div class='presentasjon'>
  <?php echo do_shortcode('[tc-team-members teamid="203"]')?>
@@ -23,5 +23,7 @@
 	<?php echo do_shortcode('[sponsors description=yes title=yes]')?>
 </div>
 
-
+<div class='kontaktoss'
+	<?php echo do_shortcode("[gdfrm_form id='1']"); ?>
+</div>
 <?php get_footer();?>

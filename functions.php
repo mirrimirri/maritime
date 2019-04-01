@@ -3,33 +3,40 @@
 
  function load_stylesheets()
  {
-	/*
- wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
-	 wp_enqueue_style('bootstrap');
-	 */
+
 	 
 	 $slug = basename(get_permalink());
-	 wp_enqueue_style( 'global', get_stylesheet_uri() ); //framside
-	 wp_register_style('style', get_template_directory_uri() . '/events.css', array(), false, 'all'); // laster ned header
-	 wp_register_style('style', get_template_directory_uri() . '/events.css', array(), false, 'all'); //lastern ned footer
 	 
-	  if(is_page($slug=='events')){
-	  wp_register_style('style', get_template_directory_uri() . '/events.css', array(), false, 'all'); //laster css events
+	  
+	 wp_enqueue_style( 'header', get_template_directory_uri() . '/style/header.css' );
+	 wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css' );
+
+	 
+	 if(is_front_page()){
+		 wp_enqueue_style( 'global', get_stylesheet_uri() );//framside
 	 }
 	 
-	 if(is_page($slug=='omoss')){
-	  wp_register_style('style', get_template_directory_uri() . '/omoss.css', array(), false, 'all'); //laster css omoss
-	 }
-	 wp_enqueue_style('style');
 	 
-	  if(is_page($slug=='minside')){
-	  wp_register_style('style', get_template_directory_uri() . '/minside.css', array(), false, 'all'); //laster css minside
+		 
+	  if($slug=='events'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/events.css', array(), false, 'all'); //laster css events
 	 }
+	
 	 
-	  if(is_page($slug=='nettbutikk')){
-	  wp_register_style('style', get_template_directory_uri() . '/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
+	 if($slug=='omoss'){
+	  wp_enqueue_style('style', get_template_directory_uri() . '/style/omoss.css', array(), false, 'all'); //laster css omoss
 	 }
 	 
+	 
+	  if($slug=='minside'){
+	  wp_enqueue_style('style', get_template_directory_uri() . '/style/minside.css', array(), false, 'all'); //laster css minside
+	 }
+	 
+	  if($slug=='nettbutikk'){
+	   wp_enqueue_style('style', get_template_directory_uri() . 'style/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
+	 }
+	  
+	
  }
  add_action('wp_enqueue_scripts', 'load_stylesheets');
  
@@ -84,8 +91,16 @@ function themename_custom_header_setup() {
         );
 
     add_theme_support( 'custom-header', $defaults );
+/*
+ * Let WordPress manage the document title.
+ * By adding theme support, we declare that this theme does not use a
+ * hard-coded <title> tag in the document head, and expect WordPress to
+ * provide it for us.
+ */
+	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );
+
 
 
 

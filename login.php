@@ -1,9 +1,9 @@
 <?php
-session_start();
-get_header();
+
+
 /*Template Name: login*/
 
-if(!$_SESSION['loggetinn']==true){
+
 	
 if (!isset($_POST ["logginnKnapp"])) {
 
@@ -18,11 +18,9 @@ if (!isset($_POST ["logginnKnapp"])) {
   <input type="reset" name="nullstill" id="nullstill" value="Nullstill"> <br />
 </form>
 
-Ny bruker ? <br />
-<a href="http://localhost/wordpress/registrer/">Registrer deg her</a> <br /> <br />
 
 <?php
-die;
+
 
 } else {
   
@@ -60,16 +58,16 @@ return $lovligBruker;
 	$_SESSION['brukernav']=$brukernav;
 	$_SESSION['passord']=$passord;
 	$_SESSION['loggetinn']=True;
-	echo "Du er nå logget inn  <meta http-equiv = 'refresh' content = '2; url = http://localhost/wordpress' />";
+	echo "Du er nå logget inn  <meta http-equiv = 'refresh' content = '2; url = http://localhost/wordpress/minside' />";
 } else {
-	echo "passord eller brukernavn er feil<br/>";
-	header("Location: {$_SERVER['PHP_SELF']}"); 
+	echo "passord eller brukernavn er feil<br/> <meta http-equiv = 'refresh' content = '2; url = http://localhost/wordpress/minside' />";
+	
 	
 	exit;	
     }
 	
 }
 	
-	} get_footer();
+	 
 ?>
 

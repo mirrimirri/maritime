@@ -7,12 +7,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .fa {
-  padding: 5px;
+  padding: 6px;
   font-size: 50px;
-  width: 70px;
+  width: 65px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 5px;
+  margin: 7 px 3 px;
+  border-radius: 55%;
 }
 
 .fa:hover {
@@ -39,16 +40,14 @@
 </head>
 <body>
 
-<h2>Følg oss</h2>
-
+<h3>Følg oss</h3>
 <!-- Add font awesome icons -->
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-instagram"></a>
 <a href="#" class="fa fa-snapchat-ghost"></a>
 
-     
 	<div>
-	<h2>Copyright © 2019 Septa Design</h2>
+	<h3>Copyright © 2019 Septa Design</h3>
 	</div>
 </footer>
 </div>

@@ -13,16 +13,24 @@
 	</div>
 	
 
+<<<<<<< HEAD
+
+
+=======
 <div class="gjeruldsen">
     <img src="../bilder/Nordbyen.jpg" width="460" height="345">
 </div>
+>>>>>>> master
 
 <div class='gjeruldsenprisen'>
  <?php echo do_shortcode('[tc-team-members teamid="203"]')?>
 </div>
 
+<<<<<<< HEAD
+=======
 <?php get_footer();?>
 
+>>>>>>> master
 <?php
 
 ?>

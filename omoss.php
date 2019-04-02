@@ -16,7 +16,7 @@
 
 
 <div class='presentasjon'>
- <?php echo do_shortcode('[tc-team-members teamid="203"]')?>
+ <?php echo do_shortcode('[tc-team-members teamid="303"]')?>
 </div>
 
 <div class='samarbeidspartnere'>

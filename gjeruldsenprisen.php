@@ -12,9 +12,12 @@
 	</div>
 	
 
-
-
+<div class="gjeruldsen">
+    <img src="../bilder/Nordbyen.jpg" width="460" height="345">
+</div>
 
 <div class='gjeruldsenprisen'>
  <?php echo do_shortcode('[tc-team-members teamid="203"]')?>
 </div>
+
+<?php get_footer();?>

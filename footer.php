@@ -7,12 +7,13 @@
 <link rel="stylesheet" href="style/footer.css">
 <style>
 .fa {
-  padding: 5px;
+  padding: 6px;
   font-size: 50px;
-  width: 70px;
+  width: 65px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 5px;
+  margin: 7 px 3 px;
+  border-radius: 55%;
 }
 
 .fa:hover {
@@ -39,16 +40,14 @@
 </head>
 <body>
 
-<h2>Følg oss</h2>
-
+<h3>Følg oss</h3>
 <!-- Add font awesome icons -->
 <a href="https://www.facebook.com/USNMaritime/" class="fa fa-facebook"></a>
 <a href="https://www.instagram.com/usnmaritime/" class="fa fa-instagram"></a>
 <a href="https://www.snapchat.com/add/usnmaritime" class="fa fa-snapchat-ghost"></a> <!-- USN må lage en URL kode til å adde de på snapchat -->
 
-     
 	<div>
-	<h2>Copyright © 2019 Septa Design</h2>
+	<h3>Copyright © 2019 Septa Design</h3>
 	</div>
 </footer>
 </div>

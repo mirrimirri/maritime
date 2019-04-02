@@ -44,7 +44,7 @@
 <!-- Add font awesome icons -->
 <a href="https://www.facebook.com/USNMaritime/" class="fa fa-facebook"></a>
 <a href="https://www.instagram.com/usnmaritime/" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-snapchat-ghost"></a> <!-- USN må lage en URL kode til å adde de på snapchat -->
+<a href="https://www.snapchat.com/add/usnmaritime" class="fa fa-snapchat-ghost"></a> <!-- USN må lage en URL kode til å adde de på snapchat -->
 
      
 	<div>

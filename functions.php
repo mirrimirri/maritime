@@ -101,8 +101,23 @@ function themename_custom_header_setup() {
 }
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 
+function redirect_to_custom_login_page(){
+	wp_redirect(site_url() . "/login");
+	exit();
+	
+}
+add_action("wp_logout","redirect_to_custom_login_page");
 
 
+add_action("init","fn_redirect_wp_admin");
+
+function fn_redirect_wp_admin(){
+	global $pagenow;
+	if($pagenow=="wp_login.php" && $_GET['action'] != "logout"){
+		wp_redirect(site_url() . "/login");
+		exit();
+	}
+}
 
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);

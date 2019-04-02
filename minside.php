@@ -24,8 +24,8 @@ else{
 	echo "<ul>";
 		$sqli="SELECT * from bruker;";
 		$tilkobling= new mysqli("localhost",
-						"225329",
-						"SCOZOqAc",
+						"root",
+						"Grasklipper98",
 						"wp"
 						); 
 	$resultatstud=mysqli_query($tilkobling,$sqli);

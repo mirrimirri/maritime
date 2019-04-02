@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style/footer.css">
 <style>
 .fa {
   padding: 6px;
@@ -42,9 +42,9 @@
 
 <h3>Følg oss</h3>
 <!-- Add font awesome icons -->
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.facebook.com/USNMaritime/" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/usnmaritime/" class="fa fa-instagram"></a>
+<a href="https://www.snapchat.com/add/usnmaritime" class="fa fa-snapchat-ghost"></a> <!-- USN må lage en URL kode til å adde de på snapchat -->
 
 	<div>
 	<h3>Copyright © 2019 Septa Design</h3>

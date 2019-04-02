@@ -1,0 +1,62 @@
+.omgjeruldsen {
+	display:flex;
+	flex: column;
+	margin-left: 5%;
+	margin-right: 35%;
+	font-size:150%;
+	background-color: #7796CB;
+	border-radius: 24px;
+	margin-top: 7%;
+}
+
+.omgjeruldsen .post h1 {
+	display:flex;
+	justify-content: center;
+	font-family:helvetica;
+	font-size:150%;
+}
+
+.omgjeruldsen .post p{
+	margin: 5%;
+}
+
+body{
+	
+}
+.gjeruldsenprisen{
+	display: flex;
+	flex-wrap: wrap;
+	flex:column;
+	font-family:areal;
+	font-size:150%;
+	background-color: #7796CB;
+	border-radius: 24px;
+	margin-left: 20%;
+	margin-right: 20%; 
+	margin-top: 5%;
+}
+
+.tc_team-members{
+	display:flex;
+	flex-wrap:wrap;
+	 justify-content: center;
+	
+}
+
+.gjeruldsen img{
+	display: flex;
+	position: relative;
+    float: left;
+    width:  250px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  border-radius:100px;
+}
+
+.gdfrm-form{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+

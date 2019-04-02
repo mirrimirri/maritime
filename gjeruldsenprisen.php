@@ -1,6 +1,12 @@
 <?php /*Template Name: gjeruldsenprisen */?>
 <?php get_header();?>
 
+<html>
+  <head>
+    <link rel="stylesheet" href="gjeruldsenprisen.css">
+  </head>
+</html>
+
 
 <div class='omgjeruldsen'>
    <?php if(have_posts()) : while(have_posts()): the_post();?>

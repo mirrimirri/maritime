@@ -21,7 +21,7 @@
 }
 
 body{
-	
+	background-color: black;
 }
 .gjeruldsenprisen{
 	display: flex;
@@ -54,9 +54,3 @@ body{
     background-size:     cover;
   border-radius:100px;
 }
-
-.gdfrm-form{
-	margin-left: 20%;
-	margin-right: 20%;
-}
-

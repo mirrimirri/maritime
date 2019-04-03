@@ -40,7 +40,7 @@
 	<?php echo do_shortcode('[sponsors description=yes title=yes]')?>
 </div>
 
-<div class='kontaktoss'
+<div class='kontaktoss'>
 	<?php echo do_shortcode("[gdfrm_form id='1']"); ?>
 </div>
 <?php get_footer();?>

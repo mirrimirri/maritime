@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: maritime
 Theme URI: trygvevalbo.com
 Author: design
@@ -14,12 +14,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */ 
 
 body{
+
+	margin: 0px; 
+}
+
+
+ .mellom{
+
 	margin: 0px;
     background-color: #a2c2e5;	
 }
 
 
     .mellom{
+
      display: flex;
      flex-wrap:wrap;
      flex-direction:row;

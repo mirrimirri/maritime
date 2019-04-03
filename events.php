@@ -7,4 +7,18 @@
 <div class='sdsfaas'>
 	
 </div>
+
+<?php 
+
+echo do_shortcode('[MMFileList <ul class=”mmm-list”> /../../members/]');
+
+
+if($_SESSION['loggetinn']==true)
+{
+	//echo do_shortcode('[MMFileList <ul class=”mmm-list”> /]');
+
+}
+
+?>
+
 <?php get_footer();?>

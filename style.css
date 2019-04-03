@@ -14,11 +14,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */ 
 
 body{
-	margin: 0px; 
+	margin: 0px;
+    background-color: #a2c2e5;	
 }
 
 
- .mellom{
+    .mellom{
      display: flex;
      flex-wrap:wrap;
      flex-direction:row;
@@ -26,10 +27,10 @@ body{
 /* main column*/
  .hoved{
      flex: 55%;
-     background-color: #A3BCF9;
+     background-color: #a2c2e5;
      font-family:Verdana;
      font-size:100%;
-     margin: 1% 1%;
+     margin: 1em;
      height:1%;
 }
 
@@ -39,9 +40,14 @@ body{
 	flex-wrap:wrap;
 	align-items: flex-end;
 	justify-content:space-evenly;
-	background-color: #7796CB;
-	margin: 8%;
-	border-radius: 25px;
+	background-color: #f4f9ff;
+	margin: 0,5em;
+	color: #1e1e1e;
+	 border-bottom: 2px solid grey;
+	 border-color: #e6eaef;
+	
+	
+	
 	
 }
 
@@ -49,6 +55,7 @@ body{
 		margin-left:8%;
 		margin-right:8%;
 		font-size:110%;
+	   
 	}
 	
 	
@@ -56,21 +63,28 @@ body{
  .hoved h1{
      text-align:center;
      font-family:Verdana;
+	 border-bottom: 2px solid grey;
+	 border-color: #e6eaef;
+	 margin: 0,1em 0,5em 0,1 em 0,5em;
+	 
 }
  .hoyreside{
      flex: 0%;
      flex-direction:column;
-     background-color: C9CAD9;
-     margin: 1% 1%;
-     width: 100%;
+     background-color: #f4f9ff;
+     margin: 1em 1em 1em 0em;
+     width: 150%;
      height: auto;
+	 padding: 2% 2%;
 }
  #simple-facebook-widget {
-     width:100%;
+     width:120%;
 }
  .instagram{
      display:flex;
 	 background-color: #7796CB;
 }
+
+
 
  

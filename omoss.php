@@ -16,7 +16,24 @@
 
 
 <div class='presentasjon'>
- <?php echo do_shortcode('[tc-team-members teamid="59"]')?>
+
+ <?php 
+ 		
+
+ 	for ($i=0; $i <=1000 ; $i++) { 
+ 		$postType=get_post_type($i);
+ 		if ($postType=="tcmembers") {
+ 			break;
+ 		}
+ 	}
+
+	$tcmembers = '[tc-team-members teamid='.$i.']';
+	echo do_shortcode($tcmembers);
+
+
+ ?>
+
+
 </div>
 
 <div class='samarbeidspartnere'>

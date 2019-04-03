@@ -1,0 +1,70 @@
+.gcaptain a, li{
+
+font-family: helvetica;
+text-decoration: none;
+color: #46434a;
+margin:0.2em 0.1em 0.2em 0.1em;
+
+}
+
+.gcaptain{
+	color: #46434a;
+}
+
+
+.gcaptain li {
+	border-bottom: solid 1px black ;
+
+}
+
+.gcaptain{
+	background: #dadde2;
+}
+
+.gcaptain a:hover{
+
+	color: maroon;
+}
+
+.gcaptain a:active{
+	
+}
+
+.gcaptain a:visited{
+	
+}
+
+.sysla a, li{
+
+text-decoration: none;
+color: #46434a;
+margin:0.2em 0.1em 0.2em 0.1em;
+
+}
+
+
+.sysla{
+	color: #46434a;
+}
+
+.sysla li {
+	border-bottom: solid 1px black ;
+
+}
+
+.sysla{
+	background: #dadde2;
+}
+
+.sysla a:hover{
+
+	color: maroon;
+}
+
+.sysla a:active{
+	
+}
+
+.gcaptain a:visited{
+	
+}

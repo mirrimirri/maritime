@@ -15,14 +15,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
      box-sizing: border-box;
 }
  body{
-     font-family: Areal;
+     font-family: Arial;
      background: #A3BCF9;
 }
 /* header/logo/title */
  header{
      display: flex;
      flex-direction:column;
-     background: D1D2F9;
+     background: #D1D2F9;
      color: white;
 }
 

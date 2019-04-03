@@ -46,7 +46,7 @@ body{
 }
 
 .presentasjon img{
-	display flex;
+	display: flex;
 	position: relative;
     float: left;
     width:  250px;

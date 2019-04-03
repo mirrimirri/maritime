@@ -2,8 +2,8 @@
 <div class='mellom'>
 
 <div class='events'>
-<?php echo do_shortcode('[event facebook]')?>
-</div>
+
+</div> 
 
 	<div class='hoved'>
 	

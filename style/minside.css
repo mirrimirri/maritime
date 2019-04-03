@@ -14,20 +14,32 @@
 justify-content: space-around;
 }
 
-.basis {
+.bruker {
 display: flex;
-flex-wrap: wrap;
-direction: column;
+direction:row ;
+justify-content:space-around;
+}
 
-	
+.kontakt{
+	display: flex;
+direction: row;
+justify-content:space-around;
+}
+
+.skriftpas{
+	display: flex;
+	flex: column;
+}
+
+.passord  {
+display: flex;
+direction: ;
+justify-content:space-around;	
 }
 
 .location {
 display: flex;
-
-direction: column;
-
-	
+direction: column;	
 }
 
 input[type=submit] {

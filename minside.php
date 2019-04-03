@@ -11,7 +11,7 @@ if (!isset($_POST ["logginnKnapp"])) {
 
 ?>
 
-<h3>Innlogging </h3>
+<h1>Innlogging </h1>
 
 <form action="" id="innloggingSkjema" name="innloggingSkjema" method="post">
   Brukernavn <input name="brukernav" type="text" id="brukernav"> <br />
@@ -82,19 +82,22 @@ if (!isset($_REQUEST['brukernavn'])){
 
 echo "<h1>Registrer student</h1><br/>";
 echo "<form action='' method='post'>";
-echo "<div class='basis'>";
+echo "<div class='bruker'>";
 echo "Brukernavn:<input type='text' name='brukernavn' required/><br/>";
 echo "Navn:<input type='text' name='navn' required/><br/>";
+echo "</div><div class='kontakt'>";
 echo "E-post <input type='email' name='epost' required><br/>";
 echo "Mobilnummer:<input type='number' name='mobilnummer' required/> <br/>";
 echo "</div>";
 echo "<div class='location'>";
-echo "Adresse<input type='text' name='adresse' required/><br/>";
+echo "Adresse <br/><input type='text' name='adresse' required/><br/>";
 echo "Postnummer<input type='number' name='postnr' required><br/>";
 echo "Poststed<input type='text' name='poststed' required><br/>";
 echo "</div>";
-echo "Passord:<input type='password' name='passord' required/><br/>";
-echo "Bekreft passord;<input type='password' name='pasconf required'/><br/>";
+echo "<div class='passord'>";
+echo "<div a='skriftpas'>Passord:</div><input type='password' name='passord' required/><br/>";
+echo "<div a='skriftpas'>Bekreft passord</div><input type='password' name='pasconf required'/><br/>";
+echo "</div>";
 echo "<input type='submit' name='comregistrer' value='Registrer'/>";
  	
 

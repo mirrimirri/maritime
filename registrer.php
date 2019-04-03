@@ -1,72 +1,79 @@
 <?php
-/*Template Name: registrer*/
-	get_header();
-	global $wpdb;
-if($_POST){
-	
-$username= $wpdb->escape($_POST['txtUsername']);
-$email= $wpdb->escape($_POST['txtEmail']);
-$password= $wpdb->escape($_POST['txtPassword']);
-$ConfPassword= $wpdb->escape($_POST['txtConfirmPassword']);
 
-	$error=array();
-	if(strpos($username,' ')!== FALSE){
-		$error['username_space']= "Username has Space";
-	}
+/*Template Name: login*/
+
+
+
+if (!isset($_REQUEST['brukernavn'])){
+
+
+
+echo "<h1>Registrer student</h1><br/>";
+echo "<form action='' method='post'>";
+echo "Brukernavn:<input type='text' name='brukernavn' required/><br/>";
+echo "Navn:<input type='text' name='navn' required/><br/>";
+echo "E-post <input type='email' name='epost' required><br/>";
+echo "Mobilnummer:<input type='number' name='mobilnummer' required/> <br/>";
+echo "Adresse<input type='text' name='adresse' required/><br/>";
+echo "Postnummer<input type='number' name='postnr' required><br/>";
+echo "Poststed<input type='text' name='poststed' required><br/>";
+echo "Passord:<input type='password' name='passord' required/><br/>";
+echo "Bekreft passord;<input type='password' name='pasconf required'/><br/>";
+echo "<input type='submit' name='comregistrer' value='Registrer'/>";
+ 	
+
+
+die;
+}else{
+ 
+
+
+
+$tilkobling= new mysqli("localhost",
+						"225329",
+						"SCOZOqAc",
+						"wp"
+						);
+
+		
+			$brukernavn=$_REQUEST['brukernavn'];
+			$navn=$_REQUEST['navn'];
+			$epost=$_REQUEST['epost'];
+			$mobilnummer=$_REQUEST['mobilnummer'];
+			$adresse=$_REQUEST['adresse'];
+			$postnummer=$_REQUEST['postnr'];
+			$poststed=$_REQUEST['poststed'];
+			$passord=$_REQUEST['passord'];
+			$pasconf=$_REQUEST['pasconf'];
+			
+			
+			
+			
+			
+			$sqlstreng="SELECT * from bruker;";
+	$resultatstud=mysqli_query($tilkobling,$sqlstreng);
+	foreach($resultatstud as $k){
+		if($k['brukernavn']==$_REQUEST['brukernavn']){
+			echo "Brukernavnet finnes fra før av ";
+				die;
+		}
+		
+	}					
+			if(strlen($_REQUEST['brukernavn'])<=1){
+				echo "brukernavn er minimum 2 tegn";
+				die;
+			}
+			
+			
+			
+	$sql="INSERT INTO bruker VALUES ('$brukernavn','$navn','$mobilnummer','$adresse','$postnummer','$poststed', '$epost', '$passord');";
 	
-	if(empty($username)){
-		$error['username_empty']="Need Username must";
-	}
-	
-	if(username_exists($username)){
-		$error['username_exists']="Username already exists";
-	}
-	
-	if(!is_email($email)){
-		$error['email_valid']="Email is not valid";
-	}
-	
-	if(email_exists($email)){
-		$error['email_existence']= "Email already exists";
-	}
-	if(strcmp($password, $ConfPassword)!==0){
-		$error['password']="Password didn't mach";
-	}
-	
-	if(count($error)==0){
-		wp_create_user($username, $password, $email);
-		echo "User created successfully";
-		exit();
+	if($b = mysqli_query($tilkobling, $sql)){
+		echo "<h1>du er nå registrert</h1> <meta http-equiv = 'refresh' content = '2; url = http://localhost/wordpress/minside/' />";
 	}else{
-		print_r($error);
+		echo "Noe gikk galt prøv på nytt";
 	}
+	
 }
 
 ?>
-
-<form method="POST">
-	
-	<p>
-		<label>Skriv inn brukernavn</label>
-		<div><input type='text' id='txtUsername' name='txtUsername' placeholde='Brukernavn'></div>
-	</p>
-	
-	<p>
-		<label>Skriv inn E-post</label>
-		<div><input type='email' id='txtEmail' name='txtEmail' placeholde='E-post'></div>
-	</p>
-	
-	<p>
-		<label>Skriv inn passord</label>
-		<div><input type='password' id='txtPassword' name='txtPassword' placeholde='Passord'></div>
-	</p>
-	
-	<p>
-		<label>Bekreft passord</label>
-		<div><input type='password' id='txtConfirmPassword' name='txtConfirmPassword' placeholde='Passord'></div>
-	</p>
-	
-	
-			<input type="submit" name="btnsubmit"/>
-</form>
-<?php get_footer();?>

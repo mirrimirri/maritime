@@ -1,3 +1,4 @@
+
 <?php /*Template Name: gjeruldsenprisen */?>
 <?php get_header();?>
 
@@ -17,15 +18,21 @@
 	</div>
 	
 
+
+
+
+
 <div class="gjeruldsen">
     <!-- <img src="../bilder/Nordbyen.jpg" width="460" height="345"> -->
 </div>
+
 
 <div class='gjeruldsenprisen'>
  <?php echo do_shortcode('[tc-team-members teamid="69"]')?>
 </div>
 
-<?php get_footer();?>
-<?php
 
-?>
+<?php get_footer();?>
+
+
+

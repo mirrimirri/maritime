@@ -3,7 +3,7 @@
   /*Template Name: minside*/
  
 get_header();
-if($_SESSION['loggetinn']==true){
+if($_SESSION['loggetinn']==false){
 	
 	echo" <div class='innlogging'>";
 echo "<div class='loginn'>";
@@ -90,7 +90,7 @@ echo "E-post <input type='email' name='epost' required><br/>";
 echo "Mobilnummer:<input type='number' name='mobilnummer' required/> <br/>";
 echo "</div>";
 echo "<div class='location'>";
-echo "Adresse <br/><input type='text' name='adresse' required/><br/>";
+echo "Adresse<input type='text' name='adresse' required/><br/>";
 echo "Postnummer<input type='number' name='postnr' required><br/>";
 echo "Poststed<input type='text' name='poststed' required><br/>";
 echo "</div>";

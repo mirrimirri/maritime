@@ -1,0 +1,76 @@
+
+.innlogging {
+	display: flex;
+     flex-wrap:wrap;
+     flex-direction:row;
+     justify-content: space-around;
+     margin-top:5%;     
+ 
+
+}
+
+.login{
+	
+justify-content: space-around;
+}
+
+.bruker {
+display: flex;
+direction:row ;
+justify-content:space-around;
+}
+
+.kontakt{
+	display: flex;
+direction: row;
+justify-content:space-around;
+}
+
+.skriftpas{
+	display: flex;
+	flex: column;
+}
+
+.passord  {
+display: flex;
+direction: ;
+justify-content:space-around;	
+}
+
+.location {
+display: flex;
+direction: column;	
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+input[type=text], input[type=email],input[type=number],input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;

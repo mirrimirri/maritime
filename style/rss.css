@@ -1,3 +1,9 @@
+
+.gcaptain{
+
+text-decoration: none;
+
+
 .gcaptain a, li{
 
 font-family: helvetica;
@@ -67,4 +73,5 @@ margin:0.2em 0.1em 0.2em 0.1em;
 
 .gcaptain a:visited{
 	
+
 }

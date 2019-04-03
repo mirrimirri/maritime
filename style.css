@@ -19,6 +19,7 @@ body{
 }
 
 
+
     .mellom{
      display: flex;
      flex-wrap:wrap;
@@ -42,9 +43,9 @@ body{
 	justify-content:space-evenly;
 	background-color: #f4f9ff;
 	margin: 0,5em;
+	padding-bottom: 3em;
 	color: #1e1e1e;
-	 border-bottom: 2px solid grey;
-	 border-color: #e6eaef;
+	
 	
 	
 	
@@ -57,7 +58,15 @@ body{
 		font-size:110%;
 	   
 	}
-	
+	.post:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 90%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid; /* This creates the border. Replace black with whatever color you want. */
+	border-color: #e6eaef;
+}
 	
 	
  .hoved h1{
@@ -76,6 +85,8 @@ body{
      width: 150%;
      height: auto;
 	 padding: 2% 2%;
+	
+	 
 }
  #simple-facebook-widget {
      width:120%;

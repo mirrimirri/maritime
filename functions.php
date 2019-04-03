@@ -33,7 +33,11 @@
 	 }
 	 
 	  if($slug=='nettbutikk'){
-	   wp_enqueue_style('style', get_template_directory_uri() . 'style/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); //laster css nettbutikk
+	 }
+
+ 	  if(is_front_page()){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/rss.css', array(), false, 'all'); //laster css nettbutikk
 	 }
 	  
 	

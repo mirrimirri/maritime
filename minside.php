@@ -24,10 +24,10 @@ else{
 	echo "<ul>";
 		$sqli="SELECT * from bruker;";
 		$tilkobling= new mysqli("localhost",
-						"root",
-						"Grasklipper98",
+						"225329",
+						"SCOZOqAc",
 						"wp"
-						); 
+						);
 	$resultatstud=mysqli_query($tilkobling,$sqli);
 	foreach($resultatstud as $k){
 		if($k['brukernavn']==$_SESSION['brukernav']){

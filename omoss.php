@@ -41,6 +41,14 @@
 </div>
 
 <div class='kontaktoss'>
-	<?php echo do_shortcode("[gdfrm_form id='1']"); ?>
+
+<form action="">
+  E-mail <input type="email" name="emailaddress" ><br/>
+  Overskrift <input type="overskrift" name="overskrift"><br/>
+  Melding <input type="melding" name="melding"><br/>
+  <input type="submit" value="Send" id="send" name="send">
+  <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
+</form>
+	
 </div>
 <?php get_footer();?>

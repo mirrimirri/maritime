@@ -1,4 +1,5 @@
 <?php get_header();?>
+<link rel="stylesheet" type="text/css" href="style/rss.css">
 <div class='mellom'>
 
 <div class='events'>

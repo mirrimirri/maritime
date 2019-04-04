@@ -52,20 +52,14 @@ body{
 	margin: 0,5em;
 	color: #1e1e1e;
 	 border-bottom: 2px solid grey;
-	 border-color: #e6eaef;	
+	 border-color: #e6eaef;
+	
+	
+	
 	
 }
 
-.post:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 50%; /* Change this to whatever width you want. */
     padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
-}
-
-
 	.post p{
 		margin-left:8%;
 		margin-right:8%;

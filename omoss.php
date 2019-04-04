@@ -49,6 +49,18 @@
   <input type="submit" value="Send" id="send" name="send">
   <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
 </form>
-	
+	<?php
+if (isset($_REQUEST['send'])){
+$to = "s662404@nwytg.net";
+$subject = $_REQUEST['overskrift'];
+$txt = $_REQUEST['melding'];
+$headers = "From:". $_REQUEST['emailadress'] . "\r\n" .
+"CC: somebodyelse@example.com";
+
+mail($to,$subject,$txt,$headers);	
+
+header("Location: index.php?mailsend");
+}	
+?>
 </div>
 <?php get_footer();?>

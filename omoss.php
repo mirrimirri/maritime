@@ -20,18 +20,26 @@
  <?php 
  		
 
- 	for ($i=0; $i <=1000 ; $i++) { 
- 		$postType=get_post_type($i);
- 		if ($postType=="tcmembers") {
- 			break;
- 		}
- 	}
+		$args = array(
+		    'post_type'=> 'tcmembers',    
+		    'order'    => 'ASC'
+		 );              
 
-	$tcmembers = '[tc-team-members teamid='.$i.']';
-	echo do_shortcode($tcmembers);
+		$the_query = new WP_Query( $args );
 
+		if($the_query->have_posts() ) {	 
+			 while ( $the_query->have_posts() ) {	 
+			 	$the_query->the_post();
+			 	echo do_shortcode('[tc-team-members teamid="'.get_the_ID().'"]');	 	
+			 }
+
+		}
+		wp_reset_postdata();
 
  ?>
+
+
+ 
 
 
 </div>

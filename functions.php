@@ -47,10 +47,12 @@
 
 	 if($slug=='gjeruldsenprisen'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/gjeruldsenprisen.css', array(), false, 'all'); //laster css gjeruldsenprisen
-
-
 	 }
 	  
+
+	 if($slug=='nettbutikk'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
 	
  }
  add_action('wp_enqueue_scripts', 'load_stylesheets');

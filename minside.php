@@ -193,6 +193,10 @@ else{
 		
 		
 		echo"<div class='mine_ordrer'>";
+		$orders = wc_get_orders( array(
+    'billing_first_name' => $_SESSION['brukernav'],
+    'date_paid' => '2016-01-01') );
+		
 		echo"</div>";
 	
 	

@@ -1,3 +1,6 @@
+<?php /*Template Name: cart*/
+get_header(); 
+?>
 <?php
 /**
  * Cart Page
@@ -152,7 +155,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		 * @hooked woocommerce_cross_sell_display
 		 * @hooked woocommerce_cart_totals - 10
 		 */
-		do_action( 'woocommerce_cart_collaterals' );
+		do_action( 'woocommerce_proceed_to_checkout' );
 	?>
 </div>
 

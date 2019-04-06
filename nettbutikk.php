@@ -37,7 +37,7 @@ $wc_query = new WP_Query($params);
 <?php _e('Zobacz dostępne warianty', 'my-theme'); ?>
 </a>
 <?php elseif($product->is_in_stock()) : ?>
-<form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
+<form class="cart" action="http://localhost/wordpress/handlekurv/" method="post" enctype="multipart/form-data">
      <div class="quantity">
           <input type="number" step="1" min="1" max="9" name="quantity" value="1" title="<?php _e('Szt.', 'my-theme'); ?>" class="input-text qty text" size="4">
      </div>

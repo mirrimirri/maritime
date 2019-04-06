@@ -73,33 +73,32 @@ return $lovligBruker;
 
  echo "</div>";
  	
- 
- echo "<div class='registrer'>";
+
 
 if (!isset($_REQUEST['brukernavn'])){
 
 
-
+echo "<div class='registrer'>";
 echo "<h1>Registrer student</h1><br/>";
 echo "<form action='' method='post'>";
 echo "<div class='bruker'>";
-echo "Brukernavn:<input type='text' name='brukernavn' required/><br/>";
-echo "Navn:<input type='text' name='navn' required/><br/>";
+echo "<input type='text' name='brukernavn' placeholder='Brukernavn' required/><br/>";
+echo "<input type='text' name='navn' placeholder='Navn'  required/><br/>";
 echo "</div><div class='kontakt'>";
-echo "E-post <input type='email' name='epost' required><br/>";
-echo "Mobilnummer:<input type='number' name='mobilnummer' required/> <br/>";
+echo "<input type='email' name='epost' placeholder='E-post'  required><br/>";
+echo "<input type='number' name='mobilnummer' placeholder='Mobilnummer'  required/> <br/>";
 echo "</div>";
 echo "<div class='location'>";
-echo "Adresse<input type='text' name='adresse' required/><br/>";
-echo "Postnummer<input type='number' name='postnr' required><br/>";
-echo "Poststed<input type='text' name='poststed' required><br/>";
+echo "<input type='text' name='adresse' placeholder='Adresse'  required/><br/>";
+echo "<input type='number' name='postnr' placeholder='Postnr' required><br/>";
+echo "<input type='text' name='poststed' placeholder='Poststed' required><br/>";
 echo "</div>";
 echo "<div class='passord'>";
-echo "<div a='skriftpas'>Passord:</div><input type='password' name='passord' required/><br/>";
-echo "<div a='skriftpas'>Bekreft passord</div><input type='password' name='pasconf required'/><br/>";
+echo "<input type='password' name='passord' placeholder='Passord' required/><br/>";
+echo "<input type='password' name='pasconf placeholder='passord' required'/><br/>";
 echo "</div>";
 echo "<input type='submit' name='comregistrer' value='Registrer'/>";
- 	
+echo "</div>";
 
 
 die;
@@ -109,8 +108,8 @@ die;
 
 
 $tilkobling= new mysqli("localhost",
-						"root",
-						"Grasklipper98",
+						"225329",
+						"SCOZOqAc",
 						"wp"
 						);
 
@@ -162,7 +161,7 @@ else{
 	
 	
 	
-	echo "<div class='min_profil'>";
+	echo "<div class='minprofil'>";
 	echo "<ul>";
 		$sqli="SELECT * from bruker;";
 		$tilkobling= new mysqli("localhost",
@@ -173,6 +172,7 @@ else{
 	$resultatstud=mysqli_query($tilkobling,$sqli);
 	foreach($resultatstud as $k){
 		if($k['brukernavn']==$_SESSION['brukernav']){
+			
 			echo "<li>Navn: ". $k['navn']. "</li><br/>";
 			echo "<li>Brukernavn: ". $k['brukernavn']. "</li><br/>";
 			echo "<li>Mobilnummer: ". $k['mobilnummer']. "</li><br/>";

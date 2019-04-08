@@ -10,31 +10,37 @@
 }
 
 .login{
+	display:flex
+justify-content: space-between;
 	
-justify-content: space-around;
 }
+
+.registrer input{
+	display:flex;
+	flex-wrap:wrap;
+}
+
 
 .bruker {
 display: flex;
 direction:row ;
-justify-content:space-around;
+justify-content:space-between;
+flex-wrap:wrap;
 }
 
 .kontakt{
 	display: flex;
 direction: row;
 justify-content:space-around;
+flex-wrap:wrap;
 }
 
-.skriftpas{
-	display: flex;
-	flex: column;
-}
 
 .passord  {
 display: flex;
 direction: ;
 justify-content:space-around;	
+flex-wrap:wrap;
 }
 
 .location {
@@ -74,3 +80,11 @@ input[type=text], input[type=email],input[type=number],input[type=password], sel
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  }
+  .minprofil {
+	  background-color:#DADDE2;
+	  margin-top: 3%;
+	  margin-right:60%;
+	  margin-left:3%;
+	  margin-bottom: 3%;
+  }

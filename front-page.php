@@ -16,9 +16,7 @@
 		</div>
 	<?php endwhile; endif;?>
 	</div>
- <div class='skilleposts'>
  
- </div>
 	
 	
 	

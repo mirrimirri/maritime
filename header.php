@@ -17,10 +17,42 @@
 
 <div class="header-image">
 	
-	<?php echo get_header_image_tag(); ?>
+
+
+	<?php 
+	
+
+		if(has_post_thumbnail())
+		{
+			echo the_post_thumbnail();
+		}
+		else
+		{
+		echo get_header_image_tag(); 
+		}
+	
+
+	?>
+
 	<div class="header-image-text">
 
-		<?php echo get_bloginfo( 'name' );?>
+		<?php 
+
+	    global $post;
+	    $page_title=$post->post_title;
+	    $page_title=ucfirst($page_title);
+
+
+	    if(is_front_page())
+	    {
+			echo get_bloginfo( 'name' );
+	    }
+	    else
+	    {
+	    	echo $page_title;
+	    }
+
+		?>
 
 	</div>
 

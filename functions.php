@@ -53,7 +53,15 @@
 	 if($slug=='nettbutikk'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); //laster css gjeruldsenprisen
 	 }
-	
+	 
+	 if($slug=='handlekurv'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/handlekurv.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
+
+	if($slug=='kassen'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/kassen.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
+
  }
  add_action('wp_enqueue_scripts', 'load_stylesheets');
  

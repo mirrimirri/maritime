@@ -12,7 +12,7 @@
   width: 65px;
   text-align: center;
   text-decoration: none;
-  margin: 7 px 3 px;
+  margin: 7px 3px;
   border-radius: 55%;
 }
 

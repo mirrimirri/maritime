@@ -53,7 +53,15 @@
 	 if($slug=='nettbutikk'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); //laster css gjeruldsenprisen
 	 }
-	
+	 
+	 if($slug=='handlekurv'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/handlekurv.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
+
+	if($slug=='kassen'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/kassen.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
+
  }
  add_action('wp_enqueue_scripts', 'load_stylesheets');
  
@@ -118,6 +126,11 @@ function themename_custom_header_setup() {
 	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );
+
+
+//Kan vi få denne inn i customize theme meny?
+add_theme_support( 'post-thumbnails', array( 'page' ) );
+
 
 function redirect_to_custom_login_page(){
 	wp_redirect(site_url() . "/login");

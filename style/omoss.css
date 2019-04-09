@@ -1,3 +1,9 @@
+
+body{
+
+	margin: 0px; 
+}
+
 .ommaritime{
 	display:flex;
 	flex: column;
@@ -20,9 +26,6 @@
 	margin: 5%;
 }
 
-body{
-	
-}
 .presentasjon{
 	display: flex;
 	flex-wrap: wrap;

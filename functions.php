@@ -124,6 +124,7 @@ add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 add_theme_support( 'post-thumbnails', array( 'page' ) );
 
 
+
 function redirect_to_custom_login_page(){
 	wp_redirect(site_url() . "/login");
 	exit();

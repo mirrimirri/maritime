@@ -105,9 +105,9 @@ function themename_custom_header_setup() {
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1000,
+        'width'             => 1920,
         // Header image height (in pixels)
-        'height'            => 198,
+        'height'            => 1080,
         // Header image random rotation default
         'random-default'        => false,
         // Enable upload of image file in admin 
@@ -130,6 +130,7 @@ add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 
 //Kan vi få denne inn i customize theme meny?
 add_theme_support( 'post-thumbnails', array( 'page' ) );
+
 
 
 function redirect_to_custom_login_page(){

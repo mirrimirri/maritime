@@ -8,12 +8,22 @@
 
 
 	<div class='hoved'>
-	 
- 
 	<?php if(have_posts()) : while(have_posts()): the_post();?>
-	<div class='post'>
-	<h1><?php the_title();?></h1>
-		<?php the_content();?>
+	<div class='post' id="post-<?php the_ID(); ?>">
+	<div class="postTitle"><h1><?php the_title();?></h1></div>
+	<?php //the_content();?>
+
+		<?php 
+			$my_postid = get_the_ID();//This is page id or post id
+			$content_post = get_post($my_postid);
+			$content = $content_post->post_content;
+			$content = apply_filters('the_content', $content);
+			$content = str_replace(']]>', ']]&gt;', $content);
+			$content = str_replace('<p>','<div class="postDiv"><p>',$content);
+			$content = str_replace('</p>', '</div></p>', $content);
+			echo $content;
+
+		?>
 		</div>
 	<?php endwhile; endif;?>
 	</div>

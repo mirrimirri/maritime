@@ -45,10 +45,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 800%;
+    font-size: 6vw;
     padding: 0.2em;
     background: rgba(255,255,255,0.2);
-
     border:0.1em solid white;
 }
 .nav-container{

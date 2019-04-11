@@ -1,5 +1,5 @@
   <?php 
-	 session_start();
+	 
   /*Template Name: minside*/
 get_header();
   

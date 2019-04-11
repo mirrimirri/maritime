@@ -61,6 +61,10 @@ body p{
 	color: #1e1e1e;
 }
 
+.postDiv{
+	flex: initial;
+}
+
 .postTitle {
   flex: 0 0 100%; /* fg: 0, fs: 0, fb: 100% */
 }

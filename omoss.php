@@ -49,26 +49,9 @@
 </div>
 
 <div class='kontaktoss'>
+	
 
-<form action="">
-  E-mail <input type="email" name="emailaddress" ><br/>
-  Overskrift <input type="overskrift" name="overskrift"><br/>
-  Melding <input type="melding" name="melding"><br/>
-  <input type="submit" value="Send" id="send" name="send">
-  <input type="reset" value="Nullstill" id="nullstill" name="nullstill" /> <br />
-</form>
-	<?php
-if (isset($_REQUEST['send'])){
-$to = "s662404@nwytg.net";
-$subject = $_REQUEST['overskrift'];
-$txt = $_REQUEST['melding'];
-$headers = "From:". $_REQUEST['emailadress'] . "\r\n" .
-"CC: somebodyelse@example.com";
+<?php echo do_shortcode('[CONTACT_FORM_TO_EMAIL id="1"]')?>
 
-mail($to,$subject,$txt,$headers);	
-
-header("Location: index.php?mailsend");
-}	
-?>
 </div>
 <?php get_footer();?>

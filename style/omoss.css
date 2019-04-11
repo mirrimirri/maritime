@@ -1,51 +1,51 @@
 
 body{
 
-	margin: 0px; 
+	margin: 0em; 
 }
-
+.boks{
+	margin-left: 3em;
+	margin-right: 3em;
+	background-color: #f4f9ff;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+}
+	
 .ommaritime{
 	display:flex;
 	flex: column;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 1em;
+	margin-right: 1em;
 	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 24px;
+	background-color: #f4f9ff;
 	margin-top: 7%;
+	padding: 1em 1em 1em 1em;
+	text-align:center;
 }
 
-.ommaritime .post h1 {
-	display:flex;
-	justify-content: center;
-	font-family:helvetica;
-	font-size:150%;
+.post {
+  width: 50%;
+  margin: 0 auto;
 }
-
-.ommaritime .post p{
-	margin: 5%;
+	
 }
-
 .presentasjon{
 	display: flex;
 	flex-wrap: wrap;
 	flex:column;
 	font-family:areal;
 	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 24px;
-	margin-left: 20%;
-	margin-right: 20%; 
-	margin-top: 5%;
+	background-color: #f4f9ff;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+	
 }
 
 .tc_team-members{
 	display:flex;
 	flex-wrap:wrap;
-	 justify-content: center;
-	
-	 
-	
+    justify-content: center;
+
 }
 
 .presentasjon img{
@@ -68,23 +68,24 @@ body{
 .sponsor-item {
 	display:flex;
 	flex-direction:column ;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 2em;
+	margin-right: 2em;
 	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 24px;
-	margin-top: 7%;
+	background-color:#f4f9ff;
+	margin-top: 2em;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	padding: 1em 1em 1em 1em;
 }
 .sponsor-item h3{
-	font-size:200%;
+	font-size:150%;
 	text-align: center;
 }
 
 .sponsor-item p{
 	text-decoration: none;
 	color: black;
-	margin-left:20%;
-	margin-right: 20%;
+	margin-left:1em;
+	margin-right: 1em;
 }
 
 
@@ -100,12 +101,14 @@ body{
 .kontaktoss{
 	display:flex;
 	flex-direction:column ;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 2em;
+	margin-right: 2em;
 	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 10px;
-	margin-top: 7%;
+	background-color: #f4f9ff;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 0em 2em 2em 2em;
 }
 
 .gdfrm-form{

@@ -1,18 +1,18 @@
 <?php /*Template Name: omoss*/?>
 <?php get_header();?>
 
-
+<div class='boks'>
 <div class='ommaritime'>
-   <?php if(have_posts()) : while(have_posts()): the_post();?>
+  	<?php if(have_posts()) : while(have_posts()): the_post();?>
 	<div class='post'>
-	<h1><?php the_title();?></h1>
+	<div class="postTitle"><h1><?php the_title();?></h1></div>
 		<?php the_content();?>
 		</div>
 	<?php endwhile; endif;?>
+
 	</div>
-	
 
-
+<br>
 
 
 <div class='presentasjon'>
@@ -37,10 +37,7 @@
 		wp_reset_postdata();
 
  ?>
-
-
- 
-
+</div>
 
 </div>
 
@@ -51,6 +48,7 @@
 <div class='kontaktoss'>
 
 <form action="">
+<h3> Kontakt oss</h3>
   E-mail <input type="email" name="emailaddress" ><br/>
   Overskrift <input type="overskrift" name="overskrift"><br/>
   Melding <input type="melding" name="melding"><br/>

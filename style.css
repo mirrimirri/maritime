@@ -18,11 +18,10 @@ body{
 	margin: 0px; 
 }
 
-
  .mellom{
 
 	margin: 0px;
-    background-color: #d8e8ff;	
+    background-color: #efefef;	
 }
 
 
@@ -34,16 +33,17 @@ body{
      flex-direction:row;
 }
 /* main column*/
- .hoved{
-     flex: 55%;
-     background-color: #d8e8ff;;
-     font-family:Verdana;
-	 box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
-     font-size:100%;
-     margin: 1em;
-     height:1%;
-	 
+.hoved{
+	flex: 55%;
+	background-color: white;
+
+	font-family: 'Quattrocento Sans', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
 }
+	 
 
 	.post{
 	display: flex;
@@ -51,7 +51,7 @@ body{
 	flex-wrap:wrap;
 	align-items: flex-end;
 	justify-content:space-evenly;
-	background-color: #f4f9ff;
+	background-color: white;
 	margin: 0,5em;
 	padding-bottom: 3em;
 	color: #1e1e1e;
@@ -78,19 +78,19 @@ body{
 	border-color: #e6eaef;
 }
 	
-	
- .hoved h1{
-     text-align:center;
-     font-family:Verdana;
-	 border-bottom: 2px solid grey;
-	 border-color: #e6eaef;
-	 margin: 0,1em 0,5em 0,1 em 0,5em;
-	 
+
+.hoved h1{
+	text-align:center;
+	font-family: 'Quattrocento', serif;
+	border-bottom: 2px solid grey;
+	border-color: #e6eaef;
+	margin: 0,1em 0,5em 0,1 em 0,5em;
+
 }
  .hoyreside{
      flex: 0%;
      flex-direction:column;
-     background-color: #f4f9ff;
+     background-color: white;
      margin: 1em 1em 1em 0em;
      width: 150%;
      height: auto;
@@ -104,7 +104,7 @@ body{
 }
  .instagram{
      display:flex;
-	 background-color: #7796CB;
+	 background-color: white;
 }
 
 

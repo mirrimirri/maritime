@@ -97,9 +97,9 @@ function themename_custom_header_setup() {
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1000,
+        'width'             => 1920,
         // Header image height (in pixels)
-        'height'            => 198,
+        'height'            => 1080,
         // Header image random rotation default
         'random-default'        => false,
         // Enable upload of image file in admin 

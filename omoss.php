@@ -46,6 +46,10 @@
 </div>
 
 <div class='kontaktoss'>
+	
+
+<?php echo do_shortcode('[CONTACT_FORM_TO_EMAIL id="1"]')?>
+
 
 <form action="">
 <h3> Kontakt oss</h3>
@@ -68,5 +72,6 @@ mail($to,$subject,$txt,$headers);
 header("Location: index.php?mailsend");
 }	
 ?>
+
 </div>
 <?php get_footer();?>

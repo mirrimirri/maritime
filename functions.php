@@ -167,6 +167,9 @@ function wooc_extra_register_fields() {?>
        <?php
  }
  add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+ 
+ 
+ 
 
 
 add_image_size('smallest', 300, 300, true);

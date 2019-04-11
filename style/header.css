@@ -58,7 +58,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
     transform: translate( 10%, 30% );
     text-align: center;
     color: white;
+}
 
+.nav-container{
+	display:flex;
+	flex-direction: row;
 }
 
 .main-nav ul {
@@ -81,6 +85,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   text-decoration: none;
 }
 
+.hoyrenav{
+	display: flex;
+}
+
 /* Change the link color to #111 (black) on hover */
 .main-nav li a:hover {
   color: #ffdb58;
@@ -88,32 +96,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 
-/*
-.main-nav{
-     display: flex;
-}
-}
- .main-nav ul{
-     display:flex;
-     flex-wrap: wrap;
-     list-style: none;
-     font-size: 130%;
-     justify-content: inherit;
-}
-   .main-nav li a{ 
-    float: left;
-    color: #2D5778;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-	list-style: none;
-	display: flex;
-    font-size: 100%;
-    font-family: arial;
-   
-  }
- .main-nav ul li a :hover {
-     background-color: #white;
-} */
+
+
+
 

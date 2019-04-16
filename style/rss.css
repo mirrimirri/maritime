@@ -4,28 +4,27 @@
 text-decoration: none;
 }
 
-.gcaptain a, li{
+.gcaptain a{
 
-font-family: helvetica;
+font-family: 'Montserrat', sans-serif;
 text-decoration: none;
 color: #46434a;
-margin:0.2em 0.1em 0.2em 0.1em;
 
 }
 
 .gcaptain{
 	color: #46434a;
+	background: white;
 }
 
 
 .gcaptain li {
 	border-bottom: solid 1px black ;
+	padding: 0  0 0.1em 0;
+	margin: 0 0.5em 0.8em 0.5em;
 
 }
 
-.gcaptain{
-	background: #dadde2;
-}
 
 .gcaptain a:hover{
 

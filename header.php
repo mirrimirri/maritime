@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="footer.css">
 		<link rel="stylesheet" href="header.css">
 		<link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Quattrocento" rel="stylesheet">
 	<?php }?>	
 	</head>
 

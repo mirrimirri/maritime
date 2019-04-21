@@ -1,115 +1,101 @@
-
 body{
 
 	margin: 0px; 
 }
 
-.ommaritime{
-	display:flex;
-	flex: column;
-	margin-left: 20%;
-	margin-right: 20%;
-	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 24px;
-	margin-top: 7%;
+body p{
+	display: default;
 }
 
-.ommaritime .post h1 {
-	display:flex;
-	justify-content: center;
-	font-family:helvetica;
-	font-size:150%;
+ .mellom{
+
+	margin: 0px;
+    background-color: #efefef;	
 }
 
-.ommaritime .post p{
-	margin: 5%;
-}
 
-.presentasjon{
-	display: flex;
-	flex-wrap: wrap;
-	flex:column;
-	font-family:areal;
-	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 24px;
-	margin-left: 20%;
-	margin-right: 20%; 
-	margin-top: 5%;
-}
 
-.tc_team-members{
-	display:flex;
-	flex-wrap:wrap;
-	 justify-content: center;
-	
+    .mellom{
+     display: flex;
+     flex-wrap:wrap;
+     flex-direction:row;
+}
+/* main column*/
+.hoved{
+	flex: 55%;
+	background-color: white;
+	font-family: 'Quattrocento Sans', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+}
 	 
-	
-}
 
-.presentasjon img{
+.post{
 	display: flex;
-	position: relative;
-    float: left;
-    width:  250px;
-    height: 250px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-  border-radius:100px;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items: flex-end;
+	justify-content:space-evenly;
+	background-color: white;
+	margin: 0,5em;
+	padding-bottom: 3em;
+	color: #1e1e1e;
 }
 
-.samarbeidspartnere{
-	display:flex;
-	justify-content:center;
+.postDiv{
+	flex: initial;
 }
 
-.sponsor-item {
-	display:flex;
-	flex-direction:column ;
-	margin-left: 20%;
-	margin-right: 20%;
-	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 24px;
-	margin-top: 7%;
-}
-.sponsor-item h3{
-	font-size:200%;
-	text-align: center;
+.postTitle {
+  flex: 0 0 100%; /* fg: 0, fs: 0, fb: 100% */
 }
 
-.sponsor-item p{
-	text-decoration: none;
-	color: black;
-	margin-left:20%;
-	margin-right: 20%;
+.wp-block-image figure:after{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-evenly;
+
 }
 
+.wp-block-image img{
 
-
-.sponsor-item img{
-	border-radius: 25px;
-	 max-width: 100%;
-  height: auto;
-  display: block;
-    margin: 0 auto; 
- 
-}
-.kontaktoss{
-	display:flex;
-	flex-direction:column ;
-	margin-left: 20%;
-	margin-right: 20%;
-	font-size:150%;
-	background-color: #7796CB;
-	border-radius: 10px;
-	margin-top: 7%;
+	max-width: 100%;
 }
 
-.gdfrm-form{
-	margin-left: 20%;
-	margin-right: 20%;
+.post p{
+	font-size:110%;
+
 }
+
+.post:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+	display: block; /* This will put the pseudo element on its own line. */
+	margin: 0 auto; /* This will center the border. */
+	width: 80%; /* Change this to whatever width you want. */
+	padding-top: 20px; /* This creates some space between the element and the border. */
+	border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
+	border-color: #667299;
+}
+	
+
+.hoved h1{
+	text-align:center;
+	font-family: 'Quattrocento', serif;
+	margin: 0,1em 0,5em 0,1em 0,5em;
+
+}
+
+.hoved h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 40%; /* Change this to whatever width you want. */
+    border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
+	border-color: #e6eaef;
+}
+
 

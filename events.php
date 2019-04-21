@@ -5,7 +5,7 @@
 
 <div class='events'>
 	<h1> Kommende events</h1>
-<?php echo do_shortcode("[fb_plugin page href='https://www.facebook.com/Testformaritime-282835995990959/' tabs='events']"); ?>
+<?php echo do_shortcode("[events_list]"); ?>
 </div>
 
 <?php 

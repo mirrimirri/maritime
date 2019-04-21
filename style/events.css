@@ -22,14 +22,16 @@
      height:1%;
 	 
 	 display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap:wrap;
-	align-items: flex-end;
+	align-content: center;
 	justify-content:space-evenly;
 	margin: 0,5em;
 	padding-bottom: 3em;
 	color: #1e1e1e;
 }
+
+
  
  .filopplasting{
    flex: 0%;

@@ -4,12 +4,9 @@
 	<head>
 	<?php wp_head();?>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<?php if(basename($_SERVER['PHP_SELF']) == 'front-page.php'){ ?>
-		<link href="/style.css" rel="stylesheet" media="all"/>
-		<link rel="stylesheet" href="footer.css">
-		<link rel="stylesheet" href="header.css">
-		<link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
-	<?php }?>	
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	</head>
 
 <body <?php body_class();?>>

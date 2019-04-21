@@ -18,6 +18,7 @@
 <div class='presentasjon'>
 
  <?php 
+	print("<h1> Samarbeidspartnere </h1>");
  		
 
 		$args = array(
@@ -51,7 +52,9 @@
 <div class='kontaktoss'>
 	
 
-<?php echo do_shortcode('[CONTACT_FORM_TO_EMAIL id="1"]')?>
+<?php 
+print("<h1> Kontakt oss </h1>");
+echo do_shortcode('[CONTACT_FORM_TO_EMAIL id="1"]')?>
 
 </div>
 <?php get_footer();?>

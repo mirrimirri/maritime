@@ -1,4 +1,46 @@
 body{
 
 	margin: 0px; 
-} 
+}
+
+body p{
+	display: default;
+}
+
+ .mellom{
+
+	margin: 0px;
+    background-color: #efefef;	
+}
+
+
+
+    .mellom{
+     display: flex;
+     flex-wrap:wrap;
+     flex-direction:column;
+}
+/* main column*/
+.mellom{
+	flex: 55%;
+	background-color: white;
+	font-family: 'Quattrocento Sans', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+}
+	 
+
+.produkt{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	background-color: white;
+	margin: 0,5em;
+	padding-bottom: 3em;
+	color: #1e1e1e;
+	font-family: 'Roboto Condensed', Sans-serif;
+}
+

@@ -4,9 +4,6 @@
 <div class="container">
 <h3> About this cookie policy </h3>
 <p> This Cookie Policy explains what cookies are and how we use them. You should read this policy to understand what cookies are, how we use them, the types of cookies we use i.e, the information we collect using cookies and how that information is used and how to control the cookie preferences. 
-For further information on how we use, store and keep your personal data secure, see our Privacy Policy. </p> <br />
-<p>You can at any time change or withdraw your consent from the Cookie Declaration on our website. </p> <br />
-<p>Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy. </p> <br />
 <h3> What are cookies ? </h3>
 <p>Cookies are small text files that are used to store small pieces of information. The cookies are stored on your device when the website is loaded on your browser. 
 These cookies help us make the website function properly, make the website more secure, provide better user experience, and understand how the website performs and to analyze what works and where it needs improvement. </p> <br />

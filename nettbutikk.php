@@ -7,6 +7,7 @@ get_header();
 
 get_header(); 
 echo "<div class='mellom'>";
+echo "<div class='boks'>";
 echo "<h1>Nettbutikk</h1>";
 
 $x=1;
@@ -17,6 +18,7 @@ while ($x<1000){
 }
 
 echo"</div>";
+echo "</div>";
 echo "</div>";
 
 

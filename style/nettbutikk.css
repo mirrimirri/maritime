@@ -34,7 +34,7 @@ body p{
 	background-color: white;
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size:100%;
-	margin: 1em;
+	margin: 2vw 6vw 2vw 6vw;
 	height:1%;
 }
 	 
@@ -46,12 +46,20 @@ body p{
 	justify-content: space-between;
 	background-color: white;
 	margin: 0,5em;
-	padding-bottom: 3em;
+	padding: 2vw;
 	color: #1e1e1e;
 	font-family: 'Roboto Condensed', Sans-serif;
 	
 }
 h1{
-	text-align: center;
-margin: 0,5em;
+text-align: center;
+margin: 0,5vw;
+padding: 0,5vw;
+font-family: 'Quattrocento', serif;
 }
+
+.boks{
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+}
+
+	

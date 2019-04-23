@@ -17,6 +17,8 @@ get_header();
  * @package WooCommerce/Templates
  * @version 3.5.0
  */
+ 
+echo "<div class='mellom'>";
  echo do_shortcode("[woocommerce_cart]"); 	 
-
+echo"</div>";
 ?>

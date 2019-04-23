@@ -3,10 +3,11 @@ body{
 	margin: 0px; 
 } 
 .kassen{
-    background-color: #f4f9ff;
+	background-color: white;
+	background-color: white;
     font-family:Verdana;
 	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
-    margin: 1em 2em 1em 2em;
+    margin: 2vw 6vw 2vw 6vw;
 	padding: 1em 1em 1em 1em;
 	display: flex;
 }

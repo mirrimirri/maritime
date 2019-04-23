@@ -1,7 +1,8 @@
 <?php /*Template Name: cookie-policy*/?>
 <?php get_header();?>
-<div class='cookie-policy'>
 <html>
+<link rel="stylesheet" type="tekst.css" href="style/cookie-policy.css">
+<div class="mellom">
 <h3> About this cookie policy </h3>
 <p> This Cookie Policy explains what cookies are and how we use them. You should read this policy to understand what cookies are, how we use them, the types of cookies we use i.e, the information we collect using cookies and how that information is used and how to control the cookie preferences. 
 For further information on how we use, store and keep your personal data secure, see our Privacy Policy. </p> <br />
@@ -25,5 +26,6 @@ These cookies also help us keep track of the efficiency of these ad campaigns. <
 <p> Functional: These are the cookies that help certain non-essential functionalities on our website. 
 These functionalities include embedding content like videos or sharing contents on the website on social media platforms. </p> <br />
 <p> Preferences: These cookies help us store your settings and browsing preferences like language preferences so that you have a better and efficient experience on future visits to the website. </p> <br />
+</div>
 <html>
 <?php get_footer();?>

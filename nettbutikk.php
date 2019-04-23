@@ -2,7 +2,7 @@
 
 get_header();
 ?>
-<div class='produkt'> 
+
 <?php
 
 get_header(); 
@@ -18,7 +18,7 @@ while ($x<1000){
 
 echo"</div>";
 echo "</div>";
-echo "</div>";
+
 
 get_footer();
 ?>

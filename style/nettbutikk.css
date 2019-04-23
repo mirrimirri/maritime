@@ -4,13 +4,6 @@
 
 } 
 
-.produkt{
-	 background-color: #f4f9ff;
-     font-family:Verdana;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
-	 margin: 1em 1em 1em 1em;
-	padding: 1em 1em 1em 1em;
-}
 
 .woocommerce img{
    max-width: 30vw;
@@ -29,13 +22,6 @@ body p{
 	display: default;
 }
 
- .mellom{
-
-	margin: 0px;
-    background-color: #efefef;	
-}
-
-
 
     .mellom{
      display: flex;
@@ -47,7 +33,6 @@ body p{
 	flex: 55%;
 	background-color: white;
 	font-family: 'Quattrocento Sans', sans-serif;
-	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	font-size:100%;
 	margin: 1em;
 	height:1%;
@@ -64,5 +49,9 @@ body p{
 	padding-bottom: 3em;
 	color: #1e1e1e;
 	font-family: 'Roboto Condensed', Sans-serif;
+	
 }
-
+h1{
+	text-align: center;
+margin: 0,5em;
+}

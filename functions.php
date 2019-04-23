@@ -52,15 +52,15 @@
 	  
 
 	 if($slug=='nettbutikk'){
-	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); 
 	 }
 	 
 	 if($slug=='handlekurv'){
-	   wp_enqueue_style('style', get_template_directory_uri() . '/style/handlekurv.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/handlekurv.css', array(), false, 'all'); 
 	 }
 
 	if($slug=='kassen'){
-	   wp_enqueue_style('style', get_template_directory_uri() . '/style/kassen.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/kassen.css', array(), false, 'all'); 
 	 }
 
 	 if($slug=='cookie-policy'){
@@ -174,7 +174,10 @@ function wooc_extra_register_fields() {?>
  }
  add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
  
- 
+ add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
  
 
 

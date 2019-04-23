@@ -1,7 +1,52 @@
-body{
+﻿body{
 
-	margin: 0px; 
+	margin: 0em; 
 }
+
+.boks{
+	margin-left: 3em;
+	margin-right: 3em;
+	background-color: #f4f9ff;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+}
+	
+.ommaritime{
+	display:flex;
+	flex: column;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size:150%;
+	background-color: #f4f9ff;
+	margin-top: 7%;
+	padding: 1em 1em 1em 1em;
+	text-align:center;
+}
+
+.post {
+  width: 50%;
+  margin: 0 auto;
+}
+	
+}
+.presentasjon{
+	display: flex;
+	flex-wrap: wrap;
+	flex:column;
+	font-family:areal;
+	font-size:150%;
+	background-color: #f4f9ff;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+	
+}
+
+.tc_team-members{
+	display:flex;
+	flex-wrap:wrap;
+    justify-content: center;
+
+
 
 body p{
 	display: default;
@@ -50,6 +95,7 @@ body p{
 
 .postTitle {
   flex: 0 0 100%; /* fg: 0, fs: 0, fb: 100% */
+
 }
 
 .wp-block-image figure:after{
@@ -66,6 +112,22 @@ body p{
 	max-width: 100%;
 }
 
+
+.sponsor-item {
+	display:flex;
+	flex-direction:column ;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-size:150%;
+	background-color:#f4f9ff;
+	margin-top: 2em;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	padding: 1em 1em 1em 1em;
+}
+.sponsor-item h3{
+	font-size:150%;
+	text-align: center;
+
 .post p{
 	font-size:110%;
 
@@ -79,6 +141,7 @@ body p{
 	padding-top: 20px; /* This creates some space between the element and the border. */
 	border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
 	border-color: #667299;
+
 }
 	
 
@@ -87,6 +150,12 @@ body p{
 	font-family: 'Quattrocento', serif;
 	margin: 0,1em 0,5em 0,1em 0,5em;
 
+
+.sponsor-item p{
+	text-decoration: none;
+	color: black;
+	margin-left:1em;
+	margin-right: 1em;
 }
 
 .hoved h1:after {
@@ -117,6 +186,17 @@ body p{
 }
 
 .kontaktoss{
+
+	display:flex;
+	flex-direction:column ;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-size:150%;
+	background-color: #f4f9ff;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 0em 2em 2em 2em;
 	display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
@@ -131,6 +211,7 @@ body p{
 	font-size:100%;
 	margin: 1em;
 	height:1%;
+
 }
 
 input{

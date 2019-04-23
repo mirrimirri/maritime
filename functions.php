@@ -63,6 +63,10 @@
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/kassen.css', array(), false, 'all'); //laster css gjeruldsenprisen
 	 }
 
+	 if($slug=='cookie-policy'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/cookie-policy.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
+
  }
  add_action('wp_enqueue_scripts', 'load_stylesheets');
  

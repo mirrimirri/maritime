@@ -1,4 +1,4 @@
-.mellom{
+.container{
 
 	margin: 0px;
     background-color: #efefef;	
@@ -6,10 +6,11 @@
 
 
 
-	.mellom{
+	.container{
 	max-width: 1100px;
 	display: flex;
 	flex-wrap:wrap;
 	flex-direction:row;
 	margin: auto;
+	background: white;
 	}

@@ -11,9 +11,18 @@ Text Domain: usnmaritime
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-*/ * {
-     box-sizing: border-box;
+*/ 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+body{
+  margin: 0px;
+}
+
+
  body{
      font-family: Arial;
      background: #efefef;
@@ -79,8 +88,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
-  font-size: 130%;
+  padding: 2vw 0.8vw;
+  font-size: 1.5vw;
   text-decoration: none;
 }
 
@@ -93,8 +102,88 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: #ffdb58;
 }
 
+#handlekurv{
+  background-image: url(../bilder/ikoner/handlevognhvit.png);
+  background-size: 3vw;
+  width: 3vw;
+  height: 3vw;
+  margin-top: 1vw;
+}
+
+#handlekurv:hover{
+  background-image: url(../bilder/ikoner/handlevogngul.png);
+  background-size: 3vw;
+  width: 3vw;
+  height: 3vw;
+}
 
 
+@media only screen and (max-width: 600px)
+{
+
+  :root{
+    --size-bg-size:7vw;
+    --size-width:7vw;
+    --size-height:7vw;    
+  }
+
+
+  #handlekurv{
+    background-image: url(../bilder/ikoner/handlevognhvit.png);
+    background-size: var(--size-bg-size);
+    width: var(--size-width);
+    height: var(--size-height);
+    margin-left: 4vw;
+  }
+
+  #handlekurv:hover{
+    background-image: url(../bilder/ikoner/handlevogngul.png);
+    background-size: var(--size-bg-size);
+    width: var(--size-width);
+    height: var(--size-height);
+  }
+
+.main-nav {
+  color: white;
+  padding: 16px;
+  font-size: 2.5vw;
+  border: none;
+}
+
+.nav-container{
+  margin: 1vw 2vw 0 4vw;
+  background-color: transparent;
+  background-image: url(../bilder/ikoner/dropdownmenu.png);
+  background-size: var(--size-bg-size);
+  width: var(--size-width);
+  height: var(--size-height);
+  display:flex;
+  flex-direction: row;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  transform: translate(-10%, 4%);
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a:hover {opacity: 0.7;}
+
+.nav-container:hover .menu {display: block;}
+
+.nav-container:hover .main-nav {}
+}
 
 
 

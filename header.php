@@ -67,7 +67,7 @@
 		</nav>
 		
 		<div class='hoyrenav'>
-<a href='http://localhost/wordpress/handlekurv/'><img src="http://www.trygvevalbo.com/wp-content/uploads/2019/04/handlevogn-hvit.png" style="width:40px; height:40px" alt="tilkurv"/></a>
+<a href='http://localhost/wordpress/handlekurv/'><div id="handlekurv"></div></a>
 		</div>
 		
 

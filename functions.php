@@ -1,5 +1,6 @@
  <?php
 
+
  function load_stylesheets()
  {
 
@@ -36,7 +37,7 @@
 	 }
 
 	  
-	  if($slug=='minside'){
+	  if($slug=='min-konto'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/minside.css', array(), false, 'all'); //laster css nettbutikk
 
     }

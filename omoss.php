@@ -1,23 +1,35 @@
 <?php /*Template Name: omoss*/?>
 <?php get_header();?>
+<div class='mellom'>
+<div class='hoved'>
+
 
 <div class='boks'>
 <div class='ommaritime'>
   	<?php if(have_posts()) : while(have_posts()): the_post();?>
+
+   <?php if(have_posts()) : while(have_posts()): the_post();?>
+
 	<div class='post'>
 	<div class="postTitle"><h1><?php the_title();?></h1></div>
 		<?php the_content();?>
 		</div>
 	<?php endwhile; endif;?>
 
+
 	</div>
 
+
 <br>
+
+</div>
+
 
 
 <div class='presentasjon'>
 
  <?php 
+	print("<h1> Samarbeidspartnere </h1>");
  		
 
 		$args = array(
@@ -39,6 +51,7 @@
  ?>
 </div>
 
+	
 </div>
 
 <div class='samarbeidspartnere'>
@@ -48,7 +61,9 @@
 <div class='kontaktoss'>
 	
 
-<?php echo do_shortcode('[CONTACT_FORM_TO_EMAIL id="1"]')?>
+<?php 
+print("<h1> Kontakt oss </h1>");
+echo do_shortcode('[CONTACT_FORM_TO_EMAIL id="1"]')?>
 
 
 <form action="">
@@ -73,5 +88,6 @@ header("Location: index.php?mailsend");
 }	
 ?>
 
+</div>
 </div>
 <?php get_footer();?>

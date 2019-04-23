@@ -1,8 +1,8 @@
-
-body{
+﻿body{
 
 	margin: 0em; 
 }
+
 .boks{
 	margin-left: 3em;
 	margin-right: 3em;
@@ -46,24 +46,72 @@ body{
 	flex-wrap:wrap;
     justify-content: center;
 
+
+
+body p{
+	display: default;
 }
 
-.presentasjon img{
+ .mellom{
+
+	margin: 0px;
+    background-color: #efefef;	
+}
+
+
+
+    .mellom{
+     display: flex;
+     flex-wrap:wrap;
+     flex-direction:row;
+}
+/* main column*/
+.hoved{
+	flex: 55%;
+	background-color: white;
+	font-family: 'Quattrocento Sans', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+}
+	 
+
+.post{
 	display: flex;
-	position: relative;
-    float: left;
-    width:  250px;
-    height: 250px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-  border-radius:100px;
+	flex-direction: row;
+	flex-wrap:wrap;
+	align-items: flex-end;
+	justify-content:space-evenly;
+	background-color: white;
+	margin: 0,5em;
+	padding-bottom: 3em;
+	color: #1e1e1e;
 }
 
-.samarbeidspartnere{
-	display:flex;
-	justify-content:center;
+.postDiv{
+	flex: initial;
 }
+
+.postTitle {
+  flex: 0 0 100%; /* fg: 0, fs: 0, fb: 100% */
+
+}
+
+.wp-block-image figure:after{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-evenly;
+
+}
+
+.wp-block-image img{
+
+	max-width: 100%;
+}
+
 
 .sponsor-item {
 	display:flex;
@@ -79,7 +127,29 @@ body{
 .sponsor-item h3{
 	font-size:150%;
 	text-align: center;
+
+.post p{
+	font-size:110%;
+
 }
+
+.post:after {
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+	display: block; /* This will put the pseudo element on its own line. */
+	margin: 0 auto; /* This will center the border. */
+	width: 80%; /* Change this to whatever width you want. */
+	padding-top: 20px; /* This creates some space between the element and the border. */
+	border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
+	border-color: #667299;
+
+}
+	
+
+.hoved h1{
+	text-align:center;
+	font-family: 'Quattrocento', serif;
+	margin: 0,1em 0,5em 0,1em 0,5em;
+
 
 .sponsor-item p{
 	text-decoration: none;
@@ -88,17 +158,35 @@ body{
 	margin-right: 1em;
 }
 
-
-
-.sponsor-item img{
-	border-radius: 25px;
-	 max-width: 100%;
-  height: auto;
-  display: block;
-    margin: 0 auto; 
- 
+.hoved h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 40%; /* Change this to whatever width you want. */
+    border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
+	border-color: #e6eaef;
 }
+
+.presentasjon{
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	background-color: white;
+	margin: 0,5em;
+	padding-bottom: 3em;
+	color: #1e1e1e;
+	flex: 100%;
+	font-family: 'Quattrocento Sans', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+
+}
+
 .kontaktoss{
+
 	display:flex;
 	flex-direction:column ;
 	margin-left: 2em;
@@ -109,10 +197,23 @@ body{
 	margin-top: 2em;
 	margin-bottom: 2em;
 	padding: 0em 2em 2em 2em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	background-color: white;
+	margin: 0,5em;
+	padding-bottom: 3em;
+	color: #1e1e1e;
+	flex: 100%;
+	font-family: 'Quattrocento Sans', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+
 }
 
-.gdfrm-form{
-	margin-left: 20%;
-	margin-right: 20%;
+input{
+	color: grey;
 }
-

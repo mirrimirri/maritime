@@ -30,18 +30,19 @@ body p{
 
 
 
-    .mellom{
-
-     display: flex;
-     flex-wrap:wrap;
-     flex-direction:row;
-}
-/* main column*/
+	.mellom{
+	max-width: 1100px;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	margin: auto;
+	}
+	/* main column*/
 .hoved{
 	flex: 55%;
 	background-color: white;
 
-	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	font-size:100%;
 	margin: 1em;
@@ -80,7 +81,7 @@ body p{
 
 .wp-block-image img{
 
-	max-width: 20em;	
+	max-width: 100%;
 }
 
 .post p{
@@ -121,15 +122,21 @@ body p{
      flex: 0%;
      flex-direction:column;
      background-color: white;
-     margin: 1em 1em 1em 0em;
-     width: 150%;
+     margin: 1em 1em 1em 1.5em;
+     width: 160%;
      height: auto;
-	 padding: 2% 2%;
 	 box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
-	 padding: 0 0.2em 0.2em 0.2em;
+	 padding: 0 0.7em 0.2em 0.7em;
 	
-	 
 }
+
+.hoyreside h1{
+	text-align:center;
+	font-family: 'Quattrocento', serif;
+	margin: 0,1em 0,5em 0,1em 0,5em;
+
+}
+
  #simple-facebook-widget {
      width:120%;
 }

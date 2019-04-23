@@ -5,7 +5,7 @@
 
 <div class='events'>
 	<h1> Kommende events</h1>
-<?php echo do_shortcode(''); ?>
+<?php echo do_shortcode("[events_list]"); ?>
 </div>
 
 <?php 

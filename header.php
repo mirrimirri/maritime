@@ -61,7 +61,7 @@
 	</div>
 
 <div class="nav-container">	
-		<nav class="main-nav">
+		<nav class="main-nav" id="menu-icon">
 		<?php 
 			$args= array('theme_location'=>'primary');
 		 	wp_nav_menu($args);

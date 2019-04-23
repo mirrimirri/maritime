@@ -25,4 +25,5 @@ These cookies also help us keep track of the efficiency of these ad campaigns. <
 <p> Functional: These are the cookies that help certain non-essential functionalities on our website. 
 These functionalities include embedding content like videos or sharing contents on the website on social media platforms. </p> <br />
 <p> Preferences: These cookies help us store your settings and browsing preferences like language preferences so that you have a better and efficient experience on future visits to the website. </p> <br />
+<html>
 <?php get_footer();?>

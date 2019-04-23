@@ -20,4 +20,5 @@ get_header();
  echo "<div class='handlevogn'>";
  echo do_shortcode("[woocommerce_cart]"); 	 
  echo "</div>";
+ get_footer();
 ?>

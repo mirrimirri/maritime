@@ -3,6 +3,14 @@ body{
 
   margin: 0px; 
 }
+.minside{
+	background-color: #f4f9ff;
+    font-family:Verdana;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+    margin: 1em 2em 1em 2em;
+	padding: 1em 1em 1em 1em;
+	display: flex;
+}
 
 .innlogging {
 	display: flex;
@@ -15,7 +23,7 @@ body{
 }
 
 .login{
-	display:flex
+	display:flex;
 justify-content: space-between;
 	
 }
@@ -93,3 +101,11 @@ input[type=text], input[type=email],input[type=number],input[type=password], sel
 	  margin-left:3%;
 	  margin-bottom: 3%;
   }
+  .minside{
+	background-color: #f4f9ff;
+    font-family:Verdana;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+    margin: 1em 2em 1em 2em;
+	padding: 1em 1em 1em 1em;
+	display: flex;
+}

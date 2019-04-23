@@ -1,0 +1,15 @@
+body{
+
+	margin: 0px; 
+} 
+.kassen{
+    background-color: #f4f9ff;
+    font-family:Verdana;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+    margin: 1em 2em 1em 2em;
+	padding: 1em 1em 1em 1em;
+	display: flex;
+}
+.woocommerce-info {
+ display: none;
+}

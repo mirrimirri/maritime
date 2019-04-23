@@ -1,7 +1,8 @@
  footer{
-	 background-color:#a2c2e5;
-     padding: 20px;
+	 background-color:#192733;
+     padding: 0.5vw;
      text-align: center;
+     color: white;
     
 }
 
@@ -24,4 +25,65 @@
 	color:black;
 	 border: 1px solid black;
 	 margin:0px 10px;
+}
+
+.fa {
+  padding: 6px;
+  font-size: 50px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7 px 3 px;
+  border-radius: 55%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer-container{
+  width: auto;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.facebook-icon {
+  background-image: url("../bilder/ikoner/facebook.png");
+  background-size:7vw;
+  width: 7vw;
+  height: 7vw;
+  color: white;
+}
+
+.instagram-icon {
+  background-image: url("../bilder/ikoner/instagram.png");
+  background-color: transparent;
+  background-size:7vw;
+  width: 7vw;
+  height: 7vw;
+  margin: 0 1vw 0 1vw
+}
+
+.snapchat-ghost {
+ 
+  background-image: url("../bilder/ikoner/snapchat.png");
+  background-size:7vw;
+  width: 7vw;
+  height: 7vw;
+  color: white;
+}
+
+.facebook-icon:hover{
+  opacity: 0.7;
+}
+
+.instagram-icon:hover{
+  opacity: 0.7;
+}
+
+.snapchat-ghost:hover{
+  opacity: 0.7;
 }

@@ -63,9 +63,10 @@ body{
     position: absolute;
     top: 0%;
     left: 0%;
-    transform: translate( 10%, 30% );
+    transform: translate( 0%, 30% );
     text-align: center;
     color: white;
+    max-width: 100%;
 }
 
 .nav-container{
@@ -100,6 +101,21 @@ body{
 /* Change the link color to #111 (black) on hover */
 .main-nav li a:hover {
   color: #ffdb58;
+}
+
+#handlekurv{
+  background-image: url(../bilder/ikoner/handlevognhvit.png);
+  background-size: 3vw;
+  width: 3vw;
+  height: 3vw;
+  margin-top: 1vw;
+}
+
+#handlekurv:hover{
+  background-image: url(../bilder/ikoner/handlevogngul.png);
+  background-size: 3vw;
+  width: 3vw;
+  height: 3vw;
 }
 
 /* collapse menue */

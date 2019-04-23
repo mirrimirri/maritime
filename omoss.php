@@ -10,10 +10,9 @@
 		</div>
 	<?php endwhile; endif;?>
 	
+
+
 </div>
-	
-
-
 
 
 <div class='presentasjon'>
@@ -44,6 +43,7 @@
  
 
 
+	
 </div>
 
 <div class='samarbeidspartnere'>

@@ -1,10 +1,10 @@
 
-.gcaptain{
+.gcaptain, .sysla{
 
 text-decoration: none;
 }
 
-.gcaptain a{
+.gcaptain a,.sysla a{
 
 font-family: 'Montserrat', sans-serif;
 text-decoration: none;
@@ -12,13 +12,13 @@ color: #46434a;
 
 }
 
-.gcaptain{
+.gcaptain, .sysla{
 	color: #46434a;
 	background: white;
 }
 
 
-.gcaptain li {
+.gcaptain li,.sysla li {
 	border-bottom: solid 1px black ;
 	padding: 0  0 0.1em 0;
 	margin: 0 0.5em 0.8em 0.5em;
@@ -26,51 +26,15 @@ color: #46434a;
 }
 
 
-.gcaptain a:hover{
+.gcaptain a:hover,.sysla a:hover{
 
 	color: maroon;
 }
 
-.gcaptain a:active{
+.gcaptain a:active, .sysla a:active{
 	
 }
 
-.gcaptain a:visited{
+.gcaptain a:visited, .sysla a:visited{
 	
-}
-
-.sysla a, li{
-
-text-decoration: none;
-color: #46434a;
-margin:0.2em 0.1em 0.2em 0.1em;
-
-}
-
-
-.sysla{
-	color: #46434a;
-}
-
-.sysla li {
-	border-bottom: solid 1px black ;
-
-}
-
-.sysla{
-	background: #dadde2;
-}
-
-.sysla a:hover{
-
-	color: maroon;
-}
-
-.sysla a:active{
-	
-}
-
-.gcaptain a:visited{
-	
-
 }

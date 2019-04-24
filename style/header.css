@@ -20,12 +20,13 @@ html, body {
 
 body{
   margin: 0px;
+   background: #efefef;
 }
-
-
- body{
-     font-family: Arial;
-     background: #efefef;
+h1. h2. h3.{
+ font-family: 'Quattrocento', serif;
+}
+p.{
+	font-family: 'Montserrat', sans-serif;
 }
 /* header/logo/title */
  header{

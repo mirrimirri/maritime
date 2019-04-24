@@ -46,7 +46,7 @@
 	flex-wrap:wrap;
     justify-content: center;
 
-
+}
 
 body p{
 	display: default;
@@ -127,6 +127,7 @@ body p{
 .sponsor-item h3{
 	font-size:150%;
 	text-align: center;
+	}
 
 .post p{
 	font-size:110%;
@@ -149,7 +150,7 @@ body p{
 	text-align:center;
 	font-family: 'Quattrocento', serif;
 	margin: 0,1em 0,5em 0,1em 0,5em;
-
+}
 
 .sponsor-item p{
 	text-decoration: none;

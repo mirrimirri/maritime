@@ -3,18 +3,8 @@ body{
 
   margin: 0px; 
 }
-.minside{
-	background-color: #f4f9ff;
-    font-family:Verdana;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
-    margin: 1em 2em 1em 2em;
-	padding: 1em 1em 1em 1em;
-	display: flex;
-}
 
 
-
-}
 
 .login{
 	display:flex;
@@ -95,14 +85,7 @@ input[type=text], input[type=email],input[type=number],input[type=password], sel
 	  margin-left:3%;
 	  margin-bottom: 3%;
   }
-  .minside{
-	background-color: #f4f9ff;
-    font-family:Verdana;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
-    margin: 1em 2em 1em 2em;
-	padding: 1em 1em 1em 1em;
-	display: flex;
-}
+
 
   /* Change WC Acct Page Column Widths */
 @media only screen and (min-width: 769px) {
@@ -158,5 +141,11 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
   margin-top: -7px;
 }
 
+.minside{
+	background-color: white;
+	padding: 2vw 2vw 2vw 2vw;
+	display: flex;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+}
 
   

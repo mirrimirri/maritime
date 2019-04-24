@@ -74,6 +74,15 @@
   width: 7vw;
   height: 7vw;
   color: white;
+margin: 0 1vw 0 1vw
+}
+.grasrotandel-icon {
+ 
+  background-image: url("../bilder/ikoner/grasrotandel.png");
+  background-size:7vw;
+  width: 7vw;
+  height: 7vw;
+  color: white;
 }
 
 .facebook-icon:hover{
@@ -85,5 +94,8 @@
 }
 
 .snapchat-ghost:hover{
+  opacity: 0.7;
+}
+.grasrotandel-icon:hover{
   opacity: 0.7;
 }

@@ -14,6 +14,7 @@
     <a href="https://www.facebook.com/USNMaritime/"><div class="facebook-icon"></div></a>
     <a href="https://www.instagram.com/usnmaritime/"><div class="instagram-icon"></div></a>
     <a href="https://www.snapchat.com/add/usnmaritime"><div class="snapchat-ghost"></div></a> <!-- USN må lage en URL kode til å adde de på snapchat -->
+	<a href="https://www.norsk-tipping.no/grasrotandelen#search=919965002"><div class="grasrotandel-icon"></div></a>
 </div>
 
 	<div>

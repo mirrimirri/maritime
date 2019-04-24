@@ -181,7 +181,7 @@ body{
   }
 
   .menu a {
-    font-size: 2vw;
+    font-size: 3vw;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -197,6 +197,17 @@ body{
   .menu.visible a{
     color: black;   
   }
+
+  .menu a{
+    min-width: 160px;
+    text-align: left;
+  }
+
+  .menu li:hover{
+    background:#192733;
+  }
+
+
 }
 
 

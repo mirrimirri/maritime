@@ -35,7 +35,7 @@
  margin-right: auto;
 }
 .cart_totals {
-  width: 100%;
+  width: 100% !important;
   float:left;
 }
 

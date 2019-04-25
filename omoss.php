@@ -1,6 +1,7 @@
 <?php /*Template Name: omoss*/?>
 <?php get_header();?>
 <div class='mellom'>
+
 <div class='hoved'>
 
    <?php if(have_posts()) : while(have_posts()): the_post();?>
@@ -12,14 +13,12 @@
 	
 
 
-</div>
+
 
 
 <div class='presentasjon'>
 
  <?php 
-	print("<h1> Samarbeidspartnere </h1>");
- 		
 
 		$args = array(
 		    'post_type'=> 'tcmembers',    
@@ -38,15 +37,12 @@
 		wp_reset_postdata();
 
  ?>
-
-
- 
-
-
 	
+</div>
 </div>
 
 <div class='samarbeidspartnere'>
+<h1> Samarbeidspartnere </h1>
 	<?php echo do_shortcode('[sponsors description=yes title=yes]')?>
 </div>
 

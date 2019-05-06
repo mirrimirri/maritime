@@ -10,6 +10,7 @@
 	  
 	 wp_enqueue_style( 'header', get_template_directory_uri() . '/style/header.css' );
 	 wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css' );
+	
 
 	 
 	 if(is_front_page()){

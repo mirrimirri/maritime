@@ -51,20 +51,18 @@ body p{
 	 
 
 .post{
-	display: flex;
+/*	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
 	align-items: flex-end;
-	justify-content:space-evenly;
+	justify-content:space-evenly;*/
+	text-align: center;
 	background-color: white;
 	margin: 0,5em;
 	padding-bottom: 3em;
 	color: #1e1e1e;
 }
 
-.postDiv{
-	flex: initial;
-}
 
 .postTitle {
   flex: 0 0 100%; /* fg: 0, fs: 0, fb: 100% */
@@ -72,7 +70,7 @@ body p{
 
 .wp-block-image figure:after{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: flex-end;
 	justify-content: space-evenly;
@@ -82,30 +80,33 @@ body p{
 .wp-block-image img{
 
 	max-width: 100%;
+	padding:3rem;
 }
 
-.post p{
+.post p,.postExcerpt p{
 	margin-left:8%;
 	margin-right:8%;
 	font-size:110%;
 
 }
 
-.post:after {
-	content: ""; /* This is necessary for the pseudo element to work. */ 
-	display: block; /* This will put the pseudo element on its own line. */
-	margin: 0 auto; /* This will center the border. */
-	width: 80%; /* Change this to whatever width you want. */
-	padding-top: 20px; /* This creates some space between the element and the border. */
-	border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
-	border-color: #667299;
+.post:after,.postExcerpt::after{
+	content: "\f13d     \f13d     \f13d";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: FontAwesome;
+	font-size: 30px;
+	color:#eee;
+	margin: 2vh;
 }
 	
 
 .hoved h1{
 	text-align:center;
 	font-family: 'Quattrocento', serif;
-	margin: 0,1em 0,5em 0,1em 0,5em;
+	margin: 4vw 0;
+	font-size: 250%;
 
 }
 
@@ -144,5 +145,72 @@ body p{
      display:flex;
 	 background-color: white;
 }
+
+/*.hoved p::after{
+	content: "\f13d"
+	font-family:FontAwesome;
+}
+*/
+
+
+
+.sitat {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid black;
+  font-family: 'Montserrat', serif;
+  font-style: italic;
+  font-weight: 100;
+  
+}
+.sitat::before {
+  content: '\f10d';
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  color: black;
+}
+.sitat::after {
+  content: '\f10e';
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  color: black;
+}
+
+.post .paragraf::after {
+  content: "\f13d";
+  display: block;
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 30px;
+  font-style: unset;
+  color:#eee;
+  margin: 2vh;
+
+}
+
+
+.visMer .paragraf, .visMindre .paragraf{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	margin: 0 0 2vw 0;
+}
+
+
+
+
+.visMer p,.visMindre p{
+	display: block;
+	text-align: center;
+	font-weight: 800; 
+	text-decoration: underline;
+}
+
+.visMer p:hover,.visMindre p:hover{
+	cursor:pointer;
+	color: maroon;
+}
+
 
 

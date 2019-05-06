@@ -3,9 +3,7 @@ body{
 
   margin: 0px; 
 }
-<<<<<<< HEAD
 
-=======
 
   .minprofil {
 	  background-color:#DADDE2;
@@ -18,6 +16,7 @@ body{
 .login{
 	display:flex;
 justify-content: space-between;
+flex-direction: column;
 	
 }
 
@@ -29,7 +28,7 @@ justify-content: space-between;
 
 .bruker {
 display: flex;
-direction:row ;
+direction:column ;
 justify-content:space-between;
 flex-wrap:wrap;
 }
@@ -88,7 +87,7 @@ input[type=text], input[type=email],input[type=number],input[type=password], sel
   resize: vertical;
   }
 
->>>>>>> master
+
 
   /* Change WC Acct Page Column Widths */
 @media only screen and (min-width: 769px) {

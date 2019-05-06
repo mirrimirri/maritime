@@ -5,13 +5,6 @@
 } 
 
 
-.woocommerce img{
-   max-width: 30vw;
-   height: auto;
-   display: block;
-   margin: 0 auto; 
-   
-}
 .related {
  display: none;
 }

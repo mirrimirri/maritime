@@ -37,9 +37,9 @@ if ( in_array( 'author', (array) $user->roles ) )
 
 //kode for å vise filliste for admin, må endre if-statement
 $user = wp_get_current_user();
-if ( in_array( 'admin', (array) $user->roles ) ) {
-    //The user has the "author" role
-}
+if ( in_array( 'admin', (array) $user->roles ) ) 
+
+
 {
 	echo do_shortcode('[MMFileList folder="../../admin/" <ul class=”mmm-list”> /]');
 

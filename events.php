@@ -27,14 +27,19 @@ echo do_shortcode('[MMFileList folder="../../public/" <ul class=”mmm-list”> 
 
 
 //kode for å vise filliste som er tilgjengelig for registrerte brukere, må endre if-statement
-if($_SESSION['loggetinn']==true)
+$user = wp_get_current_user();
+if ( in_array( 'author', (array) $user->roles ) ) 
+
 {
 	echo do_shortcode('[MMFileList folder="../../members/" <ul class=”mmm-list”> /]');
 
 }
 
 //kode for å vise filliste for admin, må endre if-statement
-if($_SESSION['loggetinn']==true)
+$user = wp_get_current_user();
+if ( in_array( 'admin', (array) $user->roles ) ) {
+    //The user has the "author" role
+}
 {
 	echo do_shortcode('[MMFileList folder="../../admin/" <ul class=”mmm-list”> /]');
 

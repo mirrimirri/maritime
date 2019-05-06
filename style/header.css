@@ -192,11 +192,13 @@ p.{
   
 
   .menu.visible {
-     display: block;   
+     display: block; 
+     z-index: 1000;  
   }
 
   .menu.visible a{
-    color: black;   
+    color: black;
+    z-index: 1001;   
   }
 
   .menu a{

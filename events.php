@@ -37,7 +37,8 @@ if ( in_array( 'author', (array) $user->roles ) )
 
 //kode for å vise filliste for admin, må endre if-statement
 $user = wp_get_current_user();
-if ( in_array( 'admin', (array) $user->roles ) ) 
+
+if ( in_array( 'administrator', (array) $user->roles ) ) 
 
 
 {

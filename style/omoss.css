@@ -43,16 +43,8 @@ body p{
 
 /* main column*/
 .hoved{
-	flex: 55%;
-	background-color: white;
-	font-family: 'Quattrocento Sans', sans-serif;
-	height:1%;
-	display:flex;
-	flex-direction:column ;
 	margin: 1vw 12vw 1vw 12vw;
-	font-size:150%;
-	background-color: #f4f9ff;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	padding: 0em 2em 2em 2em;
 	display: flex;
 	flex-direction: column;
@@ -176,7 +168,7 @@ body p{
 	margin: 1vw 12vw 1vw 12vw;
 	font-size:150%;
 	background-color: #f4f9ff;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	padding: 0em 2em 2em 2em;
 	display: flex;
 	flex-direction: column;
@@ -201,7 +193,7 @@ input{
 	margin: 1vw 12vw 1vw 12vw;
 	font-size:150%;
 	background-color: #f4f9ff;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	padding: 0em 2em 2em 2em;
 	display: flex;
 	flex-direction: column;

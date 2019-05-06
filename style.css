@@ -80,6 +80,7 @@ body p{
 .wp-block-image img{
 
 	max-width: 100%;
+	padding:3rem;
 }
 
 .post p,.postExcerpt p{
@@ -187,32 +188,29 @@ body p{
 
 }
 
-#visMer,#visMindre{
-	display: flex;
-}
 
-#visMer .paragraf, #visMindre .paragraf{
+.visMer .paragraf, .visMindre .paragraf{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: auto;
 	margin: 0 0 2vw 0;
 }
 
 
 
 
-#visMer p,#visMindre p{
+.visMer p,.visMindre p{
 	display: block;
 	text-align: center;
 	font-weight: 800; 
 	text-decoration: underline;
 }
 
-#visMer p:hover,#visMindre p:hover{
+.visMer p:hover,.visMindre p:hover{
 	cursor:pointer;
-	font-weight: 800; 
-	text-decoration: underline;
-	background: gray;
-	color: white;
+	color: maroon;
 }
+
+
 

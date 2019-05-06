@@ -9,17 +9,17 @@
 
 	<div class='hoved'>
 	<?php if(have_posts()) : while(have_posts()): the_post();?>
-	<div class='postExcerpt' id="post-<?php the_ID(); ?>" >
+	<div class='postExcerpt' id="postExcerpt-<?php the_ID(); ?>" >
 	<div class="postTitle"><h1><?php the_title();?></h1></div>
 		<?php the_excerpt(); ?>
-		<div id="visMer"><p>Vis Mer</p></div>
+		<div class="visMer" id="<?php the_ID()?>"><p>Vis Mer</p></div>
 		
 	</div>
 	<div class='post' id="post-<?php the_ID(); ?>">
 	<div class="postTitle"><h1><?php the_title();?></h1></div>
 	
 	<?php the_content();?>
-	<div id="visMindre"><p>Vis Mindre</p></div>
+	<div class="visMindre" id="<?php the_ID()?>"><p>Vis Mindre</p></div>
 
 		</div>
 	<?php endwhile; endif;?>

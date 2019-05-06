@@ -15,12 +15,19 @@ $("p").wrap("<div class='paragraf'></div>");
 
 $(".post").hide();
 
-$( "#visMer" ).click(function() {
-  $( ".post" ).toggle("slow");
-  $(".postExcerpt").toggle();
+$( ".visMer" ).click(function(visMer) {
+	var id = $(this).attr('id');
+	var post = 'post-'+id;
+	var postExcerpt = 'postExcerpt-'+id;
+  $("#"+post).toggle("slow");
+  $("#"+postExcerpt).toggle();
 });
 
-$( "#visMindre" ).click(function() {
-  $( ".post" ).toggle("slow");
-  $(".postExcerpt").toggle();
+$( ".visMindre" ).click(function(visMindre) {
+	var id = $(this).attr('id');
+	var post = 'post-'+id;
+	var postExcerpt = 'postExcerpt-'+id;
+  $("#"+post).toggle("slow");
+  $("#"+postExcerpt).toggle();
 });
+

@@ -10,6 +10,7 @@
 	  
 	 wp_enqueue_style( 'header', get_template_directory_uri() . '/style/header.css' );
 	 wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css' );
+	 wp_enqueue_style( 'enkelevent', get_template_directory_uri() . '/style/enkelevent.css' );
 	
 
 	 
@@ -182,6 +183,17 @@ function remove_admin_login_header() {
  
 
 
+
+//når man logger ut blir du sendt til hjemmesiden !!!!!!!!!!hvorfor funker dette ikke??
+
+add_action(‘wp_logout’,’go_home’);
+function go_home(){
+wp_redirect( home_url() );
+exit();
+}
+ 
+
+//sideattribut på sider
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
 ?>

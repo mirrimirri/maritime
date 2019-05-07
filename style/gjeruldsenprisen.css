@@ -2,6 +2,7 @@
 body{
 	background-color: white;
 	margin: 0px;
+	
 }
 
 .omgjeruldsen {
@@ -28,19 +29,8 @@ body{
 	float: left;
 	margin: 5%;
 }
-/* .gjeruldsenprisen{
-	display: flex;
-	flex-wrap: wrap;
-	flex:column;
-	float: right;
-	font-family:areal;
-	font-size:100%;
-	background-color: #7796CB;
-	border-radius: 24px;
-	margin-left: 20%;
-	margin-right: 20%; 
-	margin-top: 5%;
-} */
+
+
 
 .tc_team-members{
 	display:flex;

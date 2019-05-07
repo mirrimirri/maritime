@@ -68,6 +68,7 @@ p.{
     text-align: center;
     color: white;
     max-width: 100%;
+    padding: 1.5em;
 }
 
 .nav-container{
@@ -92,7 +93,8 @@ p.{
     display: block;
     color: white;
     text-align: center;
-    padding: 2vw 0.8vw;
+    margin-left: 0.5em;
+    padding: 1.5em;
     font-size: 1.5vw;
     text-decoration: none;
   }
@@ -112,7 +114,8 @@ p.{
   background-size: 3vw;
   width: 3vw;
   height: 3vw;
-  margin-top: 1vw;
+  padding: 1.5em;
+  margin-top: 1.5em;
 }
 
 #handlekurv:hover{
@@ -138,6 +141,7 @@ p.{
     width: var(--size-variable);
     height: var(--size-variable);
     margin-left: 4vw;
+    margin-top: 1em;
   }
 
   #handlekurv:hover{

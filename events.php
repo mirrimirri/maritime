@@ -5,7 +5,7 @@
 
 <div class='events'>
 	<h1> Kommende events</h1>
-<?php echo do_shortcode("[events_list]"); ?>
+<?php echo do_shortcode("[events]"); ?>
 </div>
 
 <?php 
@@ -39,9 +39,8 @@ if ( in_array( 'author', (array) $user->roles ) )
 $user = wp_get_current_user();
 
 if ( in_array( 'administrator', (array) $user->roles ) ) 
-
-
 {
+	echo "<h2>Administrator</h2>";
 	echo do_shortcode('[MMFileList folder="../../admin/" <ul class=”mmm-list”> /]');
 
 }

@@ -7,7 +7,7 @@
 <div class='omgjeruldsen'>
 	<img src ="http://www.trygvevalbo.com/wp-content/uploads/2019/03/Gunnar.jpg" width="460" height="345">
    <?php if(have_posts()) : while(have_posts()): the_post();?>
-	<div class='post'>
+	<div class='posts' style="display:block;">
 	<h1><?php the_title();?></h1>
 		<?php the_content();?>
 		</div>

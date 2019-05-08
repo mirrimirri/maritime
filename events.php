@@ -4,7 +4,10 @@
 <div class='mellom'>
 
 <div class='events'>
-<?php echo do_shortcode("[events]"); ?>
+
+	<h1> Kommende events</h1>
+<?php echo do_shortcode("[events_list]"); ?>
+
 </div>
 
 <?php 

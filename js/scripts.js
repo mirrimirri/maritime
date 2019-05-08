@@ -11,11 +11,16 @@ $(document).ready(function() {
 });
 
 
+
+
+
+
 $("p").wrap("<div class='paragraf'></div>");
 
 $(".mmm-warning").hide();
 
 $(".post").hide();
+
 
 
 $( ".visMer" ).click(function(visMer) {

@@ -1,6 +1,5 @@
 
 body{
-	background-color: white;
 	margin: 0px;
 }
 
@@ -9,9 +8,10 @@ body{
 	flex: column;
 	font-size:100%;
 	background-color: #F5F5F5;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
 	background-color: white;
 	margin: 1vw 6vw 1vw 6vw;
+	padding: 3vw;
 }
 
 .omgjeruldsen .post h1 {
@@ -26,7 +26,7 @@ body{
 
 .omgjeruldsen img {
 	float: left;
-	margin: 5%;
+	margin-right: 5%;
 }
 /* .gjeruldsenprisen{
 	display: flex;
@@ -70,14 +70,22 @@ body{
 	flex-wrap: wrap;
 	font-size:100%;
 	background-color: #F5F5F5;
-	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
 	background-color: white;
 	margin: 1vw 6vw 1vw 6vw;
 	flex-direction:column;
+	margin-bottom: 3vw;
+	padding: 3vw;
 }
 .tidligerevinnere h1{
 	font-size:200%;
 	text-align: center;
 	flex:1 0 100%;
 	
+}
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
+}
+p.{
+	font-family: 'Montserrat', sans-serif;
 }

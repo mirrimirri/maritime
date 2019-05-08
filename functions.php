@@ -186,11 +186,33 @@ function remove_admin_login_header() {
 
 //når man logger ut blir du sendt til hjemmesiden !!!!!!!!!!hvorfor funker dette ikke??
 
-add_action(‘wp_logout’,’go_home’);
-function go_home(){
-wp_redirect( home_url() );
-exit();
+//last inn themplate for single product
+
+function get_custom_post_type_template($single_template) {
+ global $post;
+
+ if ($post->post_type == 'product') {
+      $single_template = dirname( __FILE__ ) . '/single-template.php';
+ }
+ return $single_template;
 }
+add_filter( 'single_template', 'get_custom_post_type_template' );
+
+
+add_filter( 'template_include', 'portfolio_page_template', 99 );
+
+function portfolio_page_template( $template ) {
+
+    if ( is_page( 'slug' )  ) {
+        $new_template = locate_template( array( 'single-template.php' ) );
+        if ( '' != $new_template ) {
+            return $new_template ;
+        }
+    }
+
+    return $template;
+}
+
  
 
 //sideattribut på sider

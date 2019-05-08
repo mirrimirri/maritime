@@ -23,7 +23,7 @@ Kan lages med plugin: Media Library Folders for WordPress
 echo" <div class='filopplasting'>";
 echo"<h2> Filnedlastninger </h2>";
 //kode for å vise fram fillisten som er tilgjengelig for alle
-echo do_shortcode('[MMFileList folder="../../public/" <ul class=”mmm-list”> /]');
+echo do_shortcode('[MMFileList folder="../../public/" <ul class=”mmm-list”>/]');
 
 
 //kode for å vise filliste som er tilgjengelig for registrerte brukere, må endre if-statement

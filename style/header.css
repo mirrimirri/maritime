@@ -38,6 +38,11 @@ p.{
      z-index: -4;
 }
 
+.home,.blog,.locale-en-us,.woocommerce-js,.maritime{
+  position: relative;
+  z-index: -1;
+}
+
 .header-image img{
     display: block;
     width: 100%;

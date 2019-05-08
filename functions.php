@@ -186,11 +186,7 @@ function remove_admin_login_header() {
 
 //når man logger ut blir du sendt til hjemmesiden !!!!!!!!!!hvorfor funker dette ikke??
 
-add_action(‘wp_logout’,’go_home’);
-function go_home(){
-wp_redirect( home_url() );
-exit();
-}
+
  
 
 //sideattribut på sider

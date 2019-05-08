@@ -14,7 +14,6 @@
  * @package WooCommerce/Templates
  * @version 3.6.0
  */
- get_header();
 defined( 'ABSPATH' ) || exit;
 global $product;
 /**

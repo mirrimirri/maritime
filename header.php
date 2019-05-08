@@ -33,10 +33,9 @@
 		{
 			echo the_post_thumbnail();
 		}
-		else
-		{
+		
 		echo get_header_image_tag(); 
-		}
+		
 	
 
 	?>

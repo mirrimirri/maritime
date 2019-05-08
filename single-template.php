@@ -14,12 +14,12 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
- get_header();
+ 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 get_header( 'shop' ); ?>
-test ost
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.

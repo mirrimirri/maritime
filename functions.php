@@ -187,31 +187,42 @@ function remove_admin_login_header() {
 //når man logger ut blir du sendt til hjemmesiden !!!!!!!!!!hvorfor funker dette ikke??
 
 //last inn themplate for single product
+function bizroot_check_custom_header_status( $input ) {
 
-function get_custom_post_type_template($single_template) {
- global $post;
+		global $post;
 
- if ($post->post_type == 'product') {
-      $single_template = dirname( __FILE__ ) . '/single-template.php';
- }
- return $single_template;
-}
-add_filter( 'single_template', 'get_custom_post_type_template' );
+		// Slider status.
+		$featured_slider_status = bizroot_get_option( 'featured_slider_status' );
 
+		if ( is_front_page() && 'posts' === get_option( 'show_on_front' ) ) {
+			$input = true;
+		}
+		else if ( is_front_page() && 'page' === get_option( 'show_on_front' ) && 'home-page' == $featured_slider_status ) {
+			$input = false;
+		}
 
-add_filter( 'template_include', 'portfolio_page_template', 99 );
+		else if ( is_home() && ( $blog_page_id = bizroot_get_index_page_id( 'blog' ) ) > 0 ) {
+			$values = get_post_meta( $blog_page_id, 'bizroot_theme_settings', true );
+			$disable_banner_area = isset( $values['disable_banner_area'] ) ? absint( $values['disable_banner_area'] ) : 0;
+			if ( 1 === $disable_banner_area ) {
+				$input = false;
+			}
+		}
+		else if ( $post ) {
+			if ( is_singular() ) {
+				$values = get_post_meta( $post->ID, 'bizroot_theme_settings', true );
+				$disable_banner_area = isset( $values['disable_banner_area'] ) ? absint( $values['disable_banner_area'] ) : 0;
+				if ( 1 === $disable_banner_area ) {
+					$input = false;
+				}
+			}
+		}
 
-function portfolio_page_template( $template ) {
+		else{$input = true;}
 
-    if ( is_page( 'slug' )  ) {
-        $new_template = locate_template( array( 'single-template.php' ) );
-        if ( '' != $new_template ) {
-            return $new_template ;
-        }
-    }
+		return $input;
 
-    return $template;
-}
+	}
 
  
 

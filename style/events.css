@@ -1,16 +1,22 @@
 ﻿
  body{
 
-	margin: 0px; 
+	margin: 0px;
+	z-index: -2;
+
 }
  .mellom{
 
 	margin: 0vw 6vw;
+	font-family: 'Montserrat', sans-serif;
     background-color: #efefef;	
     display: flex;
     flex-wrap:wrap;
     flex-direction:row;
+    position: relative;
+    z-index: -1
 }
+
 
 .events{
     flex: 55%;
@@ -47,6 +53,7 @@
 	 
 }
  .filopplasting h2{
+ 	font-family: 'Quattrocento', serif;
 	 text-align: center;
 	 
  }
@@ -57,3 +64,20 @@
 h1{
 	text-align: center;
 }
+
+ul.mmm-list{
+	position: relative;
+	z-index: 10;
+}
+
+
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
+}
+
+.page-template, .page-template-events, .page-template-events-php, .page, .page-id-56, .locale-en-us, .woocommerce-js, .maritime{
+	position: relative;
+	z-index: -1;
+}
+
+

@@ -57,7 +57,7 @@
 	    else
 	    {
 	    	echo $page_title;
-	    }
+		}
 
 		?>
 

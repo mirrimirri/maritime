@@ -132,6 +132,15 @@ p.{
 
 #ajaxsearchlite1{
   z-index: -1;
+  transform: translateY(10%);
+  margin-right: 2vw;
+}
+
+img[alt="Norwegian"],img[alt="English"]{
+  width:5vw;
+  height: auto;
+  margin-left: 2vw; 
+  transform: translateY(60%);
 }
 
 @media only screen and (min-width: 600px)
@@ -168,9 +177,9 @@ p.{
   background-repeat: no-repeat; 
   width: var(--size-variable-kurv);
   height: var(--size-variable-kurv);
-  padding: 1.5em;
-  margin-top: 1.5em;
+  padding: 0 1vw;
   margin-right: 0.5vw;
+  transform: translateY(50%);
 }
 
 #handlekurv:hover{
@@ -191,6 +200,9 @@ p.{
     --size-variable:7vw;    
   }
 
+  #ajaxsearchlite1{
+    transform: translateY(-15%);
+  }
 
   #handlekurv{
     background-image: url(../bilder/ikoner/handlevognhvit.png);
@@ -198,7 +210,7 @@ p.{
     width: var(--size-variable);
     height: var(--size-variable);
     margin-left: 4vw;
-    margin-top: 1em;
+    transform: translateY(0%);
   }
 
   #handlekurv:hover{

@@ -2,11 +2,7 @@
 <?php /*Template Name: gjeruldsenprisen */?>
 <?php get_header();?>
 
-<html>
-  <head>
-    <link rel="stylesheet" href="gjeruldsenprisen.css">
-  </head>
-</html>
+
 
 <div class='omgjeruldsen'>
 	<img src ="http://www.trygvevalbo.com/wp-content/uploads/2019/03/Gunnar.jpg" width="460" height="345">
@@ -24,7 +20,7 @@
 
 
 <div class="gjeruldsen">
-    <!-- <img src="../bilder/Nordbyen.jpg" width="460" height="345"> -->
+   
 </div>
 
 

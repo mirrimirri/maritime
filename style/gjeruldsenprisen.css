@@ -3,9 +3,6 @@ body{
 	background-color: white;
 	margin: 0px;
 }
-.posts{
-	display:block !important;
-	}
 
 .omgjeruldsen {
 	display:flex;
@@ -17,12 +14,12 @@ body{
 	margin: 1vw 6vw 1vw 6vw;
 }
 
-.omgjeruldsen .posts h1 {
+.omgjeruldsen .post h1 {
 	font-size:150%;
 	margin-top: 10%;
 }
 
-.omgjeruldsen .posts p{
+.omgjeruldsen .post p{
 	float: right;
 	margin-right: 5%;
 }
@@ -64,3 +61,23 @@ body{
     background-repeat:   no-repeat;
     background-size:     cover;
 }*/
+
+
+.tidligerevinnere{
+	display:flex;
+	flex: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size:100%;
+	background-color: #F5F5F5;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	background-color: white;
+	margin: 1vw 6vw 1vw 6vw;
+	flex-direction:column;
+}
+.tidligerevinnere h1{
+	font-size:200%;
+	text-align: center;
+	flex:1 0 100%;
+	
+}

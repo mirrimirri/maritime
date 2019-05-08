@@ -29,15 +29,20 @@
 	<?php 
 	
 
-		if(has_post_thumbnail())
+		if(!is_front_page())
 		{
-			echo the_post_thumbnail();
+			if(has_post_thumbnail())
+			{
+				echo the_post_thumbnail();
+			 
+			}
+			else
+			{
+			echo get_header_image_tag(); 
+			}
+		}else{
+			echo get_header_image_tag();
 		}
-		else
-		{
-		echo get_header_image_tag(); 
-		}
-	
 
 	?>
 	<div class="image-gradient"></div>
@@ -66,6 +71,7 @@
 
 	<div class="nav-container">	
 			<nav class="main-nav" id="menu-icon">
+
 			<?php 
 				$args= array('theme_location'=>'primary');
 			 	wp_nav_menu($args);

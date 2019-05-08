@@ -9,6 +9,7 @@
 .post {
   width: 70%;
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 	
 }
@@ -53,7 +54,7 @@ body p{
 	background-color: white;
 	color: #1e1e1e;
 	flex: 100%;
-	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size:100%;
 	height:1%;
 }
@@ -135,6 +136,7 @@ body p{
 	color: black;
 	margin-left:1em;
 	margin-right: 1em;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .hoved h1:after {
@@ -155,7 +157,6 @@ body p{
 	margin: 0,5em;
 	color: #1e1e1e;
 	flex: 100%;
-	font-family: 'Quattrocento Sans', sans-serif;
 	font-size:100%;
 	height:1%;
 
@@ -178,9 +179,9 @@ body p{
 	padding-bottom: 3em;
 	color: #1e1e1e;
 	flex: 100%;
-	font-family: 'Quattrocento Sans', sans-serif;
 	font-size:100%;
 	height:1%;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -203,11 +204,13 @@ input{
 	padding-bottom: 3em;
 	color: #1e1e1e;
 	flex: 100%;
-	font-family: 'Quattrocento Sans', sans-serif;
 	font-size:100%;
 	height:1%;
 	
 }
 h1 {
 	text-align:center;
+}
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
 }

@@ -152,5 +152,7 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
 a {
 	color:black;
 }
-
+.minside{
+	font-family: 'Montserrat', sans-serif;
+}
   

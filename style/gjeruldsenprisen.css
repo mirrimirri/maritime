@@ -3,6 +3,9 @@ body{
 	background-color: white;
 	margin: 0px;
 }
+.posts{
+	display:block !important;
+	}
 
 .omgjeruldsen {
 	display:flex;
@@ -14,12 +17,12 @@ body{
 	margin: 1vw 6vw 1vw 6vw;
 }
 
-.omgjeruldsen .post h1 {
+.omgjeruldsen .posts h1 {
 	font-size:150%;
 	margin-top: 10%;
 }
 
-.omgjeruldsen .post p{
+.omgjeruldsen .posts p{
 	float: right;
 	margin-right: 5%;
 }

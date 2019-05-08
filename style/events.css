@@ -33,9 +33,10 @@
 	flex-wrap:wrap;
 	align-content: center;
 	justify-content:space-evenly;
-	padding-bottom: 3em;
+	padding: 2vw;
 	color: #1e1e1e;
 	width: 100%;
+	margin-bottom:3vw;
 }
 
 
@@ -49,6 +50,7 @@
      height: auto;
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	 padding: 0vw 2vw;
+	 margin-bottom:3vw;
 	 
 	 
 }
@@ -80,4 +82,9 @@ h1,h2,h3{
 	z-index: -1;
 }
 
-
+.search_events{
+	display:none;
+}
+.col-md-4{
+	display:none;
+}

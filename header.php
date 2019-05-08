@@ -40,6 +40,7 @@
 	
 
 	?>
+	<div class="image-gradient"></div>
 
 	<div class="header-image-text">
 
@@ -63,21 +64,21 @@
 
 	</div>
 
-<div class="nav-container">	
-		<nav class="main-nav" id="menu-icon">
-		<?php 
-			$args= array('theme_location'=>'primary');
-		 	wp_nav_menu($args);
-		 ?>
-		</nav>
-		
-		<div class='hoyrenav'>
-<a href='http://localhost/wordpress/handlekurv/'><div id="handlekurv"></div></a>
-<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-		</div>
-		
+	<div class="nav-container">	
+			<nav class="main-nav" id="menu-icon">
+			<?php 
+				$args= array('theme_location'=>'primary');
+			 	wp_nav_menu($args);
+			 ?>
+			</nav>
+			
+			<div class='hoyrenav'>
+	<a href='http://localhost/wordpress/handlekurv/'><div id="handlekurv"></div></a>
+	<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+			</div>
+			
 
-</div>
+	</div>
 </div>
 
 

@@ -18,6 +18,35 @@
 }
 
 
+
+.events-table{
+	
+	 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+    margin-left:1vw;
+  margin-right:1vw;
+  margin-bottom:1vw;
+  margin-top:1vw;
+}
+
+.events-table td, .events-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}	
+
+.events-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.events-table tr:hover {background-color: #ddd;}	
+
+.events-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  color: black;
+}
+
+
 .events{
     flex: 55%;
     background-color: white;
@@ -26,12 +55,10 @@
     margin: 1.5vw;
     height:1%; 
 	display: flex;
-	flex-direction: row;
     height:1%;
     display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
-	align-content: center;
 	justify-content:space-evenly;
 	padding-bottom: 3em;
 	color: #1e1e1e;

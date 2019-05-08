@@ -274,8 +274,10 @@ img[alt="Norwegian"],img[alt="English"]{
   
 
   .menu.visible {
+
      display: block;
      position: relative; 
+
      z-index: 1000;  
   }
 

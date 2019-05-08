@@ -12,62 +12,33 @@
     flex-direction:row;
 }
 
-.search_events{
-	display:none;
-}
 
-.event-listings-view-header{
-	display:none;
-}
-
-}
-.event-listings-table-bordered{
-	border:none;
-}
-
-.row{
+.events-table{
 	
-	
-	
-	
+	 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+    margin-left:1vw;
+  margin-right:1vw;
+  margin-bottom:1vw;
+  margin-top:1vw;
 }
 
-.col-md-4{
-	
-}
+.events-table td, .events-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}	
 
-.organizer-logo{
-	all: unset;
-	width:100px;
-	height:100px;
-	flex:100%;	        
-}
+.events-table tr:nth-child(even){background-color: #f2f2f2;}
 
+.events-table tr:hover {background-color: #ddd;}	
 
-.event-title{
-	font-size:4vw;
+.events-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  color: black;
 }
-
-.organizer-logo img{
-	width:200px;
-	height:200px;
-	
-}
-
-.event-ticket{
-	display:none;
-}
-.event-location{
-	display:none;
-}
-
-.event-info-row-listing a {
-	all:unset;
-	display: flex;
-	} 
-	
-	
-	
 
 .events{
     flex: 55%;

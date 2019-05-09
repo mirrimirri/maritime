@@ -12,6 +12,7 @@
 	<div class='postExcerpt' id="postExcerpt-<?php the_ID(); ?>" >
 	<div class="postTitle"><h1><?php the_title();?></h1></div>
 		<?php the_excerpt(); ?>
+		<?php echo the_post_thumbnail(); ?>
 		<div class="visMer" id="<?php the_ID()?>"><p>Vis Mer</p></div>
 		
 	</div>

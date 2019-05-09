@@ -186,6 +186,7 @@ function remove_admin_login_header() {
 
 //når man logger ut blir du sendt til hjemmesiden !!!!!!!!!!hvorfor funker dette ikke??
 
+
 //last inn themplate for single product
 function bizroot_check_custom_header_status( $input ) {
 
@@ -223,6 +224,7 @@ function bizroot_check_custom_header_status( $input ) {
 		return $input;
 
 	}
+
 
  
 

@@ -29,7 +29,7 @@
 	<?php 
 	
 
-		if(!is_front_page())
+/*		if(!is_front_page())
 		{
 			if(has_post_thumbnail())
 			{
@@ -43,6 +43,12 @@
 		}else{
 			echo get_header_image_tag();
 		}
+*/ //se videre om de fungerer
+		
+		echo get_header_image_tag(); 
+		
+	
+
 
 	?>
 	<div class="image-gradient"></div>

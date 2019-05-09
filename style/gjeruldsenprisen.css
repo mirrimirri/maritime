@@ -14,7 +14,8 @@ body{
 	margin: 1vw 6vw 1vw 6vw;
 	padding: 3vw;
 	flex-wrap:wrap;
-}
+	font-family: 'Montserrat', sans-serif;
+
 
  h1 {
 	font-size:150%;
@@ -85,6 +86,7 @@ body{
 	flex-direction:column;
 	margin-bottom: 3vw;
 	padding: 3vw;
+	font-family: 'Montserrat', sans-serif;
 }
 .tidligerevinnere h1{
 	font-size:200%;

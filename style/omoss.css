@@ -98,7 +98,8 @@ body p{
 
 .sponsor-item {
 	display:flex;
-	flex-direction:column ;
+	flex-wrap:wrap;
+	flex-direction:row;
 	font-size:150%;
 	background-color:#f4f9ff;
 	padding: 1em 1em 1em 1em;

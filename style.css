@@ -205,8 +205,10 @@ body p{
 	text-align: center;
 	font-weight: 800; 
 	text-decoration: underline;
+
 	-webkit-transition: font-size 0.05s; /* Safari */
 	transition: font-size 0.05s;
+
 }
 
 .visMer p:hover,.visMindre p:hover{
@@ -214,9 +216,11 @@ body p{
 	color: maroon;
 }
 
+
 .visMer p:active,.visMindre p:active{
 	cursor:pointer;
 	color: maroon;
 	font-size: 90%
 }
+
 

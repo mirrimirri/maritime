@@ -21,17 +21,27 @@
  <?php 
 
 		$args = array(
-		    'post_type'=> 'tcmembers',    
+		    'post_type'=> 'tcmembers',  
 		    'order'    => 'ASC'
 		 );              
 
 		$the_query = new WP_Query( $args );
 
 		if($the_query->have_posts() ) {	 
-			 while ( $the_query->have_posts() ) {	 
-			 	$the_query->the_post();
-			 	echo do_shortcode('[tc-team-members teamid="'.get_the_ID().'"]');	 	
-			 }
+				 while ( $the_query->have_posts() ) {
+
+				 	$the_query->the_post();
+				 	$post = get_post($post_id);
+					$title = $post->post_title;
+					if (strstr($title,'Team')) {
+						echo "<h1 class='team-overskrift'>".$title."</h1>";
+					 	echo do_shortcode('[tc-team-members teamid="'.get_the_ID().'"]');	 	
+
+						
+					}
+
+			 	}
+
 
 		}
 		wp_reset_postdata();

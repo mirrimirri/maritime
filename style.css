@@ -137,6 +137,11 @@ body p{
 	margin: 0,1em 0,5em 0,1em 0,5em;
 
 }
+.sok{
+	display: flex;
+	max-width:100%;
+	
+}
 
  #simple-facebook-widget {
      width:120%;
@@ -222,5 +227,7 @@ body p{
 	color: maroon;
 	font-size: 90%
 }
+
+
 
 

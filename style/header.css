@@ -16,6 +16,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+	
+}
+.screen-reader-text {
+	width:unset;
+	position:unset;
 }
 
 body{

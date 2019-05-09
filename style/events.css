@@ -29,6 +29,7 @@
   margin-top:1vw;
 }
 
+
 .events-table td, .events-table th {
   border: 1px solid #ddd;
   padding: 8px;
@@ -42,8 +43,8 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #ddd;
-  color: black;
+  background-color: #1d4687;
+  color: white;
 }
 
 
@@ -99,6 +100,11 @@ ul.mmm-list{
 
 h1,h2,h3{
 	font-family: 'Quattrocento', serif;
+	text-align: center;
+}
+.event-description{
+	background-color: #1d4687;
+	color: white;
 }
 
 .page-template, .page-template-events, .page-template-events-php, .page, .page-id-56, .locale-en-us, .woocommerce-js, .maritime{
@@ -212,4 +218,6 @@ h1,h2,h3{
 		margin-left:0.5vw;
 	}
 
-
+.css-events-list table.events-table td{
+	padding: 2vw;
+}

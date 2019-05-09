@@ -3,6 +3,9 @@
 	margin: 0px; 
 
 } 
+.woocommerce img, .woocommerce-page img{
+	    max-width: 100%;
+}
 
 
 .related {
@@ -42,6 +45,8 @@ body p{
 	padding: 2vw;
 	color: #1e1e1e;
 	font-family: 'Roboto Condensed', Sans-serif;
+	  align-items:baseline;
+	  max-height: 100%;
 	
 }
 h1{
@@ -53,7 +58,29 @@ font-family: 'Quattrocento', serif;
 
 .boks{
 	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+	flex-direction: column;
 }
 
-
+/* hele greia*/
+.type-product{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
 	
+}
+
+.woocommerce-LoopProduct-link{
+	max-height: 1000px;
+	max-width: 1000px;
+}
+        
+
+/*tekst*/
+.woocommerce-loop-product__title{
+	align-items: baseline;
+}
+	/*pris*/
+.woocommerce-Price-amount amount{
+	
+}	
+

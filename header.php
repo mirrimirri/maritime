@@ -86,7 +86,6 @@
 			
 			<div class='hoyrenav'>
 	<a href='http://localhost/wordpress/handlekurv/'><div id="handlekurv"></div></a>
-	<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
 	<?php echo do_shortcode('[gtranslate]'); ?>
 			</div>
 			

@@ -12,6 +12,7 @@ body{
 	background-color: white;
 	margin: 1vw 6vw 1vw 6vw;
 	padding: 3vw;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .omgjeruldsen .post h1 {
@@ -76,6 +77,7 @@ body{
 	flex-direction:column;
 	margin-bottom: 3vw;
 	padding: 3vw;
+	font-family: 'Montserrat', sans-serif;
 }
 .tidligerevinnere h1{
 	font-size:200%;

@@ -143,10 +143,8 @@ p.{
 }
 
 img[alt="Norwegian"],img[alt="English"]{
-  width:5vw;
+  width:3vw;
   height: auto;
-  margin-left: 2vw; 
-  transform: translateY(60%);
 }
 
 
@@ -167,6 +165,9 @@ img[alt="Norwegian"],img[alt="English"]{
 
 .hoyrenav{
 	display: flex;
+	float:right;
+	  margin-right: 2vw; 
+
 }
 
 /* Change the link color to #111 (black) on hover */

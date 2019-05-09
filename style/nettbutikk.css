@@ -36,14 +36,23 @@ body p{
 	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	background-color: white;
 	margin: 0,5em;
 	padding: 2vw;
 	color: #1e1e1e;
-	font-family: 'Roboto Condensed', Sans-serif;
-	
+	font-family: 'Roboto Condensed', Sans-serif;	
 }
+
+div[class^="woocommerce"]{
+	width: 70%;
+	height: auto;
+}
+
+/* .woocoommerce columns-4{
+	
+} */
+
 h1{
 text-align: center;
 margin: 0,5vw;
@@ -53,7 +62,10 @@ font-family: 'Quattrocento', serif;
 
 .boks{
 	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+
 }
 
 
+
 	
+

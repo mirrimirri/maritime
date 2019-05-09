@@ -31,6 +31,9 @@
 	
 	
 <div class='hoyreside'>
+	<div class='sok'>
+	<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+	</div>
 <div class='facebook'>
 <h1>Nyheter fra oss<h1>
 <?php echo do_shortcode('[facebook-page href="https://www.facebook.com/USNMaritime/" tabs="timeline"  width="5000" height="500"]

@@ -124,7 +124,7 @@ body p{
      flex: 0%;
      flex-direction:column;
      background-color: white;
-     margin: 1em 1em 1em 1em;
+     margin: 1em 1em 1em 1.5em;
      width: 160%;
      height: auto;
 	 box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);

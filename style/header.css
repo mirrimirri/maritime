@@ -133,7 +133,6 @@ p.{
 }
 
 #ajaxsearchlite1{
-  z-index: -1;
   transform: translateY(10%);
   margin-right: 2vw;
 }

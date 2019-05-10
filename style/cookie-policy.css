@@ -18,3 +18,13 @@
 	padding: 0vw 3vw;
 	}
 	
+
+@media only screen and (max-width: 600px) {
+  .container{
+	   margin:unset;
+	   padding:4vw;
+	   
+		
+  }
+
+}

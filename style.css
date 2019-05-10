@@ -131,12 +131,25 @@ body p{
 	 padding: 0 0.7em 0.2em 0.7em;
 	
 }
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 600px) {
+  .hoved {
+	   margin:unset;
+	   margin-bottom: 4vw;
+		
+  }
   .hoyreside {
-    margin:unset
-    margin: 4vw 0;
-    width: 40%;
-    
+    margin:unset;
+
+}
+.sok{
+	margin-top: 3vw;
+	max-width: 100%;
+}
+#simple-facebook-widget{
+	display: block;
+	max-width:100%;
+
+}
 }
 
 .hoyreside h1{

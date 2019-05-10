@@ -215,3 +215,20 @@ h1 {
 h1,h2,h3{
 	font-family: 'Quattrocento', serif;
 }
+@media only screen and (max-width: 600px) {
+  .hoved{
+	   margin:unset;
+	   margin-bottom: 4vw;
+		
+  }
+  .samarbeidspartnere {
+    margin:unset;
+	margin-bottom: 4vw;
+}
+.kontaktoss{
+  margin:unset;
+}
+.post{
+	margin: 2vw;
+}
+}

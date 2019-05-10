@@ -118,3 +118,11 @@ margin: 0 1vw 0 1vw
 .visible a:hover{
   color: #ffdb58
 }
+
+@media only screen and (min-width: 600px)
+{
+  #menu-menu-2{
+    display: none;
+  }
+
+}

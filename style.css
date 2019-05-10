@@ -120,6 +120,7 @@ body p{
 }
 
  .hoyreside{
+	 display:flex;
      flex: 0%;
      flex-direction:column;
      background-color: white;
@@ -130,10 +131,18 @@ body p{
 	 padding: 0 0.7em 0.2em 0.7em;
 	
 }
+@media only screen and (max-width: 812px) {
+  .hoyreside {
+    margin:unset
+    margin: 4vw 0;
+    width: 40%;
+    
+}
 
 .hoyreside h1{
 	text-align:center;
 	font-family: 'Quattrocento', serif;
+	
 	margin: 0,1em 0,5em 0,1em 0,5em;
 
 }
@@ -144,6 +153,7 @@ body p{
 }
 
  #simple-facebook-widget {
+	 display: flex;
      width:120%;
 }
  .instagram{

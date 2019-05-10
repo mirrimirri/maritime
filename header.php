@@ -51,7 +51,13 @@
 
 
 	?>
-	<div class="image-gradient"></div>
+	<div class="image-gradient">
+	<div class='hoyrenav'>
+	<!--<a href='http://localhost/wordpress/handlekurv/'><div id="handlekurv"></div></a> stygg?-->
+	<?php echo do_shortcode('[gtranslate]'); ?>
+			</div>
+			
+	</div>
 
 	<div class="header-image-text">
 
@@ -84,13 +90,9 @@
 			 ?>
 			</nav>
 			
-			<div class='hoyrenav'>
-	<a href='http://localhost/wordpress/handlekurv/'><div id="handlekurv"></div></a>
-	<?php echo do_shortcode('[gtranslate]'); ?>
-			</div>
 			
-
-	</div>
+</div>
+	
 </div>
 
 

@@ -16,20 +16,8 @@
 	
 
 
-
-
-
-<div class="gjeruldsen">
-   
-</div>
-
-
-<div class='gjeruldsenprisen'>
- <?php echo do_shortcode('[tc-team-members teamid="69"]')?>
-</div>
-
 <div class='tidligerevinnere'>
- <h1> Tidligere vinnere </h1>
+ <h1> Vinnere </h1>
  <?php echo do_shortcode('[tmm name="tidligere-vinnere"]')?>
 </div>
 

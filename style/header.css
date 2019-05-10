@@ -144,7 +144,12 @@ img[alt="Norwegian"],img[alt="English"]{
   transform: translateY(60%);
 }
 
+.dropdown-menu{
+  display: block;
+  position: absolute;
+  z-index: 10000;
 
+}
 @media only screen and (min-width: 600px)
 {
 
@@ -202,9 +207,6 @@ img[alt="Norwegian"],img[alt="English"]{
     --size-variable:7vw;    
   }
 
-  #ajaxsearchlite1{
-    transform: translateY(-15%);
-  }
 
   #handlekurv{
     background-image: url(../bilder/ikoner/handlevognhvit.png);
@@ -234,6 +236,7 @@ img[alt="Norwegian"],img[alt="English"]{
   }
 
   .main-nav ul{
+    display: none;
     justify-content: unset;
     flex-wrap: wrap;
     overflow: initial;
@@ -259,7 +262,6 @@ img[alt="Norwegian"],img[alt="English"]{
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
   }
 
   .menu a {
@@ -268,15 +270,14 @@ img[alt="Norwegian"],img[alt="English"]{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    z-index: 999;
   }
 
   
 
   .menu.visible {
-
-     display: block;
-     position: relative; 
-
+    display: block;
+     position: relative;
      z-index: 1000;  
   }
 

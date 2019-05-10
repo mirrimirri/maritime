@@ -27,15 +27,21 @@ $( ".visMer" ).click(function(visMer) {
 	var id = $(this).attr('id');
 	var post = 'post-'+id;
 	var postExcerpt = 'postExcerpt-'+id;
-  $("#"+post).toggle("slow");
-  $("#"+postExcerpt).toggle();
+  $("#"+post).slideToggle();
+  $("#"+postExcerpt).toggle('fast');
 });
 
 $( ".visMindre" ).click(function(visMindre) {
 	var id = $(this).attr('id');
 	var post = 'post-'+id;
 	var postExcerpt = 'postExcerpt-'+id;
-  $("#"+post).toggle("slow");
-  $("#"+postExcerpt).toggle();
+  $("#"+post).slideToggle();
+  $("#"+postExcerpt).toggle('fast');
+});
+
+$(".dropdown-menu").hide();
+
+$(".main-nav")click(function(){
+	$(".dropdown-menu").toggle();
 });
 

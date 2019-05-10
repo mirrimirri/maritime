@@ -109,107 +109,38 @@ h1,h2,h3{
 
 /*Definerer et ikon bak hver fil i lista*/
 
-	.mmm-list a[href$=txt]::after{
-		content: '\f15c';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
+.mmm-list a[href$='.txt']::after,
+.mmm-list a[href$='.doc']::after,
+.mmm-list a[href$='.docx']::after,
+.mmm-list a[href$='.pdf']::after,
+.mmm-list a[href$='.odt']::after,
+.mmm-list a[href$='.rtf']::after
+{
+    content: '\f15c';
+    font-family:FontAwesome;
+    width: 1vw;
+    margin-left:0.5vw;
+}
 
-	.mmm-list a[href$=doc]::after{
-		content: '\f15c';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
+.mmm-list a[href$='.PNG']::after,
+.mmm-list a[href$='.png']::after,
+.mmm-list a[href$='.jpgx']::after,
+.mmm-list a[href$='.jpeg']::after,
+.mmm-list a[href$='.gif']::after
+{
+    content: '\f1c5';
+    font-family:FontAwesome;
+    width: 1vw;
+    margin-left:0.5vw;
+}
 
-	.mmm-list a[href$=docx]::after{
-		content: '\f15c';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-	.mmm-list a[href$=odt]::after{
-		content: '\f15c';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-	.mmm-list a[href$=rtf]::after{
-		content: '\f15c';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-
-
-	.mmm-list a[href$=pdf]::after
-	{
-		content: '\f1c1';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-
-	.mmm-list a[href$=png]::after{
-		content: '\f1c5';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-	.mmm-list a[href$=jpg]::after{
-		content: '\f1c5';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-	.mmm-list a[href$=jpeg]::after{
-		content: '\f1c5';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-	.mmm-list a[href$=gif]::after{
-		content: '\f1c5';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-
-	.mmm-list a[href$=xls]::after
-	{
-		content: '\f1c3';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-	.mmm-list a[href$=xml]::after
-	{
-		content: '\f1c3';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-	.mmm-list a[href$=ods]::after
-	{
-		content: '\f1c3';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-	.mmm-list a[href$=pxl]::after
-	{
-		content: '\f1c3';
-		font-family:FontAwesome;
-		width: 1vw;
-		margin-left:0.5vw;
-	}
-
-
+.mmm-list a[href$='.xls']::after,
+.mmm-list a[href$='.xml']::after,
+.mmm-list a[href$='.ods']::after,
+.mmm-list a[href$='.pxl']::after
+{
+	content: '\f1c3';
+	font-family:FontAwesome;
+	width: 1vw;
+	margin-left:0.5vw;
+}

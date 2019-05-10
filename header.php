@@ -94,7 +94,12 @@
 </div>
 
 
-		
+<div class="dropdown-menu">
+	<?php 
+				$args= array('theme_location'=>'primary');
+			 	wp_nav_menu($args);
+			 ?>
+</div>
 	
 	
 </header>

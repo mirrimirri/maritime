@@ -5,28 +5,37 @@ body{
 
 .omgjeruldsen {
 	display:flex;
-	flex: column;
+	flex:0%;
+	flex-direction: row;
 	font-size:100%;
 	background-color: #F5F5F5;
 	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
 	background-color: white;
 	margin: 1vw 6vw 1vw 6vw;
 	padding: 3vw;
+	flex-wrap:wrap;
 	font-family: 'Montserrat', sans-serif;
-}
 
-.omgjeruldsen .post h1 {
+
+ h1 {
 	font-size:150%;
 	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding:0px;
+	
 }
 
-.omgjeruldsen .post p{
-	float: right;
-	margin-right: 5%;
+		 .posts {
+			 flex:50%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding:0px;
 }
 
 .omgjeruldsen img {
-	float: left;
+	 flex:20%;
+	max-width: 40%;
 	margin-right: 5%;
 }
 /* .gjeruldsenprisen{

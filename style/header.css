@@ -16,6 +16,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+	
+}
+.screen-reader-text {
+	width:unset;
+	position:unset;
 }
 
 body{
@@ -138,10 +143,8 @@ p.{
 }
 
 img[alt="Norwegian"],img[alt="English"]{
-  width:5vw;
+  width:3vw;
   height: auto;
-  margin-left: 2vw; 
-  transform: translateY(60%);
 }
 
 
@@ -162,6 +165,9 @@ img[alt="Norwegian"],img[alt="English"]{
 
 .hoyrenav{
 	display: flex;
+	float:right;
+	  margin-right: 2vw; 
+
 }
 
 /* Change the link color to #111 (black) on hover */

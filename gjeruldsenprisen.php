@@ -16,7 +16,7 @@
 	
 
 
-<div class='tidligerevinnere'>
+<div class='vinnere'>
  <h1> Vinnere </h1>
  <?php echo do_shortcode('[tmm name="tidligere-vinnere"]')?>
 </div>

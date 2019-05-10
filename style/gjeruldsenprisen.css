@@ -73,7 +73,7 @@ body{
 }*/
 
 
-.tidligerevinnere{
+.vinnere{
 	display:flex;
 	flex: row;
 	justify-content: space-between;
@@ -88,7 +88,7 @@ body{
 	padding: 3vw;
 	font-family: 'Montserrat', sans-serif;
 }
-.tidligerevinnere h1{
+.Vinnere h1{
 	font-size:200%;
 	text-align: center;
 	flex:1 0 100%;

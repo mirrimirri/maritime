@@ -76,10 +76,13 @@ p.{
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(to bottom,black, rgba(255,0,0,0));
+  background: linear-gradient(to bottom,black, rgba(255, 255, 255, 0));
   width: 100vw;
   height:25vh;
 }
+
+
+
 
 .header-image-text {
     position: absolute;
@@ -136,6 +139,8 @@ p.{
   float: left;
   z-index: 9990;
 }
+
+
 
 #ajaxsearchlite1{
   transform: translateY(10%);
@@ -208,9 +213,6 @@ img[alt="Norwegian"],img[alt="English"]{
     --size-variable:7vw;    
   }
 
-  #ajaxsearchlite1{
-    transform: translateY(-15%);
-  }
 
   #handlekurv{
     background-image: url(../bilder/ikoner/handlevognhvit.png);
@@ -240,6 +242,7 @@ img[alt="Norwegian"],img[alt="English"]{
   }
 
   .main-nav ul{
+    display: none;
     justify-content: unset;
     flex-wrap: wrap;
     overflow: initial;
@@ -260,12 +263,10 @@ img[alt="Norwegian"],img[alt="English"]{
 
   .menu {
     display: none;
-    position: absolute;
     transform: translate(0, var(--size-variable));
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
   }
 
   .menu a {
@@ -274,15 +275,13 @@ img[alt="Norwegian"],img[alt="English"]{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    z-index: 999;
   }
 
   
 
   .menu.visible {
-
-     display: block;
-     position: relative; 
-
+    display: block;
      z-index: 1000;  
   }
 

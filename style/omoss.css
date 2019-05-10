@@ -13,20 +13,13 @@
 }
 	
 }
-.presentasjon{
-	display: flex;
-	flex-wrap: wrap;
-	flex:column;
-	font-size:150%;
 
-	
-}
 
 .tc_team-members{
 	display:flex;
 	flex-wrap:wrap;
     justify-content: center;
-
+	
 }
 
 body p{
@@ -96,18 +89,8 @@ body p{
 }
 
 
-.sponsor-item {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:row;
-	font-size:150%;
-	background-color:#f4f9ff;
-	padding: 1em 1em 1em 1em;
-}
-.sponsor-item h3{
-	font-size:150%;
-	text-align: center;
-	}
+
+
 
 .post p{
 	font-size:110%;
@@ -132,14 +115,23 @@ body p{
 	margin: 0,1em 0,5em 0,1em 0,5em;
 }
 
-.sponsor-item p{
-	text-decoration: none;
-	color: black;
-	margin-left:1em;
-	margin-right: 1em;
-	font-family: 'Montserrat', sans-serif;
+
+#wp-sponsors ul{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	
+	
 }
 
+
+#wp-sponsors img{
+width:250px;
+	height: 250px;
+}
 .hoved h1:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
@@ -150,17 +142,23 @@ body p{
 }
 
 .presentasjon{
+		display:flex;
+	margin: 1vw 12vw 1vw 12vw;
+	font-size:150%;
+	background-color: #f4f9ff;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	
 	display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
-	justify-content:space-between;
 	background-color: white;
-	margin: 0,5em;
+	padding-bottom: 3em;
 	color: #1e1e1e;
 	flex: 100%;
 	font-size:100%;
 	height:1%;
-
+	
+	
 }
 
 .kontaktoss{
@@ -186,29 +184,64 @@ body p{
 
 }
 
+.cpp_form{
+	font-color:white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
 input{
-	color: grey;
+	color:black;
+	font-size: 100%;
 }
 .samarbeidspartnere{
 	display:flex;
-	flex-direction:column ;
 	margin: 1vw 12vw 1vw 12vw;
 	font-size:150%;
 	background-color: #f4f9ff;
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	padding: 0em 2em 2em 2em;
-	display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
-	justify-content:space-between;
 	background-color: white;
 	padding-bottom: 3em;
 	color: #1e1e1e;
-	flex: 100%;
 	font-size:100%;
 	height:1%;
+	  justify-content: center;
 	
 }
+
+input{
+	background-color:#ccc;
+}
+
+textarea{
+	background-color:#ccc;
+}
+
 h1 {
 	text-align:center;
 }

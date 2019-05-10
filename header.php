@@ -29,23 +29,28 @@
 	<?php 
 	
 
-/*		if(!is_front_page())
+		if(!is_front_page())
 		{
 			if(has_post_thumbnail())
 			{
-				echo the_post_thumbnail();
+				
+				if (!the_post_thumbnail()) {
+					echo get_header_image_tag();		
+				}else{
+					echo the_post_thumbnail();
+
+				}
 			 
 			}
 			else
 			{
-			echo get_header_image_tag(); 
+				echo get_header_image_tag(); 
 			}
 		}else{
 			echo get_header_image_tag();
 		}
-*/ //se videre om de fungerer
-		
-		echo get_header_image_tag(); 
+ //se videre om de fungerer
+
 		
 	
 
@@ -91,17 +96,12 @@
 			</nav>
 			
 			
-</div>
+	</div>
 	
 </div>
 
 
-<div class="dropdown-menu">
-	<?php 
-				$args= array('theme_location'=>'primary');
-			 	wp_nav_menu($args);
-			 ?>
-</div>
+
 	
 	
 </header>

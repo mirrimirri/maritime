@@ -137,6 +137,8 @@ p.{
   z-index: 9990;
 }
 
+
+
 #ajaxsearchlite1{
   transform: translateY(10%);
   margin-right: 2vw;
@@ -147,12 +149,7 @@ img[alt="Norwegian"],img[alt="English"]{
   height: auto;
 }
 
-.dropdown-menu{
-  display: block;
-  position: absolute;
-  z-index: 10000;
 
-}
 @media only screen and (min-width: 600px)
 {
 
@@ -263,7 +260,6 @@ img[alt="Norwegian"],img[alt="English"]{
 
   .menu {
     display: none;
-    position: absolute;
     transform: translate(0, var(--size-variable));
     background-color: #f1f1f1;
     min-width: 160px;
@@ -283,7 +279,6 @@ img[alt="Norwegian"],img[alt="English"]{
 
   .menu.visible {
     display: block;
-     position: relative;
      z-index: 1000;  
   }
 

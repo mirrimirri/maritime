@@ -20,6 +20,15 @@
 	<div>
 	<h3>Copyright © 2019 Design</h3>
 	</div>
+
+
+<!-- Navigasjon for mobiler -->
+	<?php 
+				$args= array('theme_location'=>'primary');
+			 	wp_nav_menu($args);
+			 ?>
+
+
 </footer>
 </div>
 </body>

@@ -99,3 +99,22 @@ margin: 0 1vw 0 1vw
 .grasrotandel-icon:hover{
   opacity: 0.7;
 }
+
+  :root{
+    --size-visible: calc(4.5em - 0.5vw);    
+  }
+
+.visible{
+  display: block;
+  position: absolute;
+  z-index: 10000;
+  background: white;
+  color: black;
+  top: 0;
+  transform: translate(8vw,11.5vw);
+
+}
+
+.visible a:hover{
+  color: #ffdb58
+}

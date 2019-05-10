@@ -3,12 +3,22 @@
 	
  });
 
+$('#menu-menu-2').hide();
 
-$(document).ready(function() {
-	$('#menu-icon').click(function() {
-		$('.menu').toggleClass('visible');
-	});
-});
+
+ 		if (window.matchMedia('(max-width: 600px)').matches) {  
+
+			$(document).ready(function() {
+				$('#menu-icon').click(function() {
+					$('#menu-menu-2').toggleClass('visible');
+			/*Laster class visible på #menu-menu-2*/
+				});
+			});
+              // is mobile device
+
+       }     
+
+
 
 
 
@@ -39,9 +49,7 @@ $( ".visMindre" ).click(function(visMindre) {
   $("#"+postExcerpt).toggle('fast');
 });
 
-$(".dropdown-menu").hide();
+$(".testmenu").hide();
 
-$(".main-nav")click(function(){
-	$(".dropdown-menu").toggle();
-});
+
 

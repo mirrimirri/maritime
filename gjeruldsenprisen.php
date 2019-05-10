@@ -17,7 +17,7 @@
 
 
 <div class='tidligerevinnere'>
- <h1> Tidligere vinnere </h1>
+ <h1> Vinnere </h1>
  <?php echo do_shortcode('[tmm name="tidligere-vinnere"]')?>
 </div>
 

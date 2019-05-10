@@ -76,10 +76,13 @@ p.{
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(to bottom,black, rgba(255,0,0,0));
+  background: linear-gradient(to bottom,black, rgba(255, 255, 255, 0));
   width: 100vw;
   height:25vh;
 }
+
+
+
 
 .header-image-text {
     position: absolute;

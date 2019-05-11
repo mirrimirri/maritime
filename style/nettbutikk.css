@@ -257,5 +257,12 @@ font-family: 'Quattrocento', serif;
 .woocommerce-Price-amount amount{
 	
 }	
-
+@media only screen and (max-width: 600px) {
+  .boks{
+	   margin:unset;
+  }
+ .mellom{
+	 margin:unset;
+ }
+}
 

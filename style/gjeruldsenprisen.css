@@ -8,7 +8,6 @@ body{
 	flex:0%;
 	flex-direction: row;
 	font-size:100%;
-	background-color: #F5F5F5;
 	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
 	background-color: white;
 	margin: 1vw 6vw 1vw 6vw;
@@ -35,8 +34,8 @@ body{
 
 .omgjeruldsen img {
 	 flex:20%;
-	max-width: 40%;
 	margin-right: 5%;
+	width: 50%;
 }
 /* .gjeruldsenprisen{
 	display: flex;
@@ -79,7 +78,6 @@ body{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	font-size:100%;
-	background-color: #F5F5F5;
 	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
 	background-color: white;
 	margin: 1vw 6vw 1vw 6vw;
@@ -88,15 +86,32 @@ body{
 	padding: 3vw;
 	font-family: 'Montserrat', sans-serif;
 }
-.Vinnere h1{
+.vinnere h1{
 	font-size:200%;
 	text-align: center;
 	flex:1 0 100%;
-	
+	margin-top: 3vw;
 }
 h1,h2,h3{
 	font-family: 'Quattrocento', serif;
 }
 p.{
 	font-family: 'Montserrat', sans-serif;
+}
+.tmm_member{
+	border: #d4d7db !important ;
+	box-shadow: default;
+}
+@media only screen and (max-width: 600px) {
+  .omgjeruldsen{
+	   margin:unset;
+	   margin-bottom: 4vw;
+		
+  }
+  .vinnere {
+    margin:unset;
+}
+.posts{
+	margin: 2vw;
+}
 }

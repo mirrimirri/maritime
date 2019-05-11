@@ -33,3 +33,12 @@
 .boks3{
 	
 }
+@media only screen and (max-width: 600px) {
+  .container{
+	   margin:unset;
+	   padding:4vw;
+	   
+		
+  }
+
+}

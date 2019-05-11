@@ -46,3 +46,12 @@
 h1,h2,h3{
 	font-family: 'Quattrocento', serif;
 }
+@media only screen and (max-width: 600px) {
+  .handlevogn{
+	   margin:unset;
+	   padding: unset;
+  }
+ .mellom{
+	 margin:unset;
+ }
+}

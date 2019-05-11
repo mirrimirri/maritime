@@ -49,7 +49,5 @@ $( ".visMindre" ).click(function(visMindre) {
   $("#"+postExcerpt).toggle('fast');
 });
 
-$(".testmenu").hide();
-
 
 

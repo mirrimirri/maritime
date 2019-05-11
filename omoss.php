@@ -23,7 +23,19 @@
 
  <?php 
 
-echo do_shortcode('	[tc-team-members teamid="124"]');	
+	while ( $the_query->have_posts() ) {
+
+	 	$the_query->the_post();
+	 	$post = get_post($post_id);
+		$title = $post->post_title;
+		if (strstr($title,'Team')) {
+			echo "<h1 class='team-overskrift'>".$title."</h1>";
+		 	echo do_shortcode('[tc-team-members teamid="'.get_the_ID().'"]');	 	
+
+			
+		}
+
+ 	}
  ?>
 	
 

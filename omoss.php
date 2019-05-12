@@ -23,6 +23,14 @@
 
  <?php 
 
+
+	$args = array(
+	    'post_type'=> 'tcmembers', 
+	    'order'    => 'ASC'
+	 );              
+
+	$the_query = new WP_Query( $args );
+
 	while ( $the_query->have_posts() ) {
 
 	 	$the_query->the_post();

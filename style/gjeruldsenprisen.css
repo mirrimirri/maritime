@@ -3,6 +3,10 @@ body{
 	margin: 0px;
 }
 
+p{
+	margin: 0;
+}
+
 .omgjeruldsen {
 	display:flex;
 	flex:0%;
@@ -14,29 +18,88 @@ body{
 	padding: 3vw;
 	flex-wrap:wrap;
 	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+
 }
 
- h1 {
-	font-size:150%;
-	margin-top: 10%;
-	margin-left: 20%;
-	margin-right: 20%;
-	padding:0px;
-	
+.omgjeruldsen h1{
+	display: block;
+	width: 100%;
+	text-align: center;
 }
 
-		 .posts {
-			 flex:50%;
-	margin-left: 20%;
-	margin-right: 20%;
-	padding:0px;
+.omgjeruldsen h1{
+	font-size: calc(25px + 2vw);
+
+	color: #333;
+
+	margin: 50px;
 }
+
+@media only screen and (min-width: 1000px){
+
+	.omgjeruldsen h1::before{
+		content: "\f13d";
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		font-family: FontAwesome;
+		font-size: calc(10px + 2vw);
+		font-style: unset;
+		/*color:#283253;*/
+		color: #566ba2;
+/*		transform: translate(-45px, 8px);*/
+		margin-right: 10px;
+		
+	}
+
+	.omgjeruldsen h1::after{
+		content: "\f13d";
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		font-family: FontAwesome;
+		font-size: calc(10px + 2vw);
+		font-style: unset;
+		/*color:#283253;*/
+		color: #566ba2;
+/*		transform: translate(-5px , 8px);*/
+		margin-left: 10px;
+	}
+
+}
+
+
 
 .omgjeruldsen img {
-	 flex:20%;
+	display: inline-block;
+	flex:0 1;
+
+/*	 flex:20%;
 	margin-right: 5%;
-	width: 50%;
+	width: 50%;*/
+	align-self: center;
 }
+
+.posts{
+	display: inline-block;
+	max-width: 600px;
+	flex:0 1 60%;
+	margin:0 0 0 2vw;
+	align-self: center;
+}
+
+.posts p{
+	width: 40vw;
+}
+
+.paragraf{
+	display: inline-block;
+	width: 40vw;
+}
+
+
+
 /* .gjeruldsenprisen{
 	display: flex;
 	flex-wrap: wrap;
@@ -103,15 +166,19 @@ p.{
 	box-shadow: default;
 }
 @media only screen and (max-width: 600px) {
-  .omgjeruldsen{
-	   margin:unset;
-	   margin-bottom: 4vw;
-		
-  }
-  .vinnere {
-    margin:unset;
-}
-.posts{
-	margin: 2vw;
-}
+	.omgjeruldsen{
+		margin:unset;
+		margin-bottom: 4vw;
+
+	}
+	.vinnere {
+    	margin:unset;
+	}
+	.posts{
+		margin: 2vw;
+	}
+
+	.tmm_member{
+		background: #566ba2;
+	}
 }

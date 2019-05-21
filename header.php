@@ -29,26 +29,28 @@
 	<?php 
 	
 
-		if(!is_front_page())
-		{
-			if(has_post_thumbnail())
+			if(!is_front_page())
 			{
-				
-				if (!the_post_thumbnail()) {
-					echo get_header_image_tag();		
-				}else{
-					echo the_post_thumbnail();
+				if(has_post_thumbnail())
+				{
+					
+					if (!get_the_post_thumbnail()) {
+						echo get_header_image_tag();		
+					}else{
+						echo the_post_thumbnail();
 
+					}
+				 
 				}
-			 
+				else
+				{
+					echo get_header_image_tag(); 
+				}
+			}else{
+				echo get_header_image_tag();
 			}
-			else
-			{
-				echo get_header_image_tag(); 
-			}
-		}else{
-			echo get_header_image_tag();
-		}
+
+
  //se videre om de fungerer
 
 		

@@ -148,7 +148,7 @@ p.{
 }
 
 img[alt="Norwegian"],img[alt="English"]{
-  width:4vw;
+  width:calc(10px + 2vw);
   height: auto;
 }
 
@@ -169,13 +169,6 @@ img[alt="Norwegian"],img[alt="English"]{
  
 }
 
-@media only screen and (max-width: 600px)
-{
-  img[alt="Norwegian"],img[alt="English"]{
-  width:10vw;
-  height: auto;
-} 
-}
 
 .hoyrenav{
 	display: flex;
@@ -308,6 +301,10 @@ img[alt="Norwegian"],img[alt="English"]{
     background:#192733;
   }
 
+  img[alt="Norwegian"],img[alt="English"]{
+    width:calc(10px + 4vw);
+    height: auto;
+  }
 
 }
 

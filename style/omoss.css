@@ -65,6 +65,15 @@ body p{
 	color: #1e1e1e;
 }
 
+div#wp-sponsors{
+	font-family: 'Montserrat', sans-serif;	
+}
+
+div#wp-sponsors h3{
+	font-family: 'Quattrocento', serif;
+	font-size: 40px;
+}
+
 .postDiv{
 	flex: initial;
 }
@@ -88,6 +97,35 @@ body p{
 	max-width: 100%;
 }
 
+.team-overskrift{
+	color: #0576B1;
+}
+
+@media only screen and (min-width: 1200px) {
+
+	div#wp-sponsors{
+		display: flex;
+		flex-direction: column;
+	}
+
+	div#wp-sponsors p{
+		max-width: 400px;
+	}
+
+	div.posts{
+		align-content: center;
+	}
+
+	div.posts ul{
+/*		max-width: 700px;*/
+		width: 70%;
+		margin:auto;
+	}
+	div.posts h1{
+		margin:5vh 0;
+	}
+
+}
 
 
 
@@ -249,19 +287,23 @@ h1,h2,h3{
 	font-family: 'Quattrocento', serif;
 }
 @media only screen and (max-width: 600px) {
-  .hoved{
+	.hoved{
 	   margin:unset;
 	   margin-bottom: 4vw;
 		
-  }
-  .samarbeidspartnere {
-    margin:unset;
-	margin-bottom: 4vw;
-}
-.kontaktoss{
-  margin:unset;
-}
-.post{
-	margin: 2vw;
-}
+	}
+	.presentasjon{
+		margin: unset;
+		margin-bottom: 4vw;
+	}
+	.samarbeidspartnere {
+	    margin:unset;
+		margin-bottom: 4vw;
+	}
+	.kontaktoss{
+  		margin:unset;
+	}
+	.post{
+		margin: 2vw;
+	}
 }

@@ -6,7 +6,6 @@
 
 <div class='omgjeruldsen'>
 	<h1><?php the_title();?></h1>
-	<img src ="http://www.trygvevalbo.com/wp-content/uploads/2019/03/Gunnar.jpg">
    <?php if(have_posts()) : while(have_posts()): the_post();?>
 	<div class='posts' style="display:block;">
 		<?php the_content();?>
@@ -18,7 +17,7 @@
 
 <div class='vinnere'>
  <h1> Vinnere </h1>
- <?php echo do_shortcode('[tmm name="tidligere-vinnere"]')?>
+ <?php echo do_shortcode('[tmm name="Tidligere-vinnere"]')?>
 </div>
 
 

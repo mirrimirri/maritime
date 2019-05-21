@@ -1,0 +1,30 @@
+.container{
+
+	margin: 0px;
+    background-color: #efefef;	
+}
+
+
+
+	.container{
+	max-width: 1100px;
+	display: flex;
+	flex-wrap:wrap;
+	background: white;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 2vw 12vw 3vw 12vw;
+	padding: 0vw 3vw;
+	}
+	
+
+@media only screen and (max-width: 600px) {
+  .container{
+	   margin:unset;
+	   padding:4vw;
+	   
+		
+  }
+
+}

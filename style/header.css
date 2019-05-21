@@ -11,12 +11,27 @@ Text Domain: usnmaritime
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-*/ * {
-     box-sizing: border-box;
+*/ 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	
 }
- body{
-     font-family: Arial;
-     background: #A3BCF9;
+.screen-reader-text {
+	width:unset;
+	position:unset;
+}
+
+body{
+  margin: 0px;
+   background: #efefef;
+}
+h1. h2. h3.{
+ font-family: 'Quattrocento', serif;
+}
+p.{
+	font-family: 'Montserrat', sans-serif;
 }
 /* header/logo/title */
  header{
@@ -24,9 +39,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
      flex-direction:column;
      background: #D1D2F9;
      color: white;
+     position: relative;
+     z-index: -4;
 }
 
-.header-image img{
+.home,.blog,.locale-en-us,.woocommerce-js,.maritime{
+  position: relative;
+  z-index: -1;
+}
+
+.header-image > img{
     display: block;
     width: 100%;
     height: 100%;
@@ -35,7 +57,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .header-image{
     position: relative;
     display: inline-block;
+    z-index: -2;
 }
+
+.header-image::after {
+    position: absolute;
+    content:"";
+    height:33vw;
+    width:100vw;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom,black, rgba(255,0,0,0));
+    z-index: -1;
+}
+
+.image-gradient{
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(to bottom,black, rgba(255, 255, 255, 0));
+  width: 100vw;
+  height:25vh;
+}
+
+
+
 
 .header-image-text {
     position: absolute;
@@ -45,36 +92,89 @@ Use it to make something cool, have fun, and share what you've learned with othe
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 600%;
+    font-size: 6vw;
+    padding: 0.2em;
+    background: rgba(255,255,255,0.2);
+    border:0.1em solid white;
 }
+
+
 .nav-container{
     position: absolute;
     top: 0%;
     left: 0%;
-    transform: translate( 10%, 30% );
+    transform: translate( 0%, 30% );
     text-align: center;
     color: white;
+    max-width: 100vw;
+    padding: 1.5em;
+    transform: translateY(-0.5vh);
+}
 
+
+.nav-container{
+	display:flex;
+	flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.main-nav{
+  z-index: 2;
 }
 
 .main-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 9980;
+  margin: 0 2vw;
 }
 
 .main-nav li {
   float: left;
+  z-index: 9990;
 }
 
-.main-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 130%;
-  text-decoration: none;
+
+
+#ajaxsearchlite1{
+  transform: translateY(10%);
+  margin-right: 2vw;
+}
+
+img[alt="Norwegian"],img[alt="English"]{
+  width:calc(10px + 2vw);
+  height: auto;
+}
+
+
+@media only screen and (min-width: 600px)
+{
+
+
+  .main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 0.5em;
+    padding: 1.5em;
+    font-size: 1.5vw;
+    text-decoration: none;
+     } 
+ 
+}
+
+
+.hoyrenav{
+	display: flex;
+	float:right;
+	  margin-right: 2vw; 
+
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -82,33 +182,132 @@ Use it to make something cool, have fun, and share what you've learned with othe
   color: #ffdb58;
 }
 
-
-
-/*
-.main-nav{
-     display: flex;
-}
-}
- .main-nav ul{
-     display:flex;
-     flex-wrap: wrap;
-     list-style: none;
-     font-size: 130%;
-     justify-content: inherit;
-}
-   .main-nav li a{ 
-    float: left;
-    color: #2D5778;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-	list-style: none;
-	display: flex;
-    font-size: 100%;
-    font-family: arial;
-   
+  :root{
+    --size-variable-kurv:3.5vw;    
   }
- .main-nav ul li a :hover {
-     background-color: #white;
-} */
+
+#handlekurv{
+  background-image: url(../bilder/ikoner/handlevognhvit.png);
+  background-size: var(--size-variable-kurv);
+  background-repeat: no-repeat; 
+  width: var(--size-variable-kurv);
+  height: var(--size-variable-kurv);
+  padding: 0 1vw;
+  margin-right: 0.5vw;
+  transform: translateY(50%);
+}
+
+#handlekurv:hover{
+  background-image: url(../bilder/ikoner/handlevogngul.png);
+  background-size: var(--size-variable-kurv);
+  background-repeat: no-repeat;
+  width: var(--size-variable-kurv);
+  height: var(--size-variable-kurv);
+  margin-right: 0.5vw;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+
+  :root{
+    --size-variable:7vw;    
+  }
+
+
+  #handlekurv{
+    background-image: url(../bilder/ikoner/handlevognhvit.png);
+    background-size: var(--size-variable);
+    width: var(--size-variable);
+    height: var(--size-variable);
+    margin-left: 4vw;
+    transform: translateY(0%);
+  }
+
+  #handlekurv:hover{
+    background-image: url(../bilder/ikoner/handlevogngul.png);
+    background-size: var(--size-variable);
+    width: var(--size-variable);
+    height: var(--size-variable);
+  }
+
+  .main-nav {
+    color: white;
+    font-size: 2.5vw;
+    border: none;
+    background-image: url(../bilder/ikoner/dropdownmenu.png);
+    background-repeat: no-repeat;
+    background-size: var(--size-variable);
+    width: var(--size-variable);
+    height: var(--size-variable);
+  }
+
+  .main-nav ul{
+    display: none;
+    justify-content: unset;
+    flex-wrap: wrap;
+    overflow: initial;
+  }
+
+  
+  .main-nav:hover{
+    background: url(../bilder/ikoner/dropdownmenuyella.png) no-repeat;
+    background-size: var(--size-variable);
+  }
+
+  .nav-container{
+    margin: 1vw 2vw 0 4vw;
+    background-color: transparent;
+    display:flex;
+    flex-direction: row;
+  }
+
+  .menu {
+    display: none;
+    transform: translate(0, var(--size-variable));
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .menu a {
+    font-size: 3vw;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 999;
+  }
+
+  
+
+  .menu.visible {
+    display: block;
+     z-index: 1000;  
+  }
+
+  .menu.visible a{
+    color: black;
+    z-index: 1001;   
+  }
+
+  .menu a{
+    min-width: 160px;
+    text-align: left;
+  }
+
+  .menu li:hover{
+    background:#192733;
+  }
+
+  img[alt="Norwegian"],img[alt="English"]{
+    width:calc(10px + 4vw);
+    height: auto;
+  }
+
+}
+
+
+
+

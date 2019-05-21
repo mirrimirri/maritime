@@ -1,0 +1,32 @@
+body{
+
+	margin: 0px; 
+} 
+
+.kassen{
+	background-color: white;
+	box-shadow: 0em 0em 1.5em 1em rgba(0,0,0,0.2);
+    margin: 2vw 12vw 2vw 12vw;
+	padding: 1em 1em 1em 1em;
+	display: flex;
+	text-align: center;
+}
+.woocommerce-info {
+ display: none;
+}
+.woocommerce{
+	display: flex;
+	justify-content:center;
+	padding: 0vw 6vw 0vw 6vw;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
+}
+@media only screen and (max-width: 600px) {
+  .kassen{
+	   margin:unset;
+	   padding: 3vw;
+  }
+}

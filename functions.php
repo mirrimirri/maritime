@@ -1,5 +1,6 @@
  <?php
 
+
  function load_stylesheets()
  {
 
@@ -9,6 +10,8 @@
 	  
 	 wp_enqueue_style( 'header', get_template_directory_uri() . '/style/header.css' );
 	 wp_enqueue_style( 'footer', get_template_directory_uri() . '/style/footer.css' );
+	 wp_enqueue_style( 'enkelevent', get_template_directory_uri() . '/style/enkelevent.css' );
+	
 
 	 
 	 if(is_front_page()){
@@ -36,7 +39,7 @@
 	 }
 
 	  
-	  if($slug=='minside'){
+	  if($slug=='min-konto'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/minside.css', array(), false, 'all'); //laster css nettbutikk
 
     }
@@ -47,11 +50,25 @@
 
 	 if($slug=='gjeruldsenprisen'){
 	   wp_enqueue_style('style', get_template_directory_uri() . '/style/gjeruldsenprisen.css', array(), false, 'all'); //laster css gjeruldsenprisen
-
-
 	 }
 	  
-	
+
+	 if($slug=='nettbutikk'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/nettbutikk.css', array(), false, 'all'); 
+	 }
+	 
+	 if($slug=='handlekurv'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/handlekurv.css', array(), false, 'all'); 
+	 }
+
+	if($slug=='kassen'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/kassen.css', array(), false, 'all'); 
+	 }
+
+	 if($slug=='cookie-policy'){
+	   wp_enqueue_style('style', get_template_directory_uri() . '/style/cookie-policy.css', array(), false, 'all'); //laster css gjeruldsenprisen
+	 }
+
  }
  add_action('wp_enqueue_scripts', 'load_stylesheets');
  
@@ -95,9 +112,9 @@ function themename_custom_header_setup() {
         // Header text color default
         'default-text-color'        => '000',
         // Header image width (in pixels)
-        'width'             => 1000,
+        'width'             => 1920,
         // Header image height (in pixels)
-        'height'            => 198,
+        'height'            => 1080,
         // Header image random rotation default
         'random-default'        => false,
         // Enable upload of image file in admin 
@@ -117,6 +134,12 @@ function themename_custom_header_setup() {
 }
 add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 
+
+//Kan vi få denne inn i customize theme meny?
+add_theme_support( 'post-thumbnails', array( 'page' ) );
+
+
+
 function redirect_to_custom_login_page(){
 	wp_redirect(site_url() . "/login");
 	exit();
@@ -135,6 +158,66 @@ function fn_redirect_wp_admin(){
 	}
 }
 
+function wooc_extra_register_fields() {?>
+       <p class="form-row form-row-wide">
+       <label for="reg_billing_phone"><?php _e( 'Phone', 'woocommerce' ); ?></label>
+       <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone" value="<?php esc_attr_e( $_POST['billing_phone'] ); ?>" />
+       </p>
+       <p class="form-row form-row-first">
+       <label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce' ); ?><span class="required">*</span></label>
+       <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?>" />
+       </p>
+       <p class="form-row form-row-last">
+       <label for="reg_billing_last_name"><?php _e( 'Last name', 'woocommerce' ); ?><span class="required">*</span></label>
+       <input type="text" class="input-text" name="billing_last_name" id="reg_billing_last_name" value="<?php if ( ! empty( $_POST['billing_last_name'] ) ) esc_attr_e( $_POST['billing_last_name'] ); ?>" />
+       </p>
+       <div class="clear"></div>
+       <?php
+ }
+ add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+ 
+ add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+ 
+
+
+
+//når man logger ut blir du sendt til hjemmesiden !!!!!!!!!!hvorfor funker dette ikke??
+
+
+ 
+
+//sideattribut på sider
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+
+//* Enqueue scripts and styles
+add_action( 'wp_enqueue_scripts', 'crunchify_disable_woocommerce_loading_css_js' );
+ 
+function crunchify_disable_woocommerce_loading_css_js() {
+ 
+	// Check if WooCommerce plugin is active
+	if( function_exists( 'is_woocommerce' ) ){
+ 
+		// Check if it's any of WooCommerce page
+		if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) { 		
+			
+			## Dequeue WooCommerce styles
+			wp_dequeue_style('woocommerce-layout'); 
+			wp_dequeue_style('woocommerce-general'); 
+			wp_dequeue_style('woocommerce-smallscreen'); 	
+ 
+			## Dequeue WooCommerce scripts
+			wp_dequeue_script('wc-cart-fragments');
+			wp_dequeue_script('woocommerce'); 
+			wp_dequeue_script('wc-add-to-cart'); 
+		
+			wp_deregister_script( 'js-cookie' );
+			wp_dequeue_script( 'js-cookie' );
+ 
+		}
+	}	
+}
 ?>

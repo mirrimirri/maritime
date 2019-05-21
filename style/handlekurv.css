@@ -1,0 +1,57 @@
+﻿
+#html {margin-top: 0 !important;}
+ body{
+
+	margin: 0px; 
+}
+
+}
+/* main column*/
+.mellom{
+	flex: 55%;
+	background-color: white;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+}
+.handlevogn{
+    background-color: #f4f9ff;
+	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
+    margin: auto;
+	max-width: 1100px;
+	padding: 3em 1em 1em 3em;
+	display: flex;
+	margin: 2vw 12vw 3vw 12vw;
+	background-color:white;
+	
+}
+
+.woocommerce{
+ max-width: 110 px;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ font-family: 'Montserrat', sans-serif;
+}
+.cart_totals {
+  width: 100% !important;
+  float:left;
+}
+
+.cart-collaterals{
+	text-align:center;
+	
+}
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
+}
+@media only screen and (max-width: 600px) {
+  .handlevogn{
+	   margin:unset;
+	   padding: unset;
+  }
+ .mellom{
+	 margin:unset;
+ }
+}

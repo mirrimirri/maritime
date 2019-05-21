@@ -1,30 +1,105 @@
-.omgjeruldsen {
-	display:flex;
-	flex: column;
-	margin-top: 7%;
-	font-size:100%;
-	background-color: #F5F5F5;
-	font-family: arial;
-}
-
-.omgjeruldsen .post h1 {
-	font-size:150%;
-	margin-top: 10%;
-}
-
-.omgjeruldsen .post p{
-	float: right;
-	margin-right: 5%;
-}
-
-.omgjeruldsen img {
-	float: left;
-	margin: 5%;
-}
 
 body{
-	background-color: white;
+	margin: 0px;
 }
+
+p{
+	margin: 0;
+}
+
+.omgjeruldsen {
+	display:flex;
+	flex:0%;
+	flex-direction: row;
+	font-size:100%;
+	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
+	background-color: white;
+	margin: 1vw 6vw 1vw 6vw;
+	padding: 3vw;
+	flex-wrap:wrap;
+	font-family: 'Montserrat', sans-serif;
+	justify-content: center;
+
+}
+
+.omgjeruldsen h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.omgjeruldsen h1{
+	font-size: calc(25px + 2vw);
+
+	color: #333;
+
+	margin: 50px;
+}
+
+@media only screen and (min-width: 1000px){
+
+	.omgjeruldsen h1::before{
+		content: "\f13d";
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		font-family: FontAwesome;
+		font-size: calc(10px + 2vw);
+		font-style: unset;
+		/*color:#283253;*/
+		color: #566ba2;
+/*		transform: translate(-45px, 8px);*/
+		margin-right: 10px;
+		
+	}
+
+	.omgjeruldsen h1::after{
+		content: "\f13d";
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		font-family: FontAwesome;
+		font-size: calc(10px + 2vw);
+		font-style: unset;
+		/*color:#283253;*/
+		color: #566ba2;
+/*		transform: translate(-5px , 8px);*/
+		margin-left: 10px;
+	}
+
+}
+
+
+
+.omgjeruldsen img {
+	display: inline-block;
+	flex:0 1;
+
+/*	 flex:20%;
+	margin-right: 5%;
+	width: 50%;*/
+	align-self: center;
+}
+
+.posts{
+	display: inline-block;
+	max-width: 600px;
+	flex:0 1 60%;
+	margin:0 0 0 2vw;
+	align-self: center;
+}
+
+.posts p{
+	width: 40vw;
+}
+
+.paragraf{
+	display: inline-block;
+	width: 40vw;
+}
+
+
+
 /* .gjeruldsenprisen{
 	display: flex;
 	flex-wrap: wrap;
@@ -58,3 +133,52 @@ body{
     background-repeat:   no-repeat;
     background-size:     cover;
 }*/
+
+
+.vinnere{
+	display:flex;
+	flex: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size:100%;
+	box-shadow: 0vw 0vw 1.5vw 1vw rgba(0,0,0,0.2);
+	background-color: white;
+	margin: 1vw 6vw 1vw 6vw;
+	flex-direction:column;
+	margin-bottom: 3vw;
+	padding: 3vw;
+	font-family: 'Montserrat', sans-serif;
+}
+.vinnere h1{
+	font-size:200%;
+	text-align: center;
+	flex:1 0 100%;
+	margin-top: 3vw;
+}
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
+}
+p.{
+	font-family: 'Montserrat', sans-serif;
+}
+.tmm_member{
+	border: #d4d7db !important ;
+	box-shadow: default;
+}
+@media only screen and (max-width: 600px) {
+	.omgjeruldsen{
+		margin:unset;
+		margin-bottom: 4vw;
+
+	}
+	.vinnere {
+    	margin:unset;
+	}
+	.posts{
+		margin: 2vw;
+	}
+
+	.tmm_member{
+		background: #566ba2;
+	}
+}

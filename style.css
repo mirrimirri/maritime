@@ -13,86 +13,262 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */ 
 
-body{
-
-	margin: 0px; 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+body{
+	margin: 0px;
+}
+
+body p{
+	display: default;
+}
 
  .mellom{
 
 	margin: 0px;
-    background-color: #a2c2e5;	
-}
+    background-color: #efefef;	
 
-
-    .mellom{
-
-     display: flex;
-     flex-wrap:wrap;
-     flex-direction:row;
-}
-/* main column*/
- .hoved{
-     flex: 55%;
-     background-color: #a2c2e5;
-     font-family:Verdana;
-     font-size:100%;
-     margin: 1em;
-     height:1%;
-}
-
-	.post{
+	max-width: 1100px;
 	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	margin: auto;
+	}
+	/* main column*/
+.hoved{
+	flex: 55%;
+	background-color: white;
+
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	font-size:100%;
+	margin: 1em;
+	height:1%;
+}
+	 
+
+.post{
+/*	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
 	align-items: flex-end;
-	justify-content:space-evenly;
-	background-color: #f4f9ff;
+	justify-content:space-evenly;*/
+	text-align: center;
+	background-color: white;
 	margin: 0,5em;
+	padding-bottom: 3em;
 	color: #1e1e1e;
-	 border-bottom: 2px solid grey;
-	 border-color: #e6eaef;
-	
-	
-	
-	
 }
 
-	.post p{
-		margin-left:8%;
-		margin-right:8%;
-		font-size:110%;
-	   
-	}
-	
-	
-	
- .hoved h1{
-     text-align:center;
-     font-family:Verdana;
-	 border-bottom: 2px solid grey;
-	 border-color: #e6eaef;
-	 margin: 0,1em 0,5em 0,1 em 0,5em;
-	 
+
+.postTitle {
+  flex: 0 0 100%; /* fg: 0, fs: 0, fb: 100% */
 }
+
+.wp-block-image figure:after{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-evenly;
+
+}
+
+.wp-block-image img{
+
+	max-width: 100%;
+	padding:3rem;
+}
+
+.post p,.postExcerpt p{
+	margin-left:8%;
+	margin-right:8%;
+	font-size:110%;
+
+}
+
+.post:after,.postExcerpt::after{
+	content: "\f13d     \f13d     \f13d";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: FontAwesome;
+	font-size: 30px;
+	color:#eee;
+	margin: 2vh;
+}
+	
+
+.hoved h1{
+	text-align:center;
+	font-family: 'Quattrocento', serif;
+	margin: 4vw 0;
+	font-size: 250%;
+
+}
+
+.hoved h1:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 40%; /* Change this to whatever width you want. */
+    border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
+	border-color: #e6eaef;
+}
+
  .hoyreside{
+	 display:flex;
      flex: 0%;
      flex-direction:column;
-     background-color: #f4f9ff;
-     margin: 1em 1em 1em 0em;
-     width: 150%;
+     background-color: white;
+     margin: 1em 1em 1em 1.5em;
+     width: 160%;
      height: auto;
-	 padding: 2% 2%;
+	 box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	 padding: 0 0.7em 0.2em 0.7em;
+	
 }
- #simple-facebook-widget {
-     width:120%;
+@media only screen and (max-width: 812px) {
+	  .hoyreside {
+	    margin:unset
+	    margin: 4vw 0;
+	    width: 40%;
+	    
+	}
+
+	.hoyreside h1{
+		text-align:center;
+		font-family: 'Quattrocento', serif;
+		
+		margin: 0,1em 0,5em 0,1em 0,5em;
+	}
 }
- .instagram{
-     display:flex;
-	 background-color: #7796CB;
+
+@media only screen and (max-width: 600px) {
+  .mellom{
+  	display: block;
+  }
+  .hoved {
+	   margin:0;
+	   padding-top: 4vw;
+	   margin-bottom: 4vw;
+		
+  }
+
+.hoyreside h1{
+	text-align:center;
+	font-family: 'Quattrocento', serif;
+	
+	margin: 0,1em 0,5em 0,1em 0,5em;
+
+	}
+	.sok{
+		display: flex;
+		max-width:100%;
+		
+	}
+
+	 #simple-facebook-widget {
+		 display: flex;
+	     width:120%;
+	}
+	 .instagram{
+	     display:flex;
+		 background-color: white;
+	}
+
+  .hoyreside{
+  	width: 100vw;
+    margin:0;
+   	margin-bottom: 4vw;
+  }
+  .paragraf p{
+  	text-align: left;
+  }
+}
+/*.hoved p::after{
+	content: "\f13d"
+	font-family:FontAwesome;
+}
+*/  
+.paragraf p{
+  	text-align: left;
 }
 
 
 
- 
+.sitat {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid black;
+  font-family: 'Montserrat', serif;
+  font-style: italic;
+  font-weight: 100;
+  
+}
+.sitat::before {
+  content: '\f10d';
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  color: black;
+}
+.sitat::after {
+  content: '\f10e';
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  color: black;
+}
+
+.post .paragraf::after {
+  content: "\f13d";
+  display: block;
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 30px;
+  font-style: unset;
+  color:#eee;
+  margin: 2vh;
+
+}
+
+
+.visMer .paragraf, .visMindre .paragraf{
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	margin: 0 0 2vw 0;
+}
+
+
+
+
+.visMer p,.visMindre p{
+	display: block;
+	text-align: center;
+	font-weight: 800; 
+	text-decoration: underline;
+
+	-webkit-transition: font-size 0.05s; /* Safari */
+	transition: font-size 0.05s;
+
+}
+
+.visMer p:hover,.visMindre p:hover{
+	cursor:pointer;
+	color: maroon;
+}
+
+
+.visMer p:active,.visMindre p:active{
+	cursor:pointer;
+	color: maroon;
+	font-size: 90%
+}
+
+
+
+

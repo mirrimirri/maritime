@@ -6,23 +6,34 @@
 
 </div> 
 
+
 	<div class='hoved'>
-	
-	
-	
 	<?php if(have_posts()) : while(have_posts()): the_post();?>
-	<div class='post'>
-	<h1><?php the_title();?></h1>
-		<?php the_content();?>
+	<div class='postExcerpt' id="postExcerpt-<?php the_ID(); ?>" >
+	<div class="postTitle"><h1><?php the_title();?></h1></div>
+		<?php the_excerpt(); ?>
+		<?php echo the_post_thumbnail(); ?>
+		<div class="visMer" id="<?php the_ID()?>"><p>Vis Mer</p></div>
+		
+	</div>
+	<div class='post' id="post-<?php the_ID(); ?>">
+	<div class="postTitle"><h1><?php the_title();?></h1></div>
+	
+	<?php the_content();?>
+	<div class="visMindre" id="<?php the_ID()?>"><p>Vis Mindre</p></div>
+
 		</div>
 	<?php endwhile; endif;?>
 	</div>
+ 
 	
-	
-	
+
 	
 	
 <div class='hoyreside'>
+	<div class='sok'>
+	<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+	</div>
 <div class='facebook'>
 <h1>Nyheter fra oss<h1>
 <?php echo do_shortcode('[facebook-page href="https://www.facebook.com/USNMaritime/" tabs="timeline"  width="5000" height="500"]

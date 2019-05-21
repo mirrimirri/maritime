@@ -1,0 +1,170 @@
+﻿
+ body{
+
+	margin: 0px;
+	z-index: -2;
+
+}
+ .mellom{
+
+	margin: 0vw 6vw;
+	font-family: 'Montserrat', sans-serif;
+    background-color: #efefef;	
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    position: relative;
+    z-index: -1
+}
+
+
+
+.events-table{
+	
+	 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+    margin-left:1vw;
+  margin-right:1vw;
+  margin-bottom:1vw;
+  margin-top:1vw;
+}
+
+
+.events-table td, .events-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}	
+
+.events-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.events-table tr:hover {background-color: #ddd;}	
+
+.events-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1d4687;
+  color: white;
+}
+
+
+.events{
+    flex: 55%;
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+    font-size:100%;
+    margin: 1.5vw;
+    height:1%; 
+	display: flex;
+    height:1%;
+    display: flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	padding-bottom: 3em;
+	color: #1e1e1e;
+	width: 100%;
+}
+
+
+ 
+ .filopplasting{
+   flex: 0%;
+     flex-direction:column;
+     background-color: white;
+     margin: 1.5vw;
+     width: 300%;
+     height: auto;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	 padding: 0vw 2vw;
+	 
+	 
+}
+ .filopplasting h2{
+ 	font-family: 'Quattrocento', serif;
+	 text-align: center;
+	 
+ }
+ ul .mmm-list {
+	 margin: 5px 5px 5px 5px;
+	 
+ }
+h1{
+	text-align: center;
+}
+
+ul.mmm-list{
+	position: relative;
+	z-index: 10;
+}
+
+
+h1,h2,h3{
+	font-family: 'Quattrocento', serif;
+	text-align: center;
+}
+.event-description{
+	background-color: #1d4687;
+	color: white;
+}
+
+.page-template, .page-template-events, .page-template-events-php, .page, .page-id-56, .locale-en-us, .woocommerce-js, .maritime{
+	position: relative;
+	z-index: -1;
+}
+@media only screen and (max-width: 600px) {
+  .events {
+	   margin:unset;
+	   padding:3vw;
+	   margin-bottom: 3vw;
+		
+  }
+  .filopplasting {
+    margin:unset;
+    padding:3vw;
+}
+.mellom{
+	margin:unset;
+}
+}
+
+/*Definerer et ikon bak hver fil i lista*/
+
+.mmm-list a[href$='.txt']::after,
+.mmm-list a[href$='.doc']::after,
+.mmm-list a[href$='.docx']::after,
+.mmm-list a[href$='.pdf']::after,
+.mmm-list a[href$='.odt']::after,
+.mmm-list a[href$='.rtf']::after
+{
+    content: '\f15c';
+    font-family:FontAwesome;
+    width: 1vw;
+    margin-left:0.5vw;
+}
+
+.mmm-list a[href$='.PNG']::after,
+.mmm-list a[href$='.png']::after,
+.mmm-list a[href$='.jpgx']::after,
+.mmm-list a[href$='.jpeg']::after,
+.mmm-list a[href$='.gif']::after
+{
+    content: '\f1c5';
+    font-family:FontAwesome;
+    width: 1vw;
+    margin-left:0.5vw;
+}
+
+.mmm-list a[href$='.xls']::after,
+.mmm-list a[href$='.xml']::after,
+.mmm-list a[href$='.ods']::after,
+.mmm-list a[href$='.pxl']::after
+{
+	content: '\f1c3';
+	font-family:FontAwesome;
+	width: 1vw;
+	margin-left:0.5vw;
+}
+
+.css-events-list table.events-table td{
+	padding: 2vw;
+}

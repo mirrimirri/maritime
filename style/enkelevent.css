@@ -1,0 +1,44 @@
+.container{
+
+    margin: 1vw 12vw 1vw 12vw;
+	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	padding: 0em 2em 2em 2em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	background-color: white;
+	color: #1e1e1e;
+	flex: 100%;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size:100%;
+	height:1%;
+
+}
+.boks{
+	display:flex;
+	flex-direction: row;
+}
+
+.boks1{
+	
+}
+
+
+.boks2{
+	margin-left: 1vw;
+}
+
+
+.boks3{
+	
+}
+@media only screen and (max-width: 600px) {
+  .container{
+	   margin:unset;
+	   padding:4vw;
+	   
+		
+  }
+
+}

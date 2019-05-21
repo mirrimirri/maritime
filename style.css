@@ -131,6 +131,10 @@ body p{
 	 padding: 0 0.7em 0.2em 0.7em;
 	
 }
+
+.wp-block-image{
+	max-width: 80%;
+}
 @media only screen and (max-width: 812px) {
 	  .hoyreside {
 	    margin:unset

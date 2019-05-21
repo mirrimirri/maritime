@@ -89,8 +89,10 @@
 	</div>
 
 	<div class="nav-container">	
+			<a href="<?php print get_home_url(); ?>">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/bilder/ikoner/logoliten.png" class="menu-hjem">	
+			</a>
 			<nav class="main-nav" id="menu-icon">
-
 			<?php 
 				$args= array('theme_location'=>'primary');
 			 	wp_nav_menu($args);
@@ -101,6 +103,7 @@
 	</div>
 	
 </div>
+
 
 
 

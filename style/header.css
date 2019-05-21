@@ -206,7 +206,14 @@ img[alt="Norwegian"],img[alt="English"]{
   margin-right: 0.5vw;
 }
 
+.menu-hjem{
+  width: calc(20px + 6vw);
+  height: calc(20px + 6vw) !important;
+}
 
+.menu-hjem:hover{
+  opacity: 0.8;
+}
 
 @media only screen and (max-width: 600px)
 {
@@ -257,7 +264,7 @@ img[alt="Norwegian"],img[alt="English"]{
   }
 
   .nav-container{
-    margin: 1vw 2vw 0 4vw;
+    margin: 0 2vw 0 0;
     background-color: transparent;
     display:flex;
     flex-direction: row;
@@ -305,6 +312,10 @@ img[alt="Norwegian"],img[alt="English"]{
     width:calc(10px + 4vw);
     height: auto;
   }
+
+  .menu-hjem{
+  margin-right: 2vw;
+}
 
 }
 

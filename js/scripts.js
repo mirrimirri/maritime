@@ -49,6 +49,14 @@ $( ".visMindre" ).click(function(visMindre) {
   $("#"+postExcerpt).toggle('fast');
 });
 
+$( ".visMer a" ).click(function( event ) {
+  event.preventDefault();
+});
+
+$( ".visMindre a" ).click(function( event ) {
+  event.preventDefault();
+});
+
 
 
 

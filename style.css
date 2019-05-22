@@ -250,29 +250,37 @@ body p{
 
 
 
-.visMer p,.visMindre p{
+.visMer a,.visMindre a{
 	display: block;
 	text-align: center;
 	font-weight: 800; 
 	text-decoration: underline;
+	font-family: 'Montserrat', sans-serif;
+	color: #5CB7E1;
+	font-size: 20px;
 
 	-webkit-transition: font-size 0.05s; /* Safari */
 	transition: font-size 0.05s;
 
 }
 
-.visMer p:hover,.visMindre p:hover{
+.visMer a:hover,.visMindre a:hover{
 	cursor:pointer;
 	color: maroon;
 }
 
 
-.visMer p:active,.visMindre p:active{
+.visMer a:active,.visMindre a:active{
 	cursor:pointer;
 	color: maroon;
 	font-size: 90%
 }
 
+.visMer a:visited,.visMindre a:visited{
+	cursor:pointer;
+	color: #5CB7E1;
+	font-size: 90%
+}
 
 
 

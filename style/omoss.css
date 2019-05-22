@@ -11,16 +11,17 @@
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
-	
-}
+	   
 
 
 .tc_team-members{
 	display:flex;
 	flex-wrap:wrap;
-    justify-content: center;
+	align-content: center;
+    justify-content: space-evenly;
 	
 }
+
 
 body p{
 	display: default;

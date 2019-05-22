@@ -90,7 +90,7 @@
 
 	<div class="nav-container">	
 			<a href="<?php print get_home_url(); ?>">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/bilder/ikoner/logoliten.png" class="menu-hjem">	
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/bilder/ikoner/logoliten.png" class="menu-hjem" alt="Tilbake til forsiden">	
 			</a>
 			<nav class="main-nav" id="menu-icon">
 			<?php 

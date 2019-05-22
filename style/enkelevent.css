@@ -17,7 +17,7 @@
 }
 .boks{
 	display:flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .boks1{
@@ -27,6 +27,11 @@
 
 .boks2{
 	margin-left: 1vw;
+}
+
+.boks img{
+	display: block;
+	
 }
 
 

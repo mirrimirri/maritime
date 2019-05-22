@@ -55,14 +55,15 @@
     font-size:100%;
     margin: 1.5vw;
     height:1%; 
-	display: flex;
+    display: flex;
+    flex-direction: column;
     height:1%;
     display: flex;
-	flex-wrap:wrap;
-	justify-content:space-evenly;
-	padding-bottom: 3em;
-	color: #1e1e1e;
-	width: 100%;
+    flex-wrap:wrap;
+    align-content: center;
+    padding-bottom: 3em;
+    color: #1e1e1e;
+    width: 100%;
 }
 
 
@@ -77,8 +78,19 @@
 	box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
 	 padding: 0vw 2vw;
 	 
-	 
 }
+
+div.mmm-list a{
+
+  color: #222;
+  text-decoration: none;
+}
+
+div.mmm-list a:hover{
+  color:maroon;
+}
+
+
  .filopplasting h2{
  	font-family: 'Quattrocento', serif;
 	 text-align: center;

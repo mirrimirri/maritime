@@ -165,7 +165,45 @@ p.{
 	border: #d4d7db !important ;
 	box-shadow: default;
 }
+
+.egendefinert-header{
+	font-size: 60px;
+	color: #333;
+	text-decoration: none;
+}
+
+.egendefinert-header::before{
+	content: "\f13d";
+	display: inline-block;
+	text-align: center;
+	font-family: FontAwesome;
+	font-size: 35px;
+	font-style: unset;
+	/*color:#283253;*/
+	color: #566ba2;
+	transform: translateY(-7px);
+	margin-right: 10px;
+	
+}
+
+.egendefinert-header::after{
+	content: "\f13d";
+	display: inline-block;
+	text-align: center;
+	font-family: FontAwesome;
+	font-size: 35px;
+	font-style: unset;
+	/*color:#283253;*/
+	color: #566ba2;
+	transform: translateY(-7px);
+	margin-left: 10px;
+}
+
 @media only screen and (max-width: 600px) {
+	.egendefinert-header{
+		display: none;
+	}
+
 	.omgjeruldsen{
 		margin:unset;
 		margin-bottom: 4vw;

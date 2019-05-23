@@ -37,7 +37,7 @@ body p{
 .nettbutikk-header{
 	font-size: 60px;
 	color: #333;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .nettbutikk-header::before{

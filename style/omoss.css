@@ -136,16 +136,7 @@ div#wp-sponsors h3{
 
 }
 
-.post:after {
-	content: ""; /* This is necessary for the pseudo element to work. */ 
-	display: block; /* This will put the pseudo element on its own line. */
-	margin: 0 auto; /* This will center the border. */
-	width: 80%; /* Change this to whatever width you want. */
-	padding-top: 20px; /* This creates some space between the element and the border. */
-	border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
-	border-color: #667299;
 
-}
 	
 
 .hoved h1{
@@ -171,14 +162,7 @@ div#wp-sponsors h3{
 width:250px;
 	height: 250px;
 }
-.hoved h1:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 40%; /* Change this to whatever width you want. */
-    border-bottom: 1px solid; /* This creates the border. Replace black with whatever color you want. */
-	border-color: #e6eaef;
-}
+
 
 .presentasjon{
 		display:flex;
@@ -287,7 +271,45 @@ h1 {
 h1,h2,h3{
 	font-family: 'Quattrocento', serif;
 }
+
+.egendefinert-header{
+	font-size: 60px;
+	color: #333;
+	text-decoration: none;
+}
+
+.egendefinert-header::before{
+	content: "\f13d";
+	display: inline-block;
+	text-align: center;
+	font-family: FontAwesome;
+	font-size: 35px;
+	font-style: unset;
+	/*color:#283253;*/
+	color: #566ba2;
+	transform: translateY(-7px);
+	margin-right: 10px;
+	
+}
+
+.egendefinert-header::after{
+	content: "\f13d";
+	display: inline-block;
+	text-align: center;
+	font-family: FontAwesome;
+	font-size: 35px;
+	font-style: unset;
+	/*color:#283253;*/
+	color: #566ba2;
+	transform: translateY(-7px);
+	margin-left: 10px;
+}
+
 @media only screen and (max-width: 600px) {
+	
+	.egendefinert-header{
+		display: none;
+	}
 	.hoved{
 	   margin:unset;
 	   margin-bottom: 4vw;

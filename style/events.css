@@ -123,6 +123,41 @@ h1,h2,h3{
 	position: relative;
 	z-index: -1;
 }
+
+.egendefinert-header{
+  font-size: 60px;
+  color: #333;
+  text-decoration: none;
+}
+
+.egendefinert-header::before{
+  content: "\f13d";
+  display: inline-block;
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 35px;
+  font-style: unset;
+  /*color:#283253;*/
+  color: #566ba2;
+  transform: translateY(-7px);
+  margin-right: 10px;
+  
+}
+
+.egendefinert-header::after{
+  content: "\f13d";
+  display: inline-block;
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 35px;
+  font-style: unset;
+  /*color:#283253;*/
+  color: #566ba2;
+  transform: translateY(-7px);
+  margin-left: 10px;
+}
+  
+
 @media only screen and (max-width: 600px) {
   .events {
 	   margin:unset;
@@ -133,10 +168,14 @@ h1,h2,h3{
   .filopplasting {
     margin:unset;
     padding:3vw;
-}
-.mellom{
-	margin:unset;
-}
+  }
+  .mellom{
+  	margin:unset;
+  }
+
+  .egendefinert-header{
+    display: none;
+  }
 }
 
 /*Definerer et ikon bak hver fil i lista*/

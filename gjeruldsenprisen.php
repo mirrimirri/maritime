@@ -5,7 +5,7 @@
 
 
 <div class='omgjeruldsen'>
-	<h1><?php the_title();?></h1>
+	<h1 class="egendefinert-header"><?php the_title();?></h1>
    <?php if(have_posts()) : while(have_posts()): the_post();?>
 	<div class='posts' style="display:block;">
 		<?php the_content();?>

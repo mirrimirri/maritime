@@ -30,7 +30,7 @@ echo do_shortcode('[MMFileList folder="../../public/" format="li"]<div class="mm
 $user = wp_get_current_user();
 
 
-if ( in_array( 'Participant', (array) $user->roles ) || in_array( 'administrator', (array) $user->roles ) ) 
+if ( in_array( 'participant', (array) $user->roles ) || in_array( 'administrator', (array) $user->roles ) || in_array( 'customer', (array) $user->roles )) 
 
 {
 	echo "<h2>Medlemsfiler</h2>";
